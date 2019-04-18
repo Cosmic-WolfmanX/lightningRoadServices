@@ -26,15 +26,6 @@ public class logInFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title1 = new javax.swing.JLabel();
-        PassL = new javax.swing.JLabel();
-        UserNameL1 = new javax.swing.JLabel();
-        passEnter = new javax.swing.JTextField();
-        userEnter = new javax.swing.JTextField();
-        create = new javax.swing.JButton();
-        logIn = new javax.swing.JButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
         setName("MainFrame"); // NOI18N
@@ -42,100 +33,8 @@ public class logInFrame extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(550, 950));
         getContentPane().setLayout(null);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
-        kGradientPanel1.setkGradientFocus(850);
-        kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
-        kGradientPanel1.setLayout(null);
-
-        Title1.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        Title1.setForeground(new java.awt.Color(255, 255, 255));
-        Title1.setText("Lighting Road-Side Assistance");
-        kGradientPanel1.add(Title1);
-        Title1.setBounds(160, 60, 390, 90);
-
-        PassL.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.highlight"));
-        PassL.setText("Pass-Word");
-        PassL.setOpaque(true);
-        kGradientPanel1.add(PassL);
-        PassL.setBounds(40, 430, 90, 40);
-
-        UserNameL1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.highlight"));
-        UserNameL1.setText("User-Name");
-        UserNameL1.setOpaque(true);
-        kGradientPanel1.add(UserNameL1);
-        UserNameL1.setBounds(40, 370, 90, 40);
-
-        passEnter.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
-        passEnter.setBorder(null);
-        passEnter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passEnterActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(passEnter);
-        passEnter.setBounds(160, 430, 220, 40);
-        passEnter.getAccessibleContext().setAccessibleName("userEnter");
-
-        userEnter.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
-        userEnter.setBorder(null);
-        userEnter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userEnterActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(userEnter);
-        userEnter.setBounds(160, 370, 220, 40);
-
-        create.setBackground(new java.awt.Color(51, 51, 255));
-        create.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        create.setText("Create User");
-        create.setActionCommand("");
-        create.setAutoscrolls(true);
-        create.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
-        create.setContentAreaFilled(false);
-        create.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        create.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(create);
-        create.setBounds(320, 870, 210, 60);
-
-        logIn.setBackground(new java.awt.Color(255, 153, 0));
-        logIn.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        logIn.setText("Log-In");
-        logIn.setActionCommand("");
-        logIn.setAutoscrolls(true);
-        logIn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 0), 2));
-        logIn.setContentAreaFilled(false);
-        logIn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        kGradientPanel1.add(logIn);
-        logIn.setBounds(250, 480, 170, 50);
-
-        getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 950);
-
         setBounds(0, 0, 572, 1006);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void passEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passEnterActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passEnterActionPerformed
-
-    private void userEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userEnterActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_userEnterActionPerformed
-
-    private void createActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createActionPerformed
-        
-        this.setVisible(false);
-       
-       createCustomer newcust = new createCustomer();
-       newcust.setVisible(true);
-        
-        
-    }//GEN-LAST:event_createActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,13 +72,5 @@ public class logInFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel PassL;
-    private javax.swing.JLabel Title1;
-    private javax.swing.JLabel UserNameL1;
-    private javax.swing.JButton create;
-    private keeptoo.KGradientPanel kGradientPanel1;
-    private javax.swing.JButton logIn;
-    private javax.swing.JTextField passEnter;
-    private javax.swing.JTextField userEnter;
     // End of variables declaration//GEN-END:variables
 }

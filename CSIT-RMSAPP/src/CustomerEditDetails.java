@@ -26,20 +26,12 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        kGradientPanel1 = new keeptoo.KGradientPanel();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
         setName("MainFrame"); // NOI18N
         setResizable(false);
         setSize(new java.awt.Dimension(550, 950));
         getContentPane().setLayout(null);
-
-        kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
-        kGradientPanel1.setkGradientFocus(850);
-        kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
-        getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 950);
 
         setBounds(0, 0, 572, 1006);
     }// </editor-fold>//GEN-END:initComponents
@@ -80,6 +72,5 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private keeptoo.KGradientPanel kGradientPanel1;
     // End of variables declaration//GEN-END:variables
 }
