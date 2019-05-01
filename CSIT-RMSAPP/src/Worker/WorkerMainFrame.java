@@ -85,14 +85,14 @@ public class WorkerMainFrame extends javax.swing.JFrame {
         Title2.setBounds(20, 540, 270, 40);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "View Past Report Responses", " " }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "View Past Report Responses", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
             }
         });
         kGradientPanel1.add(DropM);
-        DropM.setBounds(400, 10, 140, 60);
+        DropM.setBounds(320, 10, 220, 60);
 
         fnameV.setEditable(false);
         fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -277,7 +277,30 @@ public class WorkerMainFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
-        // TODO add your handling code here:
+        
+       if((String)DropM.getSelectedItem() == "Log-out")
+       {
+           this.setVisible(false);
+       
+           logInFrame log = new logInFrame();
+           log.setVisible(true);
+       }
+       else if((String)DropM.getSelectedItem() == "View Past Report Responses")
+       {
+           this.setVisible(false);
+       
+           WorkerReport rep = new WorkerReport();
+           rep.setVisible(true);
+       }
+       else if((String)DropM.getSelectedItem() == "Menu")
+       {
+          this.setVisible(false);
+       
+            WorkerMainFrame work = new WorkerMainFrame();
+            work.setVisible(true);
+       }
+       
+      
     }//GEN-LAST:event_DropMActionPerformed
 
     private void expiryDayEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnterActionPerformed

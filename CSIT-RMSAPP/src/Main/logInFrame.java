@@ -4,11 +4,6 @@ package Main;
 import Worker.*;
 import Customer.*;
 import javax.swing.JOptionPane;
-import java.io.File;
-import java.lang.ClassLoader;
-import java.net.URL;
-import java.net.MalformedURLException;
-import java.io.IOException;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -28,7 +23,6 @@ public class logInFrame extends javax.swing.JFrame {
     public logInFrame() {
         initComponents();
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -111,15 +105,15 @@ public class logInFrame extends javax.swing.JFrame {
 
         Title3.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title3.setForeground(new java.awt.Color(255, 255, 255));
-        Title3.setText("Password:");
+        Title3.setText("Pass - Word:");
         kGradientPanel1.add(Title3);
-        Title3.setBounds(50, 400, 210, 70);
+        Title3.setBounds(30, 410, 210, 70);
 
         Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title4.setForeground(new java.awt.Color(255, 255, 255));
-        Title4.setText("Username:");
+        Title4.setText("User - Name:");
         kGradientPanel1.add(Title4);
-        Title4.setBounds(50, 340, 210, 70);
+        Title4.setBounds(30, 350, 210, 70);
 
         passEnter.setText("jPasswordField1");
         passEnter.addActionListener(new java.awt.event.ActionListener() {
@@ -156,25 +150,27 @@ public class logInFrame extends javax.swing.JFrame {
         String Pword = passEnter.getText();
         
         
-        if(Uname != "AdminC" && Pword != "AdminC")
+        if("C".equals(Uname) && "C".equals(Pword))
         {
-             this.setVisible(false);
+            this.setVisible(false);
        
             customerMainFrame cust = new customerMainFrame();
             cust.setVisible(true);
+            
         }
-        else if(Uname == "AdminW" && Pword == "AdminW")
+        else if("W".equals(Uname) && "W".equals(Pword))
         {
-             this.setVisible(false);
+            this.setVisible(false);
        
             WorkerMainFrame work = new WorkerMainFrame();
             work.setVisible(true);
+            
         }
-        else
+        else if(Uname != "C" && Pword != "C" || Uname != "W" && Pword != "W")
         {
              JOptionPane.showMessageDialog(null, "Inncorrect Username or Password");
         }
-        
+              
         
     }//GEN-LAST:event_logInActionPerformed
 
@@ -191,25 +187,6 @@ public class logInFrame extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        ClassLoader loader = logInFrame.class.getClassLoader();
-        URL url1 = loader.getResource("Main");
-        try{
-            URL url2 = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/CustomerRecords.csv", null);
-            RandomDataGenerator randomData = new RandomDataGenerator();
-            try
-            {
-                randomData.writeToCSV(url2);
-            }
-            catch(IOException f)
-            {
-                f.printStackTrace();
-            }
-                
-        }
-        catch(MalformedURLException e)
-        {
-            e.printStackTrace();
-        }
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {

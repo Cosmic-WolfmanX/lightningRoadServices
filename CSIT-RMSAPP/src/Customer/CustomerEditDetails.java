@@ -66,6 +66,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         Title8 = new javax.swing.JLabel();
         Title3 = new javax.swing.JLabel();
         createU = new javax.swing.JButton();
+        DropM = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -92,7 +93,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         Title2.setForeground(new java.awt.Color(255, 255, 255));
         Title2.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title2);
-        Title2.setBounds(240, 10, 300, 80);
+        Title2.setBounds(230, 70, 300, 80);
 
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(fNameEnter);
@@ -247,6 +248,16 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         kGradientPanel1.add(createU);
         createU.setBounds(330, 880, 210, 60);
 
+        DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "Add Vehicle", "See Upcoming Requried Payments", "View Past Reports", "Log-out" }));
+        DropM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DropMActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(DropM);
+        DropM.setBounds(330, 10, 210, 60);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
 
@@ -290,6 +301,52 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         //move to customer bio
     }//GEN-LAST:event_createUActionPerformed
 
+    private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
+
+        if((String)DropM.getSelectedItem() == "Log-out")
+        {
+            this.setVisible(false);
+
+            logInFrame log = new logInFrame();
+            log.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Past Report")
+        {
+            this.setVisible(false);
+
+            WorkerReport rep = new WorkerReport();
+            rep.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Add Vehicle")
+        {
+            this.setVisible(false);
+
+            addVehicle addV = new addVehicle();
+            addV.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "See Upcomming Required Payments")
+        {
+            this.setVisible(false);
+
+            customerPayments pay = new customerPayments();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Menu")
+        {
+            this.setVisible(false);
+
+            customerMainFrame cust = new customerMainFrame();
+            cust.setVisible(true);
+        }
+    }//GEN-LAST:event_DropMActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -326,6 +383,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox DropM;
     private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title11;
     private javax.swing.JLabel Title12;

@@ -96,7 +96,7 @@ public class createCustomer extends javax.swing.JFrame {
         Title2.setForeground(new java.awt.Color(255, 255, 255));
         Title2.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title2);
-        Title2.setBounds(240, 10, 300, 80);
+        Title2.setBounds(240, 20, 300, 80);
 
         Title3.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title3.setForeground(new java.awt.Color(255, 255, 255));

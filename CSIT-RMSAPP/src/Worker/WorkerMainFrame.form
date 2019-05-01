@@ -93,7 +93,7 @@
               <StringArray count="3">
                 <StringItem index="0" value="Menu"/>
                 <StringItem index="1" value="View Past Report Responses"/>
-                <StringItem index="2" value=" "/>
+                <StringItem index="2" value="Log-out"/>
               </StringArray>
             </Property>
           </Properties>
@@ -102,7 +102,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="400" y="10" width="140" height="60"/>
+              <AbsoluteConstraints x="320" y="10" width="220" height="60"/>
             </Constraint>
           </Constraints>
         </Component>

@@ -36,7 +36,6 @@ public class WorkerReport extends javax.swing.JFrame {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
         Title5 = new javax.swing.JLabel();
-        DropM1 = new javax.swing.JComboBox();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         dash = new javax.swing.JTextField();
@@ -67,6 +66,7 @@ public class WorkerReport extends javax.swing.JFrame {
         kGradientPanel6 = new keeptoo.KGradientPanel();
         kGradientPanel7 = new keeptoo.KGradientPanel();
         kGradientPanel8 = new keeptoo.KGradientPanel();
+        DropM = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -80,21 +80,11 @@ public class WorkerReport extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
 
-        Title5.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        Title5.setFont(new java.awt.Font("Georgia", 1, 22)); // NOI18N
         Title5.setForeground(new java.awt.Color(255, 255, 255));
         Title5.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 320, 80);
-
-        DropM1.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        DropM1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "View Past Report Responses", "View Ratings", " " }));
-        DropM1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DropM1ActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(DropM1);
-        DropM1.setBounds(390, 10, 140, 60);
+        Title5.setBounds(20, 0, 300, 80);
 
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel2.setkGradientFocus(750);
@@ -290,15 +280,21 @@ public class WorkerReport extends javax.swing.JFrame {
         kGradientPanel1.add(jTabbedPane1);
         jTabbedPane1.setBounds(0, 70, 550, 880);
 
+        DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "View Past Report Responses", "Log-out" }));
+        DropM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DropMActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(DropM);
+        DropM.setBounds(320, 10, 220, 60);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
 
         setBounds(0, 0, 572, 1006);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void DropM1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropM1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_DropM1ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
@@ -323,6 +319,32 @@ public class WorkerReport extends javax.swing.JFrame {
     private void expiryDayEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnterActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_expiryDayEnterActionPerformed
+
+    private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
+
+        if((String)DropM.getSelectedItem() == "Log-out")
+        {
+            this.setVisible(false);
+
+            logInFrame log = new logInFrame();
+            log.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Past Report Responses")
+        {
+            this.setVisible(false);
+
+            WorkerReport rep = new WorkerReport();
+            rep.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Menu")
+        {
+            this.setVisible(false);
+
+            WorkerMainFrame work = new WorkerMainFrame();
+            work.setVisible(true);
+        }
+
+    }//GEN-LAST:event_DropMActionPerformed
 
     /**
      * @param args the command line arguments
@@ -360,7 +382,7 @@ public class WorkerReport extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox DropM1;
+    private javax.swing.JComboBox DropM;
     private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title11;
     private javax.swing.JLabel Title5;

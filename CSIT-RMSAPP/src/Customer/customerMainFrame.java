@@ -128,7 +128,7 @@ public class customerMainFrame extends javax.swing.JFrame
 
         getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
         kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(20, 20, 210, 220);
+        getProfilePic.setBounds(20, 20, 200, 220);
 
         fnameV.setEditable(false);
         fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -151,9 +151,14 @@ public class customerMainFrame extends javax.swing.JFrame
         lNameV.setBounds(210, 360, 210, 40);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "See Upcoming Requried Payments", "View Past Reports", " " }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "Add Vehicle", "See Upcoming Requried Payments", "View Past Reports", "Log-out" }));
+        DropM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DropMActionPerformed(evt);
+            }
+        });
         kGradientPanel1.add(DropM);
-        DropM.setBounds(400, 10, 140, 60);
+        DropM.setBounds(330, 10, 210, 60);
 
         Title5.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         Title5.setForeground(new java.awt.Color(255, 255, 255));
@@ -250,6 +255,52 @@ public class customerMainFrame extends javax.swing.JFrame
     private void expiryDayEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnterActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_expiryDayEnterActionPerformed
+
+    private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
+        
+        if((String)DropM.getSelectedItem() == "Log-out")
+       {
+           this.setVisible(false);
+       
+           logInFrame log = new logInFrame();
+           log.setVisible(true);
+       }
+       else if((String)DropM.getSelectedItem() == "View Past Report")
+       {
+           this.setVisible(false);
+       
+           WorkerReport rep = new WorkerReport();
+           rep.setVisible(true);
+       }
+       else if((String)DropM.getSelectedItem() == "Edit Profile")
+       {
+           this.setVisible(false);
+       
+           CustomerEditDetails edit = new CustomerEditDetails();
+           edit.setVisible(true);
+       }
+       else if((String)DropM.getSelectedItem() == "Add Vehicle")
+       {
+           this.setVisible(false);
+       
+           addVehicle addV = new addVehicle();
+           addV.setVisible(true);
+       }
+       else if((String)DropM.getSelectedItem() == "See Upcomming Required Payments")
+       {
+           this.setVisible(false);
+       
+           customerPayments pay = new customerPayments();
+           pay.setVisible(true);
+       }
+       else if((String)DropM.getSelectedItem() == "Menu")
+       {
+          this.setVisible(false);
+       
+            customerMainFrame cust = new customerMainFrame();
+            cust.setVisible(true);
+       }
+    }//GEN-LAST:event_DropMActionPerformed
 
     /**
      * @param args the command line arguments
