@@ -6,6 +6,7 @@ import Customer.*;
 import Main.*;
 
 
+
 import java.awt.Desktop;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -132,21 +133,35 @@ public class customerMainFrame extends javax.swing.JFrame
 
         fnameV.setEditable(false);
         fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        fnameV.setText(Global.user.firstName);
+        fnameV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fnameVActionPerformed(evt);
+            }
+        });
         kGradientPanel1.add(fnameV);
         fnameV.setBounds(210, 310, 210, 40);
 
         emailV.setEditable(false);
         emailV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        emailV.setText(Global.user.email);
         kGradientPanel1.add(emailV);
         emailV.setBounds(210, 480, 210, 40);
 
         mNumberV.setEditable(false);
         mNumberV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        mNumberV.setText(String.valueOf(Global.user.phoneNum));
         kGradientPanel1.add(mNumberV);
         mNumberV.setBounds(210, 420, 210, 40);
 
         lNameV.setEditable(false);
         lNameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        lNameV.setText(Global.user.lastName);
+        lNameV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lNameVActionPerformed(evt);
+            }
+        });
         kGradientPanel1.add(lNameV);
         lNameV.setBounds(210, 360, 210, 40);
 
@@ -301,6 +316,14 @@ public class customerMainFrame extends javax.swing.JFrame
             cust.setVisible(true);
        }
     }//GEN-LAST:event_DropMActionPerformed
+
+    private void fnameVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fnameVActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fnameVActionPerformed
+
+    private void lNameVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lNameVActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lNameVActionPerformed
 
     /**
      * @param args the command line arguments

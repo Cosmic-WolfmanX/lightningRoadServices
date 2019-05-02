@@ -9,19 +9,13 @@ package Main;
  *
  * @author jmfio
  */
-public class CustomerRecord {
-    
-    
+public class WorkerRecord {
     public int id;
-    public String customerFirstName;
-    public String customerLastName;
+    public String workerFirstName;
+    public String workerLastName;
+    public String email;
     public String username;
     public String password;
-    public String email;
     public int phoneNum;
-    public int bankAccountNum;
-    public Car car;
-    
- 
     
 }

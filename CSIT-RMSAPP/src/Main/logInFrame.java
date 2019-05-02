@@ -4,6 +4,14 @@ package Main;
 import Worker.*;
 import Customer.*;
 import javax.swing.JOptionPane;
+import java.io.File;
+import java.lang.ClassLoader;
+import java.net.URL;
+import java.net.MalformedURLException;
+import java.io.IOException;
+import java.util.logging.Logger;
+
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -153,6 +161,10 @@ public class logInFrame extends javax.swing.JFrame {
         if("C".equals(Uname) && "C".equals(Pword))
         {
             this.setVisible(false);
+            
+            int id = 0;
+            currentUser user = new currentUser(id,Global.data);
+            Global.user = user;
        
             customerMainFrame cust = new customerMainFrame();
             cust.setVisible(true);
@@ -161,18 +173,57 @@ public class logInFrame extends javax.swing.JFrame {
         else if("W".equals(Uname) && "W".equals(Pword))
         {
             this.setVisible(false);
+            
+            int id = 500;
+            currentUser user = new currentUser(id,Global.data);
+            Global.user = user;
        
             WorkerMainFrame work = new WorkerMainFrame();
             work.setVisible(true);
             
         }
-        else if(Uname != "C" && Pword != "C" || Uname != "W" && Pword != "W")
+        else
         {
-             JOptionPane.showMessageDialog(null, "Inncorrect Username or Password");
+            //try
+            //{
+                int id = Integer.valueOf(Uname.substring(3));
+                currentUser user = new currentUser(id,Global.data);
+                Global.user = user;
+                String actualPass = user.password;
+                if (user.userName.equals(Uname))
+                {
+                    if(actualPass.equals(Pword))
+                    {
+                        this.setVisible(false);
+                        if (user.isWorker){
+                            WorkerMainFrame work = new WorkerMainFrame();
+                            work.setVisible(true);
+                        }
+                        else{
+                            customerMainFrame cust = new customerMainFrame();
+                            cust.setVisible(true);
+                        }
+
+                    }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(null, "Inncorrect Username or Password");
+                    }
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(null, "Inncorrect Username or Password");
+                }
+            //}
+            //finally{
+                //JOptionPane.showMessageDialog(null, "failed");
+            //}
+            
         }
               
         
     }//GEN-LAST:event_logInActionPerformed
+    private static final Logger LOG = Logger.getLogger(logInFrame.class.getName());
 
     private void passEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passEnterActionPerformed
         // TODO add your handling code here:
@@ -204,6 +255,27 @@ public class logInFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(logInFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        ClassLoader loader = logInFrame.class.getClassLoader();
+        URL url1 = loader.getResource("Main");
+        try{
+            URL customerRecordsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/CustomerRecords.csv", null);
+            URL carsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/Cars.csv", null);
+            URL workerRecordsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/WorkerRecords.csv", null);
+            DataCollection randomData = Global.data;
+            try
+            {
+                randomData.writeToCSV(customerRecordsURL,carsURL,workerRecordsURL);
+            }
+            catch(IOException f)
+            {
+                f.printStackTrace();
+            }
+
+        }
+        catch(MalformedURLException e)
+        {
+            e.printStackTrace();
+        }
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
