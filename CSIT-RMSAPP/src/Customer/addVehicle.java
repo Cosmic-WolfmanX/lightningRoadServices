@@ -50,6 +50,16 @@ public class addVehicle extends javax.swing.JFrame {
         kGradientPanel1 = new keeptoo.KGradientPanel();
         Title2 = new javax.swing.JLabel();
         DropM = new javax.swing.JComboBox();
+        getProfilePic = new javax.swing.JButton();
+        Title12 = new javax.swing.JLabel();
+        fNameEnter = new javax.swing.JTextField();
+        lNameEnter = new javax.swing.JTextField();
+        Title4 = new javax.swing.JLabel();
+        Title7 = new javax.swing.JLabel();
+        mobileEnter = new javax.swing.JTextField();
+        emailEnter = new javax.swing.JTextField();
+        Title11 = new javax.swing.JLabel();
+        createU = new javax.swing.JButton();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -72,7 +82,7 @@ public class addVehicle extends javax.swing.JFrame {
         Title2.setForeground(new java.awt.Color(255, 255, 255));
         Title2.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title2);
-        Title2.setBounds(240, 50, 300, 80);
+        Title2.setBounds(20, 0, 300, 80);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "Add Vehicle", "See Upcoming Requried Payments", "View Past Reports", "Log-out" }));
@@ -83,6 +93,71 @@ public class addVehicle extends javax.swing.JFrame {
         });
         kGradientPanel1.add(DropM);
         DropM.setBounds(330, 10, 210, 60);
+
+        getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
+        getProfilePic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                getProfilePicActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(getProfilePic);
+        getProfilePic.setBounds(20, 490, 500, 220);
+
+        Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title12.setForeground(new java.awt.Color(255, 255, 255));
+        Title12.setText("Vehicle Modle:");
+        kGradientPanel1.add(Title12);
+        Title12.setBounds(20, 240, 210, 70);
+
+        fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        kGradientPanel1.add(fNameEnter);
+        fNameEnter.setBounds(210, 260, 210, 30);
+
+        lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        kGradientPanel1.add(lNameEnter);
+        lNameEnter.setBounds(210, 300, 210, 30);
+
+        Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title4.setForeground(new java.awt.Color(255, 255, 255));
+        Title4.setText("Vehicle Make:");
+        kGradientPanel1.add(Title4);
+        Title4.setBounds(20, 280, 210, 70);
+
+        Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title7.setForeground(new java.awt.Color(255, 255, 255));
+        Title7.setText("Year:");
+        kGradientPanel1.add(Title7);
+        Title7.setBounds(20, 350, 210, 70);
+
+        mobileEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        kGradientPanel1.add(mobileEnter);
+        mobileEnter.setBounds(210, 370, 210, 30);
+
+        emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        kGradientPanel1.add(emailEnter);
+        emailEnter.setBounds(210, 410, 210, 30);
+
+        Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title11.setForeground(new java.awt.Color(255, 255, 255));
+        Title11.setText("Regostration:");
+        kGradientPanel1.add(Title11);
+        Title11.setBounds(20, 390, 210, 70);
+
+        createU.setBackground(new java.awt.Color(51, 51, 255));
+        createU.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        createU.setText("Add Vehicle");
+        createU.setActionCommand("");
+        createU.setAutoscrolls(true);
+        createU.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
+        createU.setContentAreaFilled(false);
+        createU.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        createU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                createUActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(createU);
+        createU.setBounds(330, 920, 210, 60);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 990);
@@ -136,6 +211,43 @@ public class addVehicle extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_DropMActionPerformed
 
+    private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed
+        try
+        {
+            Desktop desktop = null;
+            if (Desktop.isDesktopSupported())
+            {
+                desktop = Desktop.getDesktop();
+            }
+
+            desktop.open(new File("C:\\Users\\codym\\Pictures"));
+        }
+        catch (IOException ioe)
+        {
+            ioe.printStackTrace();
+        }
+
+        URL url = null;
+        /*try
+        {
+            url = new URL("C:\\Users\\codym\\Pictures\\818.png");
+        }
+        catch (MalformedURLException ex)
+        {
+            Logger.getLogger(createCustomer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Toolkit kit = Toolkit.getDefaultToolkit();
+        Image img = kit.createImage(url);
+        this.setIconImage(img);*/
+
+    }//GEN-LAST:event_getProfilePicActionPerformed
+
+    private void createUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUActionPerformed
+
+        //take data and store into CSV File
+        //move to customer bio
+    }//GEN-LAST:event_createUActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -173,10 +285,20 @@ public class addVehicle extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox DropM;
+    private javax.swing.JLabel Title11;
+    private javax.swing.JLabel Title12;
     private javax.swing.JLabel Title2;
+    private javax.swing.JLabel Title4;
+    private javax.swing.JLabel Title7;
+    private javax.swing.JButton createU;
+    private javax.swing.JTextField emailEnter;
+    private javax.swing.JTextField fNameEnter;
+    private javax.swing.JButton getProfilePic;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private keeptoo.KGradientPanel kGradientPanel1;
+    private javax.swing.JTextField lNameEnter;
+    private javax.swing.JTextField mobileEnter;
     // End of variables declaration//GEN-END:variables
 
     private Object getFrame() {
