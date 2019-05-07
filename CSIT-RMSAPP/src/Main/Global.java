@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Main;
+import java.net.URL;
 
 /**
  *
@@ -12,5 +13,9 @@ package Main;
 public class Global {
     public static DataCollection data = new DataCollection();
     public static currentUser user;
+    public static URL customerRecordsURL;
+    public static URL carsURL;
+    public static URL workerRecordsURL;
+    
 }
     

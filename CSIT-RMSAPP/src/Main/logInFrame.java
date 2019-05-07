@@ -123,7 +123,6 @@ public class logInFrame extends javax.swing.JFrame {
         kGradientPanel1.add(Title4);
         Title4.setBounds(30, 350, 210, 70);
 
-        passEnter.setText("jPasswordField1");
         passEnter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passEnterActionPerformed(evt);
@@ -261,10 +260,13 @@ public class logInFrame extends javax.swing.JFrame {
             URL customerRecordsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/CustomerRecords.csv", null);
             URL carsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/Cars.csv", null);
             URL workerRecordsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/WorkerRecords.csv", null);
+            Global.customerRecordsURL = customerRecordsURL;
+            Global.carsURL = carsURL;
+            Global.workerRecordsURL = workerRecordsURL;
             DataCollection randomData = Global.data;
             try
             {
-                randomData.writeToCSV(customerRecordsURL,carsURL,workerRecordsURL);
+                randomData.writeToCSV();
             }
             catch(IOException f)
             {

@@ -19,7 +19,11 @@ public class CustomerRecord {
     public String password;
     public String email;
     public int phoneNum;
-    public int bankAccountNum;
+    public int creditCardNum;
+    public int cvv;
+    public String creditCardExpiryDate;
+    public int membershipStatus;
+    public String nameOnCreditCard;
     public Car car;
     
  

@@ -17,7 +17,11 @@ public class currentUser {
     public String lastName;
     public String password;
     public String email;
-    public int bankAccountNum;
+    public int creditCardNum;
+    public int cvv;
+    public String creditCardExpiryDate;
+    public int membershipStatus;
+    public String nameOnCreditCard;
     public int phoneNum;
     public Car car;
     
@@ -46,7 +50,11 @@ public class currentUser {
             this.firstName = data.CustomerRecords[id].customerFirstName;
             this.lastName = data.CustomerRecords[id].customerLastName;
             this.phoneNum = data.CustomerRecords[id].phoneNum;
-            this.bankAccountNum = data.CustomerRecords[id].bankAccountNum;
+            this.creditCardNum = data.CustomerRecords[id].creditCardNum;
+            this.cvv = data.CustomerRecords[id].cvv;
+            this.creditCardExpiryDate = data.CustomerRecords[id].creditCardExpiryDate;
+            this.membershipStatus = data.CustomerRecords[id].membershipStatus;
+            this.nameOnCreditCard = data.CustomerRecords[id].nameOnCreditCard;
             this.password = data.CustomerRecords[id].password;
             this.car = data.CustomerRecords[id].car;
             this.email = data.CustomerRecords[id].email;

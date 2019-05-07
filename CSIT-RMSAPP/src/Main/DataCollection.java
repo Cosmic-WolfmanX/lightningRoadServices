@@ -26,9 +26,28 @@ public class DataCollection {
     int phoneMax = 99999999;
     int phoneRange = phoneMax-phoneMin+1;
     
-    int bankAccountMin = 100000000;
-    int bankAccountMax = 999999999;
-    int bankAccountRange = bankAccountMax - bankAccountMin +1;
+    int creditCardMin = 100000000;
+    int creditCardMax = 999999999;
+    int creditCardRange = creditCardMax - creditCardMin +1;
+    
+    int cvvMin = 100;
+    int cvvMax = 999;
+    int cvvRange = cvvMax - cvvMin +1;
+    
+    
+    int monthMin = 1;
+    int monthMax = 12;
+    int monthRange = monthMax - monthMin +1;
+    
+    int yearMin = 2019;
+    int yearMax = 2028;
+    int yearRange = yearMax - yearMin +1;
+    
+    int membershipMin = 1;
+    int membershipMax = 3;
+    int membershipRange = membershipMax - membershipMin +1;
+    
+    
 
     
     int modelYearMin = 0;
@@ -63,7 +82,15 @@ public class DataCollection {
             record.id = i;
             
             //fill bank account number field
-            record.bankAccountNum = rand.nextInt(bankAccountRange);
+            record.creditCardNum = rand.nextInt(creditCardRange);
+            record.cvv = rand.nextInt(cvvRange);
+            record.membershipStatus = rand.nextInt(membershipRange);
+            int month = rand.nextInt(monthRange);
+            int year = rand.nextInt(yearRange);
+            record.creditCardExpiryDate =  String.valueOf(month) + "/"   + String.valueOf(year);
+            
+           
+            
             
             
             //fill model year field
@@ -82,7 +109,7 @@ public class DataCollection {
             record.username = record.customerFirstName.substring(0,3)+ String.valueOf(record.id);
             record.email = record.customerFirstName + "." + record.customerLastName + "@gmail.com";
             record.password = "asdf";
-            
+            record.nameOnCreditCard = record.customerFirstName + " " + record.customerLastName;
             
             CustomerRecords[i] = record;
             
@@ -104,11 +131,14 @@ public class DataCollection {
         }
         
     }
-    public void writeToCSV(URL customerRecordsURL,URL carsURL,URL workerRecordsURL) throws java.io.IOException
+    public void writeToCSV() throws java.io.IOException
     {
         
+        URL customerRecordsURL = Global.customerRecordsURL;
+        URL carsURL = Global.carsURL;
+        URL workerRecordsURL = Global.workerRecordsURL;
         //write customer records
-        String data = "\"ID\",\"firstName\",\"lastName\",\"userName\",\"email\",\"password\",\"phoneNumber\",\"bankAccountNum\"\n";
+        String data = "\"ID\",\"firstName\",\"lastName\",\"userName\",\"email\",\"password\",\"phoneNumber\",\"creditCardNum\",\"cvv\",\"nameOnCard\",\"creditCardExpiryDate\",\"membershipStatus\"\n";
         for (int i = 0;i<100;i++){
             CustomerRecord record = CustomerRecords[i];
             data += record.id + ",";
@@ -118,7 +148,11 @@ public class DataCollection {
             data += record.email + ",";
             data += record.password + ",";
             data += record.phoneNum + ",";
-            data += record.bankAccountNum + ",\n";   
+            data += record.creditCardNum  + ",";
+            data += record.cvv + ",";
+            data += record.nameOnCreditCard + ",";
+            data += record.creditCardExpiryDate + ",";
+            data += record.membershipStatus + ",\n";
         }
         try{
             String fileString = customerRecordsURL.toString();
@@ -190,6 +224,29 @@ public class DataCollection {
         
         
         
+    }
+    
+    public void edit_customer_profile(int customerID, String firstName, String lastName, int mobileNumber, String email, int ccNumber, int cvv, int creditCardMonth, int creditCardYear, String creditCardName, int membershipStatus)
+    {
+        CustomerRecords[customerID].customerFirstName = firstName;
+        CustomerRecords[customerID].customerLastName = lastName;
+        CustomerRecords[customerID].phoneNum  = mobileNumber;
+        CustomerRecords[customerID].email = email;
+        CustomerRecords[customerID].creditCardNum = ccNumber;
+        CustomerRecords[customerID].cvv = cvv;
+        CustomerRecords[customerID].creditCardExpiryDate =  String.valueOf(creditCardMonth) + "/" + String.valueOf(creditCardYear);
+        CustomerRecords[customerID].nameOnCreditCard = creditCardName;
+        CustomerRecords[customerID].membershipStatus = membershipStatus;
+        try
+        {
+            writeToCSV();
+        }
+        catch(IOException f)
+        {
+            f.printStackTrace();
+        }
+
+
     }
     
 }

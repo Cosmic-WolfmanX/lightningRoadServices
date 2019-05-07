@@ -67,6 +67,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         Title3 = new javax.swing.JLabel();
         createU = new javax.swing.JButton();
         DropM = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -96,10 +97,12 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         Title2.setBounds(230, 70, 300, 80);
 
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        fNameEnter.setText(Global.user.firstName);
         kGradientPanel1.add(fNameEnter);
         fNameEnter.setBounds(210, 260, 210, 30);
 
         lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        lNameEnter.setText(Global.user.lastName);
         kGradientPanel1.add(lNameEnter);
         lNameEnter.setBounds(210, 300, 210, 30);
 
@@ -138,48 +141,62 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         jSeparator1.setBounds(0, 450, 550, 10);
 
         emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        emailEnter.setText(Global.user.email);
         kGradientPanel1.add(emailEnter);
         emailEnter.setBounds(210, 410, 210, 30);
 
         mobileEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        mobileEnter.setText(String.valueOf(Global.user.phoneNum)
+        );
+        mobileEnter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mobileEnterActionPerformed(evt);
+            }
+        });
         kGradientPanel1.add(mobileEnter);
         mobileEnter.setBounds(210, 370, 210, 30);
 
         gold.setBackground(new java.awt.Color(255, 102, 0));
         gold.setForeground(new java.awt.Color(255, 255, 255));
+        gold.setSelected(Global.user.membershipStatus == 3);
         gold.setText("GOLD");
         gold.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         gold.setBorderPainted(true);
         kGradientPanel1.add(gold);
-        gold.setBounds(230, 490, 80, 25);
+        gold.setBounds(230, 490, 80, 19);
 
         silver.setBackground(new java.awt.Color(255, 102, 0));
         silver.setForeground(new java.awt.Color(255, 255, 255));
+        silver.setSelected(Global.user.membershipStatus == 2);
         silver.setText("SILVER");
         silver.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         silver.setBorderPainted(true);
         kGradientPanel1.add(silver);
-        silver.setBounds(330, 490, 90, 25);
+        silver.setBounds(330, 490, 90, 19);
 
         bronze.setBackground(new java.awt.Color(255, 102, 0));
         bronze.setForeground(new java.awt.Color(255, 255, 255));
+        bronze.setSelected(Global.user.membershipStatus == 1);
         bronze.setText("BRONZE");
         bronze.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         bronze.setBorderPainted(true);
         kGradientPanel1.add(bronze);
-        bronze.setBounds(440, 490, 100, 25);
+        bronze.setBounds(440, 490, 100, 19);
 
         cNumberEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        cNumberEnter.setText(String.valueOf(Global.user.creditCardNum));
         kGradientPanel1.add(cNumberEnter);
         cNumberEnter.setBounds(230, 540, 210, 30);
 
         cNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        cNameEnter.setText(Global.user.nameOnCreditCard);
         kGradientPanel1.add(cNameEnter);
         cNameEnter.setBounds(230, 590, 210, 30);
 
         expiryMonthEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryMonthEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        expiryMonthEnter.setText("M");
+        expiryMonthEnter.setText(Global.user.creditCardExpiryDate.split("/",-2)[0]
+        );
         kGradientPanel1.add(expiryMonthEnter);
         expiryMonthEnter.setBounds(230, 630, 30, 30);
 
@@ -194,11 +211,12 @@ public class CustomerEditDetails extends javax.swing.JFrame {
 
         expiryYearEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryYearEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        expiryYearEnter.setText("Y");
+        expiryYearEnter.setText(Global.user.creditCardExpiryDate.split("/",-2)[1]);
         kGradientPanel1.add(expiryYearEnter);
         expiryYearEnter.setBounds(290, 630, 30, 30);
 
         cvvEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        cvvEnter.setText(String.valueOf(Global.user.cvv));
         kGradientPanel1.add(cvvEnter);
         cvvEnter.setBounds(230, 670, 90, 30);
 
@@ -234,7 +252,8 @@ public class CustomerEditDetails extends javax.swing.JFrame {
 
         createU.setBackground(new java.awt.Color(51, 51, 255));
         createU.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        createU.setText("Up-Date User");
+        createU.setText("Confirm Changes");
+        createU.setToolTipText("");
         createU.setActionCommand("");
         createU.setAutoscrolls(true);
         createU.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
@@ -246,7 +265,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(createU);
-        createU.setBounds(330, 880, 210, 60);
+        createU.setBounds(330, 630, 210, 60);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "Add Vehicle", "See Upcoming Requried Payments", "View Past Reports", "Log-out" }));
@@ -257,6 +276,8 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         });
         kGradientPanel1.add(DropM);
         DropM.setBounds(330, 10, 210, 60);
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(460, 600, 80, 20);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
@@ -296,8 +317,33 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     }//GEN-LAST:event_getProfilePicActionPerformed
 
     private void createUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUActionPerformed
-
-        //take data and store into CSV File
+        String firstName = fNameEnter.getText();
+        String lastName = lNameEnter.getText();
+        int mobileNumber = Integer.valueOf(mobileEnter.getText());
+        String email = emailEnter.getText();
+        int membershipStatus = 0;
+        if (gold.isSelected())
+        {
+            membershipStatus = 3;
+        }
+        else if (silver.isSelected())
+        {
+            membershipStatus = 2;
+        }
+        else{
+            membershipStatus = 1;
+        }
+        int ccNum = Integer.valueOf(cNumberEnter.getText());
+        int cvv = Integer.valueOf(cvvEnter.getText());
+        int ccMonth = Integer.valueOf(expiryMonthEnter.getText());
+        int ccYear = Integer.valueOf(expiryYearEnter.getText());
+        String nameOnCard = cNameEnter.getText();
+        jLabel1.setText("saving info..");
+        Global.data.edit_customer_profile(Global.user.id, firstName, lastName, mobileNumber, email, ccNum, cvv, ccMonth, ccYear, nameOnCard, membershipStatus);
+        currentUser user = new currentUser(Global.user.id,Global.data);
+        Global.user = user;
+        jLabel1.setText("saved.");
+//take data and store into CSV File
         //move to customer bio
     }//GEN-LAST:event_createUActionPerformed
 
@@ -346,6 +392,10 @@ public class CustomerEditDetails extends javax.swing.JFrame {
             cust.setVisible(true);
         }
     }//GEN-LAST:event_DropMActionPerformed
+
+    private void mobileEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mobileEnterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mobileEnterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -406,6 +456,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     private javax.swing.JTextField fNameEnter;
     private javax.swing.JButton getProfilePic;
     private javax.swing.JRadioButton gold;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JSeparator jSeparator1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private javax.swing.JTextField lNameEnter;
