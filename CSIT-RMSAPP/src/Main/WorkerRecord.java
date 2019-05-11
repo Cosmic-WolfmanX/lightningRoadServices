@@ -17,5 +17,7 @@ public class WorkerRecord {
     public String username;
     public String password;
     public int phoneNum;
+    public int numQuotes;
+    public Quote[] quotes = new Quote[10];
     
 }

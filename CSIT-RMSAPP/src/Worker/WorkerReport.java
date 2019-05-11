@@ -280,8 +280,8 @@ public class WorkerReport extends javax.swing.JFrame {
         kGradientPanel1.add(jTabbedPane1);
         jTabbedPane1.setBounds(0, 70, 550, 880);
 
-        DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "View Past Report Responses", "Log-out" }));
+        DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Help Requests", "View Past Report Responses", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
@@ -329,6 +329,20 @@ public class WorkerReport extends javax.swing.JFrame {
             logInFrame log = new logInFrame();
             log.setVisible(true);
         }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            WorkerEditDetails ed = new WorkerEditDetails();
+            ed.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Help Requests")
+        {
+            this.setVisible(false);
+
+            ViewRequestHelp req = new ViewRequestHelp();
+            req.setVisible(true);
+        }
         else if((String)DropM.getSelectedItem() == "View Past Report Responses")
         {
             this.setVisible(false);
@@ -343,7 +357,6 @@ public class WorkerReport extends javax.swing.JFrame {
             WorkerMainFrame work = new WorkerMainFrame();
             work.setVisible(true);
         }
-
     }//GEN-LAST:event_DropMActionPerformed
 
     /**

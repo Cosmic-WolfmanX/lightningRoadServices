@@ -1,0 +1,14 @@
+Worker Fields add:
+
+ABN, skills, cert
+sign up function
+
+
+
+User fix:
+edit password and UserName
+
+add help Request
+
+add payment and user report and worker report CSV
+

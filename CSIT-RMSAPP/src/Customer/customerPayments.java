@@ -37,7 +37,29 @@ public class customerPayments extends javax.swing.JFrame {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
         Title5 = new javax.swing.JLabel();
-        DropM = new javax.swing.JComboBox();
+        Title10 = new javax.swing.JLabel();
+        expiryDayEnter = new javax.swing.JTextField();
+        dash1 = new javax.swing.JTextField();
+        expiryMonthEnter = new javax.swing.JTextField();
+        dash = new javax.swing.JTextField();
+        expiryYearEnter = new javax.swing.JTextField();
+        fnameV = new javax.swing.JTextField();
+        Title9 = new javax.swing.JLabel();
+        Title8 = new javax.swing.JLabel();
+        cNumberEnter = new javax.swing.JTextField();
+        Title11 = new javax.swing.JLabel();
+        cNameEnter = new javax.swing.JTextField();
+        Title12 = new javax.swing.JLabel();
+        expiryMonthEnter1 = new javax.swing.JTextField();
+        dash2 = new javax.swing.JTextField();
+        expiryYearEnter1 = new javax.swing.JTextField();
+        cvvEnter = new javax.swing.JTextField();
+        Title7 = new javax.swing.JLabel();
+        create2 = new javax.swing.JButton();
+        Title21 = new javax.swing.JLabel();
+        Title19 = new javax.swing.JLabel();
+        costView2 = new javax.swing.JTextField();
+        serviceWorkName2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -51,21 +73,166 @@ public class customerPayments extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
 
-        Title5.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        Title5.setFont(new java.awt.Font("Georgia", 1, 22)); // NOI18N
         Title5.setForeground(new java.awt.Color(255, 255, 255));
         Title5.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 320, 80);
+        Title5.setBounds(20, 0, 310, 80);
 
-        DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "Add Vehicle", "See Upcoming Requried Payments", "View Past Reports", "Log-out" }));
-        DropM.addActionListener(new java.awt.event.ActionListener() {
+        Title10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title10.setForeground(new java.awt.Color(255, 255, 255));
+        Title10.setText("Date:");
+        kGradientPanel1.add(Title10);
+        Title10.setBounds(20, 70, 100, 70);
+
+        expiryDayEnter.setEditable(false);
+        expiryDayEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryDayEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryDayEnter.setText("D");
+        kGradientPanel1.add(expiryDayEnter);
+        expiryDayEnter.setBounds(120, 90, 30, 30);
+
+        dash1.setEditable(false);
+        dash1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash1.setText("/");
+        dash1.setBorder(null);
+        dash1.setOpaque(false);
+        kGradientPanel1.add(dash1);
+        dash1.setBounds(150, 90, 30, 30);
+
+        expiryMonthEnter.setEditable(false);
+        expiryMonthEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter.setText("M");
+        kGradientPanel1.add(expiryMonthEnter);
+        expiryMonthEnter.setBounds(180, 90, 30, 30);
+
+        dash.setEditable(false);
+        dash.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash.setText("/");
+        dash.setBorder(null);
+        dash.setOpaque(false);
+        kGradientPanel1.add(dash);
+        dash.setBounds(210, 90, 30, 30);
+
+        expiryYearEnter.setEditable(false);
+        expiryYearEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter.setText("Y");
+        kGradientPanel1.add(expiryYearEnter);
+        expiryYearEnter.setBounds(240, 90, 30, 30);
+
+        fnameV.setEditable(false);
+        fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel1.add(fnameV);
+        fnameV.setBounds(120, 130, 160, 40);
+
+        Title9.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title9.setForeground(new java.awt.Color(255, 255, 255));
+        Title9.setText("Location:");
+        kGradientPanel1.add(Title9);
+        Title9.setBounds(20, 110, 100, 70);
+
+        Title8.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title8.setForeground(new java.awt.Color(255, 255, 255));
+        Title8.setText("Card Number:");
+        kGradientPanel1.add(Title8);
+        Title8.setBounds(20, 450, 210, 70);
+
+        cNumberEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        cNumberEnter.setText(String.valueOf(Global.user.creditCardNum));
+        kGradientPanel1.add(cNumberEnter);
+        cNumberEnter.setBounds(230, 460, 210, 30);
+
+        Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title11.setForeground(new java.awt.Color(255, 255, 255));
+        Title11.setText("Expiry Date:");
+        kGradientPanel1.add(Title11);
+        Title11.setBounds(20, 530, 210, 70);
+
+        cNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        cNameEnter.setText(Global.user.nameOnCreditCard);
+        kGradientPanel1.add(cNameEnter);
+        cNameEnter.setBounds(230, 510, 210, 30);
+
+        Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title12.setForeground(new java.awt.Color(255, 255, 255));
+        Title12.setText("Name on Card:");
+        kGradientPanel1.add(Title12);
+        Title12.setBounds(20, 490, 210, 70);
+
+        expiryMonthEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter1.setText(Global.user.creditCardExpiryDate.split("/",-2)[0]
+        );
+        kGradientPanel1.add(expiryMonthEnter1);
+        expiryMonthEnter1.setBounds(230, 550, 30, 30);
+
+        dash2.setEditable(false);
+        dash2.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash2.setText("/");
+        dash2.setBorder(null);
+        dash2.setOpaque(false);
+        kGradientPanel1.add(dash2);
+        dash2.setBounds(260, 550, 30, 30);
+
+        expiryYearEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter1.setText(Global.user.creditCardExpiryDate.split("/",-2)[1]);
+        kGradientPanel1.add(expiryYearEnter1);
+        expiryYearEnter1.setBounds(290, 550, 30, 30);
+
+        cvvEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        cvvEnter.setText(String.valueOf(Global.user.cvv));
+        kGradientPanel1.add(cvvEnter);
+        cvvEnter.setBounds(230, 590, 90, 30);
+
+        Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title7.setForeground(new java.awt.Color(255, 255, 255));
+        Title7.setText("CVV:");
+        kGradientPanel1.add(Title7);
+        Title7.setBounds(20, 570, 210, 70);
+
+        create2.setBackground(new java.awt.Color(51, 51, 255));
+        create2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        create2.setText("Pay");
+        create2.setActionCommand("");
+        create2.setAutoscrolls(true);
+        create2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
+        create2.setContentAreaFilled(false);
+        create2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        create2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DropMActionPerformed(evt);
+                create2ActionPerformed(evt);
             }
         });
-        kGradientPanel1.add(DropM);
-        DropM.setBounds(330, 10, 210, 60);
+        kGradientPanel1.add(create2);
+        create2.setBounds(150, 860, 390, 60);
+
+        Title21.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title21.setForeground(new java.awt.Color(255, 255, 255));
+        Title21.setText("Service Worker Name:");
+        kGradientPanel1.add(Title21);
+        Title21.setBounds(20, 190, 240, 70);
+
+        Title19.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title19.setForeground(new java.awt.Color(255, 255, 255));
+        Title19.setText("Cost:");
+        kGradientPanel1.add(Title19);
+        Title19.setBounds(20, 240, 170, 70);
+
+        costView2.setEditable(false);
+        costView2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel1.add(costView2);
+        costView2.setBounds(310, 250, 160, 40);
+
+        serviceWorkName2.setEditable(false);
+        serviceWorkName2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel1.add(serviceWorkName2);
+        serviceWorkName2.setBounds(310, 200, 160, 40);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
@@ -73,51 +240,9 @@ public class customerPayments extends javax.swing.JFrame {
         setBounds(0, 0, 572, 1006);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
-
-        if((String)DropM.getSelectedItem() == "Log-out")
-        {
-            this.setVisible(false);
-
-            logInFrame log = new logInFrame();
-            log.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Past Report")
-        {
-            this.setVisible(false);
-
-            WorkerReport rep = new WorkerReport();
-            rep.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "Edit Profile")
-        {
-            this.setVisible(false);
-
-            CustomerEditDetails edit = new CustomerEditDetails();
-            edit.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "Add Vehicle")
-        {
-            this.setVisible(false);
-
-            addVehicle addV = new addVehicle();
-            addV.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "See Upcomming Required Payments")
-        {
-            this.setVisible(false);
-
-            customerPayments pay = new customerPayments();
-            pay.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "Menu")
-        {
-            this.setVisible(false);
-
-            customerMainFrame cust = new customerMainFrame();
-            cust.setVisible(true);
-        }
-    }//GEN-LAST:event_DropMActionPerformed
+    private void create2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_create2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_create2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -155,8 +280,30 @@ public class customerPayments extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox DropM;
+    private javax.swing.JLabel Title10;
+    private javax.swing.JLabel Title11;
+    private javax.swing.JLabel Title12;
+    private javax.swing.JLabel Title19;
+    private javax.swing.JLabel Title21;
     private javax.swing.JLabel Title5;
+    private javax.swing.JLabel Title7;
+    private javax.swing.JLabel Title8;
+    private javax.swing.JLabel Title9;
+    private javax.swing.JTextField cNameEnter;
+    private javax.swing.JTextField cNumberEnter;
+    private javax.swing.JTextField costView2;
+    private javax.swing.JButton create2;
+    private javax.swing.JTextField cvvEnter;
+    private javax.swing.JTextField dash;
+    private javax.swing.JTextField dash1;
+    private javax.swing.JTextField dash2;
+    private javax.swing.JTextField expiryDayEnter;
+    private javax.swing.JTextField expiryMonthEnter;
+    private javax.swing.JTextField expiryMonthEnter1;
+    private javax.swing.JTextField expiryYearEnter;
+    private javax.swing.JTextField expiryYearEnter1;
+    private javax.swing.JTextField fnameV;
     private keeptoo.KGradientPanel kGradientPanel1;
+    private javax.swing.JTextField serviceWorkName2;
     // End of variables declaration//GEN-END:variables
 }

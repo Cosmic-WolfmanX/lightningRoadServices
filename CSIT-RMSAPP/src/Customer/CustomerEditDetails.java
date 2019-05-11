@@ -43,13 +43,10 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         getProfilePic = new javax.swing.JButton();
         Title2 = new javax.swing.JLabel();
         fNameEnter = new javax.swing.JTextField();
-        lNameEnter = new javax.swing.JTextField();
         Title12 = new javax.swing.JLabel();
-        Title4 = new javax.swing.JLabel();
         Title7 = new javax.swing.JLabel();
         Title11 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        emailEnter = new javax.swing.JTextField();
         mobileEnter = new javax.swing.JTextField();
         gold = new javax.swing.JRadioButton();
         silver = new javax.swing.JRadioButton();
@@ -64,10 +61,18 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         Title10 = new javax.swing.JLabel();
         Title9 = new javax.swing.JLabel();
         Title8 = new javax.swing.JLabel();
-        Title3 = new javax.swing.JLabel();
         createU = new javax.swing.JButton();
-        DropM = new javax.swing.JComboBox();
         jLabel1 = new javax.swing.JLabel();
+        Title5 = new javax.swing.JLabel();
+        lNameEnter = new javax.swing.JTextField();
+        Title13 = new javax.swing.JLabel();
+        emailEnter1 = new javax.swing.JTextField();
+        Title4 = new javax.swing.JLabel();
+        Title14 = new javax.swing.JLabel();
+        Title15 = new javax.swing.JLabel();
+        Title16 = new javax.swing.JLabel();
+        DropM = new javax.swing.JComboBox();
+        jPasswordField1 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -88,7 +93,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(20, 20, 210, 220);
+        getProfilePic.setBounds(20, 20, 210, 200);
 
         Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title2.setForeground(new java.awt.Color(255, 255, 255));
@@ -99,34 +104,23 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         fNameEnter.setText(Global.user.firstName);
         kGradientPanel1.add(fNameEnter);
-        fNameEnter.setBounds(210, 260, 210, 30);
-
-        lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
-        lNameEnter.setText(Global.user.lastName);
-        kGradientPanel1.add(lNameEnter);
-        lNameEnter.setBounds(210, 300, 210, 30);
+        fNameEnter.setBounds(210, 240, 210, 30);
 
         Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title12.setForeground(new java.awt.Color(255, 255, 255));
         Title12.setText("First Name:");
         kGradientPanel1.add(Title12);
-        Title12.setBounds(20, 240, 210, 70);
-
-        Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title4.setForeground(new java.awt.Color(255, 255, 255));
-        Title4.setText("Last Name:");
-        kGradientPanel1.add(Title4);
-        Title4.setBounds(20, 280, 210, 70);
+        Title12.setBounds(20, 220, 210, 70);
 
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
         Title7.setText("Mobile: ");
         kGradientPanel1.add(Title7);
-        Title7.setBounds(20, 350, 210, 70);
+        Title7.setBounds(20, 310, 210, 70);
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
-        Title11.setText("Email:");
+        Title11.setText("Pass-Word:");
         kGradientPanel1.add(Title11);
         Title11.setBounds(20, 390, 210, 70);
 
@@ -140,11 +134,6 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         kGradientPanel1.add(jSeparator1);
         jSeparator1.setBounds(0, 450, 550, 10);
 
-        emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
-        emailEnter.setText(Global.user.email);
-        kGradientPanel1.add(emailEnter);
-        emailEnter.setBounds(210, 410, 210, 30);
-
         mobileEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         mobileEnter.setText(String.valueOf(Global.user.phoneNum)
         );
@@ -154,51 +143,51 @@ public class CustomerEditDetails extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(mobileEnter);
-        mobileEnter.setBounds(210, 370, 210, 30);
+        mobileEnter.setBounds(210, 330, 210, 30);
 
         gold.setBackground(new java.awt.Color(255, 102, 0));
         gold.setForeground(new java.awt.Color(255, 255, 255));
         gold.setSelected(Global.user.membershipStatus == 3);
-        gold.setText("GOLD");
+        gold.setText("GOLD 12 Months");
         gold.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         gold.setBorderPainted(true);
         kGradientPanel1.add(gold);
-        gold.setBounds(230, 490, 80, 19);
+        gold.setBounds(230, 490, 160, 19);
 
         silver.setBackground(new java.awt.Color(255, 102, 0));
         silver.setForeground(new java.awt.Color(255, 255, 255));
         silver.setSelected(Global.user.membershipStatus == 2);
-        silver.setText("SILVER");
+        silver.setText("SILVER 6 Months");
         silver.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         silver.setBorderPainted(true);
         kGradientPanel1.add(silver);
-        silver.setBounds(330, 490, 90, 19);
+        silver.setBounds(230, 520, 160, 19);
 
         bronze.setBackground(new java.awt.Color(255, 102, 0));
         bronze.setForeground(new java.awt.Color(255, 255, 255));
         bronze.setSelected(Global.user.membershipStatus == 1);
-        bronze.setText("BRONZE");
+        bronze.setText("BRONZE 3 Months");
         bronze.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         bronze.setBorderPainted(true);
         kGradientPanel1.add(bronze);
-        bronze.setBounds(440, 490, 100, 19);
+        bronze.setBounds(230, 550, 160, 19);
 
         cNumberEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         cNumberEnter.setText(String.valueOf(Global.user.creditCardNum));
         kGradientPanel1.add(cNumberEnter);
-        cNumberEnter.setBounds(230, 540, 210, 30);
+        cNumberEnter.setBounds(230, 600, 210, 30);
 
         cNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         cNameEnter.setText(Global.user.nameOnCreditCard);
         kGradientPanel1.add(cNameEnter);
-        cNameEnter.setBounds(230, 590, 210, 30);
+        cNameEnter.setBounds(230, 650, 210, 30);
 
         expiryMonthEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryMonthEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        expiryMonthEnter.setText(Global.user.creditCardExpiryDate.split("/",-2)[0]
+        expiryMonthEnter.setText(Global.user.creditCardExpiryDate.split("-",-2)[0]
         );
         kGradientPanel1.add(expiryMonthEnter);
-        expiryMonthEnter.setBounds(230, 630, 30, 30);
+        expiryMonthEnter.setBounds(230, 690, 30, 30);
 
         dash.setEditable(false);
         dash.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -207,48 +196,42 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         dash.setBorder(null);
         dash.setOpaque(false);
         kGradientPanel1.add(dash);
-        dash.setBounds(260, 630, 30, 30);
+        dash.setBounds(260, 690, 30, 30);
 
         expiryYearEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryYearEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        expiryYearEnter.setText(Global.user.creditCardExpiryDate.split("/",-2)[1]);
+        expiryYearEnter.setText(Global.user.creditCardExpiryDate.split("-",-2)[1]);
         kGradientPanel1.add(expiryYearEnter);
-        expiryYearEnter.setBounds(290, 630, 30, 30);
+        expiryYearEnter.setBounds(290, 690, 30, 30);
 
         cvvEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         cvvEnter.setText(String.valueOf(Global.user.cvv));
         kGradientPanel1.add(cvvEnter);
-        cvvEnter.setBounds(230, 670, 90, 30);
+        cvvEnter.setBounds(230, 730, 90, 30);
 
         Title6.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title6.setForeground(new java.awt.Color(255, 255, 255));
         Title6.setText("CVV:");
         kGradientPanel1.add(Title6);
-        Title6.setBounds(20, 650, 210, 70);
+        Title6.setBounds(20, 710, 210, 70);
 
         Title10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title10.setForeground(new java.awt.Color(255, 255, 255));
         Title10.setText("Expiry Date:");
         kGradientPanel1.add(Title10);
-        Title10.setBounds(20, 610, 210, 70);
+        Title10.setBounds(20, 670, 210, 70);
 
         Title9.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title9.setForeground(new java.awt.Color(255, 255, 255));
         Title9.setText("Name on Card:");
         kGradientPanel1.add(Title9);
-        Title9.setBounds(20, 570, 210, 70);
+        Title9.setBounds(20, 630, 210, 70);
 
         Title8.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title8.setForeground(new java.awt.Color(255, 255, 255));
         Title8.setText("Card Number:");
         kGradientPanel1.add(Title8);
-        Title8.setBounds(20, 530, 210, 70);
-
-        Title3.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title3.setForeground(new java.awt.Color(255, 255, 255));
-        Title3.setText("Member Ship Class: ");
-        kGradientPanel1.add(Title3);
-        Title3.setBounds(20, 470, 210, 70);
+        Title8.setBounds(20, 590, 210, 70);
 
         createU.setBackground(new java.awt.Color(51, 51, 255));
         createU.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -265,19 +248,75 @@ public class CustomerEditDetails extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(createU);
-        createU.setBounds(330, 630, 210, 60);
+        createU.setBounds(330, 690, 210, 60);
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(460, 600, 80, 20);
 
-        DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "Add Vehicle", "See Upcoming Requried Payments", "View Past Reports", "Log-out" }));
+        Title5.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title5.setForeground(new java.awt.Color(255, 255, 255));
+        Title5.setText("Last Name:");
+        kGradientPanel1.add(Title5);
+        Title5.setBounds(20, 260, 210, 70);
+
+        lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        lNameEnter.setText(Global.user.lastName);
+        kGradientPanel1.add(lNameEnter);
+        lNameEnter.setBounds(210, 280, 210, 30);
+
+        Title13.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title13.setForeground(new java.awt.Color(255, 255, 255));
+        Title13.setText("Email:");
+        kGradientPanel1.add(Title13);
+        Title13.setBounds(20, 350, 210, 70);
+
+        emailEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        emailEnter1.setText(Global.user.email);
+        emailEnter1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emailEnter1ActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(emailEnter1);
+        emailEnter1.setBounds(210, 370, 210, 30);
+
+        Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title4.setForeground(new java.awt.Color(255, 255, 255));
+        Title4.setText("Member Ship Class: ");
+        kGradientPanel1.add(Title4);
+        Title4.setBounds(20, 470, 210, 70);
+
+        Title14.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title14.setForeground(new java.awt.Color(255, 255, 255));
+        Title14.setText("37.50");
+        kGradientPanel1.add(Title14);
+        Title14.setBounds(390, 550, 60, 30);
+
+        Title15.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title15.setForeground(new java.awt.Color(255, 255, 255));
+        Title15.setText("$150");
+        kGradientPanel1.add(Title15);
+        Title15.setBounds(390, 490, 60, 30);
+
+        Title16.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title16.setForeground(new java.awt.Color(255, 255, 255));
+        Title16.setText("$75");
+        kGradientPanel1.add(Title16);
+        Title16.setBounds(390, 520, 60, 30);
+
+        DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
             }
         });
         kGradientPanel1.add(DropM);
-        DropM.setBounds(330, 10, 210, 60);
-        kGradientPanel1.add(jLabel1);
-        jLabel1.setBounds(460, 600, 80, 20);
+        DropM.setBounds(300, 10, 240, 60);
+
+        jPasswordField1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        jPasswordField1.setText("jPasswordField1");
+        kGradientPanel1.add(jPasswordField1);
+        jPasswordField1.setBounds(210, 410, 210, 30);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
@@ -320,7 +359,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         String firstName = fNameEnter.getText();
         String lastName = lNameEnter.getText();
         int mobileNumber = Integer.valueOf(mobileEnter.getText());
-        String email = emailEnter.getText();
+        String email = emailEnter1.getText();
         int membershipStatus = 0;
         if (gold.isSelected())
         {
@@ -347,9 +386,48 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         //move to customer bio
     }//GEN-LAST:event_createUActionPerformed
 
+    private void mobileEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mobileEnterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mobileEnterActionPerformed
+
     private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
 
-        if((String)DropM.getSelectedItem() == "Log-out")
+        if((String)DropM.getSelectedItem() == "Menu")
+        {
+            this.setVisible(false);
+
+            customerMainFrame cust = new customerMainFrame();
+            cust.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Vehicle/s")
+        {
+            this.setVisible(false);
+
+            viewVehicle pay = new viewVehicle();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Add Vehicle")
+        {
+            this.setVisible(false);
+
+            addVehicle addV = new addVehicle();
+            addV.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "See Quotes")
+        {
+            this.setVisible(false);
+
+            seeQuotes pay = new seeQuotes();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Log-out")
         {
             this.setVisible(false);
 
@@ -370,32 +448,12 @@ public class CustomerEditDetails extends javax.swing.JFrame {
             CustomerEditDetails edit = new CustomerEditDetails();
             edit.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "Add Vehicle")
-        {
-            this.setVisible(false);
 
-            addVehicle addV = new addVehicle();
-            addV.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "See Upcomming Required Payments")
-        {
-            this.setVisible(false);
-
-            customerPayments pay = new customerPayments();
-            pay.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "Menu")
-        {
-            this.setVisible(false);
-
-            customerMainFrame cust = new customerMainFrame();
-            cust.setVisible(true);
-        }
     }//GEN-LAST:event_DropMActionPerformed
 
-    private void mobileEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mobileEnterActionPerformed
+    private void emailEnter1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailEnter1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_mobileEnterActionPerformed
+    }//GEN-LAST:event_emailEnter1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -437,9 +495,13 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title11;
     private javax.swing.JLabel Title12;
+    private javax.swing.JLabel Title13;
+    private javax.swing.JLabel Title14;
+    private javax.swing.JLabel Title15;
+    private javax.swing.JLabel Title16;
     private javax.swing.JLabel Title2;
-    private javax.swing.JLabel Title3;
     private javax.swing.JLabel Title4;
+    private javax.swing.JLabel Title5;
     private javax.swing.JLabel Title6;
     private javax.swing.JLabel Title7;
     private javax.swing.JLabel Title8;
@@ -450,13 +512,14 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     private javax.swing.JButton createU;
     private javax.swing.JTextField cvvEnter;
     private javax.swing.JTextField dash;
-    private javax.swing.JTextField emailEnter;
+    private javax.swing.JTextField emailEnter1;
     private javax.swing.JTextField expiryMonthEnter;
     private javax.swing.JTextField expiryYearEnter;
     private javax.swing.JTextField fNameEnter;
     private javax.swing.JButton getProfilePic;
     private javax.swing.JRadioButton gold;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private javax.swing.JTextField lNameEnter;

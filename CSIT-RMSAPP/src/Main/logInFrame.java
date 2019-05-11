@@ -3,6 +3,7 @@ package Main;
 
 import Worker.*;
 import Customer.*;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import java.io.File;
 import java.lang.ClassLoader;
@@ -49,6 +50,7 @@ public class logInFrame extends javax.swing.JFrame {
         Title3 = new javax.swing.JLabel();
         Title4 = new javax.swing.JLabel();
         passEnter = new javax.swing.JPasswordField();
+        create1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -81,7 +83,7 @@ public class logInFrame extends javax.swing.JFrame {
 
         create.setBackground(new java.awt.Color(51, 51, 255));
         create.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        create.setText("Create User");
+        create.setText("Create Worker");
         create.setActionCommand("");
         create.setAutoscrolls(true);
         create.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
@@ -93,7 +95,7 @@ public class logInFrame extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(create);
-        create.setBounds(320, 870, 210, 60);
+        create.setBounds(10, 590, 210, 60);
 
         logIn.setBackground(new java.awt.Color(255, 153, 0));
         logIn.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -106,6 +108,11 @@ public class logInFrame extends javax.swing.JFrame {
         logIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logInActionPerformed(evt);
+            }
+        });
+        logIn.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                logInKeyPressed(evt);
             }
         });
         kGradientPanel1.add(logIn);
@@ -131,6 +138,22 @@ public class logInFrame extends javax.swing.JFrame {
         kGradientPanel1.add(passEnter);
         passEnter.setBounds(160, 420, 220, 40);
 
+        create1.setBackground(new java.awt.Color(51, 51, 255));
+        create1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        create1.setText("Create User");
+        create1.setActionCommand("");
+        create1.setAutoscrolls(true);
+        create1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
+        create1.setContentAreaFilled(false);
+        create1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        create1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                create1ActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(create1);
+        create1.setBounds(330, 590, 210, 60);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
 
@@ -138,15 +161,16 @@ public class logInFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void userEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userEnterActionPerformed
-        // TODO add your handling code here:
+    logInActionPerformed(evt);
+// TODO add your handling code here:
     }//GEN-LAST:event_userEnterActionPerformed
 
     private void createActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createActionPerformed
         
-        this.setVisible(false);
+       this.setVisible(false);
        
-       createCustomer newcust = new createCustomer();
-       newcust.setVisible(true);
+       createWorker newwork = new createWorker();
+       newwork.setVisible(true);
         
         
     }//GEN-LAST:event_createActionPerformed
@@ -228,6 +252,20 @@ public class logInFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_passEnterActionPerformed
 
+    private void create1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_create1ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+       
+       createCustomer newCust = new createCustomer();
+       newCust.setVisible(true);
+    }//GEN-LAST:event_create1ActionPerformed
+
+    private void logInKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_logInKeyPressed
+        // TODO add your handling code here:
+
+        
+    }//GEN-LAST:event_logInKeyPressed
+
     /**
      * @param args the command line arguments
      */
@@ -254,30 +292,16 @@ public class logInFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(logInFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        ClassLoader loader = logInFrame.class.getClassLoader();
-        URL url1 = loader.getResource("Main");
-        try{
-            URL customerRecordsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/CustomerRecords.csv", null);
-            URL carsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/Cars.csv", null);
-            URL workerRecordsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/WorkerRecords.csv", null);
-            Global.customerRecordsURL = customerRecordsURL;
-            Global.carsURL = carsURL;
-            Global.workerRecordsURL = workerRecordsURL;
-            DataCollection randomData = Global.data;
-            try
-            {
-                randomData.writeToCSV();
-            }
-            catch(IOException f)
-            {
-                f.printStackTrace();
-            }
-
-        }
-        catch(MalformedURLException e)
+        DataCollection randomData = Global.data;
+        try
         {
-            e.printStackTrace();
+            randomData.writeToCSV();
         }
+        catch(IOException f)
+        {
+            f.printStackTrace();
+        }
+
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -292,6 +316,7 @@ public class logInFrame extends javax.swing.JFrame {
     private javax.swing.JLabel Title3;
     private javax.swing.JLabel Title4;
     private javax.swing.JButton create;
+    private javax.swing.JButton create1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private javax.swing.JButton logIn;
     private javax.swing.JPasswordField passEnter;

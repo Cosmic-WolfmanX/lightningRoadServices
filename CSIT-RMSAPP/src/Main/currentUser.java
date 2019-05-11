@@ -17,13 +17,13 @@ public class currentUser {
     public String lastName;
     public String password;
     public String email;
-    public int creditCardNum;
+    public long creditCardNum;
     public int cvv;
     public String creditCardExpiryDate;
     public int membershipStatus;
     public String nameOnCreditCard;
-    public int phoneNum;
-    public Car car;
+    public long phoneNum;
+    public Car[] cars;
     
     public currentUser(int id,DataCollection data)
     {
@@ -56,7 +56,7 @@ public class currentUser {
             this.membershipStatus = data.CustomerRecords[id].membershipStatus;
             this.nameOnCreditCard = data.CustomerRecords[id].nameOnCreditCard;
             this.password = data.CustomerRecords[id].password;
-            this.car = data.CustomerRecords[id].car;
+            this.cars = data.CustomerRecords[id].cars;
             this.email = data.CustomerRecords[id].email;
         
         }

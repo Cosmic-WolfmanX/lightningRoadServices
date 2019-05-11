@@ -25,9 +25,12 @@ public class Car {
     public String[] carModels = {"Hatchback","Sedan","MPV","SUV","Crossover","Coupe","Convertible"};
     //carModels size = 7
     
-    Car(int id)
+    Car(){
+        
+    }
+    Car(int id) //function to make a random car
     {
-        this.id = id + ".1";
+        this.id = String.valueOf(id)+ ".1";
         Random rand = new Random();
         //fill license plate field
         StringBuilder s = new StringBuilder();

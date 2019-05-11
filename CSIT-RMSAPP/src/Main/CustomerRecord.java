@@ -18,13 +18,20 @@ public class CustomerRecord {
     public String username;
     public String password;
     public String email;
-    public int phoneNum;
-    public int creditCardNum;
+    public long phoneNum;
+    public long creditCardNum;
     public int cvv;
     public String creditCardExpiryDate;
     public int membershipStatus;
     public String nameOnCreditCard;
-    public Car car;
+    public int numcars;
+    public int numreports;
+    public int numrequests;
+    public int numquotes;
+    public Car[] cars = new Car[10];
+    public CustomerReport[] reports = new CustomerReport[10];
+    public Request[] requests = new Request[10];
+    public Quote[] quotes = new Quote[10];
     
  
     

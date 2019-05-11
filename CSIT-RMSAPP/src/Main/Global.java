@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Main;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
@@ -16,6 +17,12 @@ public class Global {
     public static URL customerRecordsURL;
     public static URL carsURL;
     public static URL workerRecordsURL;
+    public static URL customerReportsURL;
+    public static URL workerReportsURL;
+    public static URL requestsURL;
+    public static URL quotesURL;
+    public static int numCustomers;
+    public static int numWorkers;
     
 }
     

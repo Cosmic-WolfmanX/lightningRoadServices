@@ -49,7 +49,6 @@ public class addVehicle extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         kGradientPanel1 = new keeptoo.KGradientPanel();
         Title2 = new javax.swing.JLabel();
-        DropM = new javax.swing.JComboBox();
         getProfilePic = new javax.swing.JButton();
         Title12 = new javax.swing.JLabel();
         fNameEnter = new javax.swing.JTextField();
@@ -60,6 +59,7 @@ public class addVehicle extends javax.swing.JFrame {
         emailEnter = new javax.swing.JTextField();
         Title11 = new javax.swing.JLabel();
         createU = new javax.swing.JButton();
+        DropM = new javax.swing.JComboBox();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -83,16 +83,6 @@ public class addVehicle extends javax.swing.JFrame {
         Title2.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title2);
         Title2.setBounds(20, 0, 300, 80);
-
-        DropM.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "Add Vehicle", "See Upcoming Requried Payments", "View Past Reports", "Log-out" }));
-        DropM.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DropMActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(DropM);
-        DropM.setBounds(330, 10, 210, 60);
 
         getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
         getProfilePic.addActionListener(new java.awt.event.ActionListener() {
@@ -159,57 +149,21 @@ public class addVehicle extends javax.swing.JFrame {
         kGradientPanel1.add(createU);
         createU.setBounds(330, 920, 210, 60);
 
+        DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Log-out" }));
+        DropM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DropMActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(DropM);
+        DropM.setBounds(300, 10, 240, 60);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 990);
 
         setBounds(0, 0, 572, 1050);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
-
-        if((String)DropM.getSelectedItem() == "Log-out")
-        {
-            this.setVisible(false);
-
-            logInFrame log = new logInFrame();
-            log.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Past Report")
-        {
-            this.setVisible(false);
-
-            WorkerReport rep = new WorkerReport();
-            rep.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "Edit Profile")
-        {
-            this.setVisible(false);
-
-            CustomerEditDetails edit = new CustomerEditDetails();
-            edit.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "Add Vehicle")
-        {
-            this.setVisible(false);
-
-            addVehicle addV = new addVehicle();
-            addV.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "See Upcomming Required Payments")
-        {
-            this.setVisible(false);
-
-            customerPayments pay = new customerPayments();
-            pay.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "Menu")
-        {
-            this.setVisible(false);
-
-            customerMainFrame cust = new customerMainFrame();
-            cust.setVisible(true);
-        }
-    }//GEN-LAST:event_DropMActionPerformed
 
     private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed
         try
@@ -247,6 +201,67 @@ public class addVehicle extends javax.swing.JFrame {
         //take data and store into CSV File
         //move to customer bio
     }//GEN-LAST:event_createUActionPerformed
+
+    private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
+
+        if((String)DropM.getSelectedItem() == "Menu")
+        {
+            this.setVisible(false);
+
+            customerMainFrame cust = new customerMainFrame();
+            cust.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Vehicle/s")
+        {
+            this.setVisible(false);
+
+            viewVehicle pay = new viewVehicle();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Add Vehicle")
+        {
+            this.setVisible(false);
+
+            addVehicle addV = new addVehicle();
+            addV.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "See Quotes")
+        {
+            this.setVisible(false);
+
+            seeQuotes pay = new seeQuotes();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Log-out")
+        {
+            this.setVisible(false);
+
+            logInFrame log = new logInFrame();
+            log.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Past Report")
+        {
+            this.setVisible(false);
+
+            WorkerReport rep = new WorkerReport();
+            rep.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
+        }
+
+    }//GEN-LAST:event_DropMActionPerformed
 
     /**
      * @param args the command line arguments

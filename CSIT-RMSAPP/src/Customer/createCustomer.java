@@ -61,9 +61,6 @@ public class createCustomer extends javax.swing.JFrame {
         dash = new javax.swing.JTextField();
         createU = new javax.swing.JButton();
         Title12 = new javax.swing.JLabel();
-        silver = new javax.swing.JRadioButton();
-        bronze = new javax.swing.JRadioButton();
-        gold = new javax.swing.JRadioButton();
         Title7 = new javax.swing.JLabel();
         fNameEnter = new javax.swing.JTextField();
         Title8 = new javax.swing.JLabel();
@@ -74,6 +71,14 @@ public class createCustomer extends javax.swing.JFrame {
         expiryMonthEnter = new javax.swing.JTextField();
         Title10 = new javax.swing.JLabel();
         cNameEnter = new javax.swing.JTextField();
+        gold = new javax.swing.JRadioButton();
+        Title15 = new javax.swing.JLabel();
+        Title16 = new javax.swing.JLabel();
+        silver = new javax.swing.JRadioButton();
+        bronze = new javax.swing.JRadioButton();
+        Title14 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        Title13 = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -118,20 +123,20 @@ public class createCustomer extends javax.swing.JFrame {
         jSeparator1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jSeparator1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         kGradientPanel1.add(jSeparator1);
-        jSeparator1.setBounds(0, 450, 550, 10);
+        jSeparator1.setBounds(0, 470, 550, 10);
         jSeparator1.getAccessibleContext().setAccessibleDescription("");
 
         Title6.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title6.setForeground(new java.awt.Color(255, 255, 255));
         Title6.setText("CVV:");
         kGradientPanel1.add(Title6);
-        Title6.setBounds(20, 650, 210, 70);
+        Title6.setBounds(20, 710, 210, 70);
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
         Title11.setText("Email:");
         kGradientPanel1.add(Title11);
-        Title11.setBounds(20, 390, 210, 70);
+        Title11.setBounds(20, 410, 210, 70);
 
         getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
         getProfilePic.addActionListener(new java.awt.event.ActionListener() {
@@ -144,7 +149,7 @@ public class createCustomer extends javax.swing.JFrame {
 
         emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(emailEnter);
-        emailEnter.setBounds(210, 410, 210, 30);
+        emailEnter.setBounds(210, 430, 210, 30);
 
         lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(lNameEnter);
@@ -152,7 +157,7 @@ public class createCustomer extends javax.swing.JFrame {
 
         mobileEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(mobileEnter);
-        mobileEnter.setBounds(210, 370, 210, 30);
+        mobileEnter.setBounds(210, 390, 210, 30);
 
         dash.setEditable(false);
         dash.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -161,7 +166,7 @@ public class createCustomer extends javax.swing.JFrame {
         dash.setBorder(null);
         dash.setOpaque(false);
         kGradientPanel1.add(dash);
-        dash.setBounds(260, 630, 30, 30);
+        dash.setBounds(260, 690, 30, 30);
 
         createU.setBackground(new java.awt.Color(51, 51, 255));
         createU.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -177,7 +182,7 @@ public class createCustomer extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(createU);
-        createU.setBounds(330, 920, 210, 60);
+        createU.setBounds(330, 700, 210, 60);
 
         Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title12.setForeground(new java.awt.Color(255, 255, 255));
@@ -185,35 +190,11 @@ public class createCustomer extends javax.swing.JFrame {
         kGradientPanel1.add(Title12);
         Title12.setBounds(20, 240, 210, 70);
 
-        silver.setBackground(new java.awt.Color(255, 102, 0));
-        silver.setForeground(new java.awt.Color(255, 255, 255));
-        silver.setText("SILVER");
-        silver.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        silver.setBorderPainted(true);
-        kGradientPanel1.add(silver);
-        silver.setBounds(330, 490, 90, 25);
-
-        bronze.setBackground(new java.awt.Color(255, 102, 0));
-        bronze.setForeground(new java.awt.Color(255, 255, 255));
-        bronze.setText("BRONZE");
-        bronze.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        bronze.setBorderPainted(true);
-        kGradientPanel1.add(bronze);
-        bronze.setBounds(440, 490, 100, 25);
-
-        gold.setBackground(new java.awt.Color(255, 102, 0));
-        gold.setForeground(new java.awt.Color(255, 255, 255));
-        gold.setText("GOLD");
-        gold.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        gold.setBorderPainted(true);
-        kGradientPanel1.add(gold);
-        gold.setBounds(230, 490, 80, 25);
-
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
         Title7.setText("Mobile: ");
         kGradientPanel1.add(Title7);
-        Title7.setBounds(20, 350, 210, 70);
+        Title7.setBounds(20, 370, 210, 70);
 
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(fNameEnter);
@@ -223,43 +204,100 @@ public class createCustomer extends javax.swing.JFrame {
         Title8.setForeground(new java.awt.Color(255, 255, 255));
         Title8.setText("Card Number:");
         kGradientPanel1.add(Title8);
-        Title8.setBounds(20, 530, 210, 70);
+        Title8.setBounds(20, 590, 210, 70);
 
         Title9.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title9.setForeground(new java.awt.Color(255, 255, 255));
         Title9.setText("Name on Card:");
         kGradientPanel1.add(Title9);
-        Title9.setBounds(20, 570, 210, 70);
+        Title9.setBounds(20, 630, 210, 70);
 
         cNumberEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(cNumberEnter);
-        cNumberEnter.setBounds(230, 540, 210, 30);
+        cNumberEnter.setBounds(230, 600, 210, 30);
 
         cvvEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(cvvEnter);
-        cvvEnter.setBounds(230, 670, 90, 30);
+        cvvEnter.setBounds(230, 730, 90, 30);
 
         expiryYearEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryYearEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryYearEnter.setText("Y");
         kGradientPanel1.add(expiryYearEnter);
-        expiryYearEnter.setBounds(290, 630, 30, 30);
+        expiryYearEnter.setBounds(290, 690, 30, 30);
 
         expiryMonthEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryMonthEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryMonthEnter.setText("M");
         kGradientPanel1.add(expiryMonthEnter);
-        expiryMonthEnter.setBounds(230, 630, 30, 30);
+        expiryMonthEnter.setBounds(230, 690, 30, 30);
 
         Title10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title10.setForeground(new java.awt.Color(255, 255, 255));
         Title10.setText("Expiry Date:");
         kGradientPanel1.add(Title10);
-        Title10.setBounds(20, 610, 210, 70);
+        Title10.setBounds(20, 670, 210, 70);
 
         cNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(cNameEnter);
-        cNameEnter.setBounds(230, 590, 210, 30);
+        cNameEnter.setBounds(230, 650, 210, 30);
+
+        gold.setBackground(new java.awt.Color(255, 102, 0));
+        gold.setForeground(new java.awt.Color(255, 255, 255));
+        gold.setText("GOLD 12 Months");
+        gold.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        gold.setBorderPainted(true);
+        kGradientPanel1.add(gold);
+        gold.setBounds(230, 490, 160, 19);
+
+        Title15.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title15.setForeground(new java.awt.Color(255, 255, 255));
+        Title15.setText("$150");
+        kGradientPanel1.add(Title15);
+        Title15.setBounds(390, 490, 60, 30);
+
+        Title16.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title16.setForeground(new java.awt.Color(255, 255, 255));
+        Title16.setText("$75");
+        kGradientPanel1.add(Title16);
+        Title16.setBounds(390, 520, 60, 30);
+
+        silver.setBackground(new java.awt.Color(255, 102, 0));
+        silver.setForeground(new java.awt.Color(255, 255, 255));
+        silver.setText("SILVER 6 Months");
+        silver.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        silver.setBorderPainted(true);
+        kGradientPanel1.add(silver);
+        silver.setBounds(230, 520, 160, 19);
+
+        bronze.setBackground(new java.awt.Color(255, 102, 0));
+        bronze.setForeground(new java.awt.Color(255, 255, 255));
+        bronze.setText("BRONZE 3 Months");
+        bronze.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        bronze.setBorderPainted(true);
+        kGradientPanel1.add(bronze);
+        bronze.setBounds(230, 550, 160, 19);
+
+        Title14.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title14.setForeground(new java.awt.Color(255, 255, 255));
+        Title14.setText("37.50");
+        kGradientPanel1.add(Title14);
+        Title14.setBounds(390, 550, 60, 30);
+
+        jPasswordField1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField1ActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(jPasswordField1);
+        jPasswordField1.setBounds(210, 350, 210, 30);
+
+        Title13.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title13.setForeground(new java.awt.Color(255, 255, 255));
+        Title13.setText("Pass-Word:");
+        kGradientPanel1.add(Title13);
+        Title13.setBounds(20, 330, 210, 70);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 990);
@@ -299,11 +337,45 @@ public class createCustomer extends javax.swing.JFrame {
     }//GEN-LAST:event_getProfilePicActionPerformed
 
     private void createUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUActionPerformed
-
+        String firstName = fNameEnter.getText();
+        String lastName = lNameEnter.getText();
+        String password = jPasswordField1.getText();
+        long mobile = Long.valueOf(mobileEnter.getText().trim());
+        String email = emailEnter.getText();
+        int membershipStatus = 0;
+        if (gold.isSelected())
+        {
+            membershipStatus = 3;
+        }
+        else if (silver.isSelected())
+        {
+            membershipStatus = 2;
+        }
+        else{
+            membershipStatus = 1;
+        }
+        long ccNum = Long.valueOf(cNumberEnter.getText().trim());
+        int cvv = Integer.valueOf(cvvEnter.getText());
+        int ccMonth = Integer.valueOf(expiryMonthEnter.getText());
+        int ccYear = Integer.valueOf(expiryYearEnter.getText());
+        String nameOnCard = cNameEnter.getText();
+        
+        
+        CustomerRecord newCust = Global.data.add_customer(firstName, lastName, password, mobile, email, membershipStatus, ccNum, nameOnCard, ccMonth, ccYear, cvv);
+        currentUser user = new currentUser(newCust.id,Global.data);
+        Global.user = user;
+        
+        this.setVisible(false);
+        customerMainFrame cust = new customerMainFrame();
+        cust.setVisible(true);
         //take data and store into CSV File
         //move to customer bio 
 
     }//GEN-LAST:event_createUActionPerformed
+
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,6 +416,10 @@ public class createCustomer extends javax.swing.JFrame {
     private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title11;
     private javax.swing.JLabel Title12;
+    private javax.swing.JLabel Title13;
+    private javax.swing.JLabel Title14;
+    private javax.swing.JLabel Title15;
+    private javax.swing.JLabel Title16;
     private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title3;
     private javax.swing.JLabel Title4;
@@ -363,6 +439,7 @@ public class createCustomer extends javax.swing.JFrame {
     private javax.swing.JTextField fNameEnter;
     private javax.swing.JButton getProfilePic;
     private javax.swing.JRadioButton gold;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
