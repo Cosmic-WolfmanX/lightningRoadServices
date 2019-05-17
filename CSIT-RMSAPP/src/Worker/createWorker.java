@@ -74,16 +74,18 @@ public class createWorker extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(550, 950));
+        setMinimumSize(new java.awt.Dimension(550, 710));
         setName("MainFrame"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(550, 710));
         setResizable(false);
-        setSize(new java.awt.Dimension(550, 1050));
+        setSize(new java.awt.Dimension(550, 710));
         getContentPane().setLayout(null);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
-        kGradientPanel1.setPreferredSize(new java.awt.Dimension(550, 1050));
+        kGradientPanel1.setMinimumSize(new java.awt.Dimension(550, 710));
+        kGradientPanel1.setPreferredSize(new java.awt.Dimension(550, 710));
         kGradientPanel1.setLayout(null);
 
         Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
@@ -96,7 +98,7 @@ public class createWorker extends javax.swing.JFrame {
         Title4.setForeground(new java.awt.Color(255, 255, 255));
         Title4.setText("Last Name:");
         kGradientPanel1.add(Title4);
-        Title4.setBounds(20, 280, 210, 70);
+        Title4.setBounds(20, 220, 210, 70);
 
         jSeparator1.setBackground(new java.awt.Color(51, 0, 51));
         jSeparator1.setForeground(new java.awt.Color(51, 0, 51));
@@ -106,14 +108,14 @@ public class createWorker extends javax.swing.JFrame {
         jSeparator1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jSeparator1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         kGradientPanel1.add(jSeparator1);
-        jSeparator1.setBounds(0, 480, 550, 10);
+        jSeparator1.setBounds(0, 420, 550, 10);
         jSeparator1.getAccessibleContext().setAccessibleDescription("");
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
         Title11.setText("Email:");
         kGradientPanel1.add(Title11);
-        Title11.setBounds(20, 420, 210, 70);
+        Title11.setBounds(20, 360, 210, 70);
 
         getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
         getProfilePic.addActionListener(new java.awt.event.ActionListener() {
@@ -122,19 +124,19 @@ public class createWorker extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(20, 20, 210, 220);
+        getProfilePic.setBounds(20, 20, 210, 170);
 
         emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(emailEnter);
-        emailEnter.setBounds(210, 440, 210, 30);
+        emailEnter.setBounds(210, 380, 210, 30);
 
         lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(lNameEnter);
-        lNameEnter.setBounds(210, 300, 210, 30);
+        lNameEnter.setBounds(210, 240, 210, 30);
 
         mobileEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(mobileEnter);
-        mobileEnter.setBounds(210, 400, 210, 30);
+        mobileEnter.setBounds(210, 340, 210, 30);
 
         createU.setBackground(new java.awt.Color(51, 51, 255));
         createU.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -150,39 +152,39 @@ public class createWorker extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(createU);
-        createU.setBounds(330, 920, 210, 60);
+        createU.setBounds(320, 640, 210, 30);
 
         Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title12.setForeground(new java.awt.Color(255, 255, 255));
         Title12.setText("First Name:");
         kGradientPanel1.add(Title12);
-        Title12.setBounds(20, 240, 210, 70);
+        Title12.setBounds(20, 180, 210, 70);
 
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
         Title7.setText("Mobile: ");
         kGradientPanel1.add(Title7);
-        Title7.setBounds(20, 380, 210, 70);
+        Title7.setBounds(20, 320, 210, 70);
 
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(fNameEnter);
-        fNameEnter.setBounds(210, 260, 210, 30);
+        fNameEnter.setBounds(210, 200, 210, 30);
 
         Title13.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title13.setForeground(new java.awt.Color(255, 255, 255));
         Title13.setText("ABN:");
         kGradientPanel1.add(Title13);
-        Title13.setBounds(20, 520, 210, 70);
+        Title13.setBounds(10, 410, 210, 70);
 
         emailEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(emailEnter1);
-        emailEnter1.setBounds(210, 540, 210, 30);
+        emailEnter1.setBounds(210, 430, 210, 30);
 
         Title35.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title35.setForeground(new java.awt.Color(255, 255, 255));
         Title35.setText("Certificates:");
         kGradientPanel1.add(Title35);
-        Title35.setBounds(20, 580, 240, 70);
+        Title35.setBounds(10, 450, 240, 70);
 
         certs.setEditable(false);
         certs.setColumns(20);
@@ -191,23 +193,23 @@ public class createWorker extends javax.swing.JFrame {
         jScrollPane5.setViewportView(certs);
 
         kGradientPanel1.add(jScrollPane5);
-        jScrollPane5.setBounds(20, 640, 520, 140);
+        jScrollPane5.setBounds(10, 500, 520, 140);
 
         Title8.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title8.setForeground(new java.awt.Color(255, 255, 255));
         Title8.setText("Pass-Word:");
         kGradientPanel1.add(Title8);
-        Title8.setBounds(20, 330, 210, 70);
+        Title8.setBounds(20, 270, 210, 70);
 
         jPasswordField1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         jPasswordField1.setText("jPasswordField1");
         kGradientPanel1.add(jPasswordField1);
-        jPasswordField1.setBounds(210, 350, 210, 30);
+        jPasswordField1.setBounds(210, 290, 210, 30);
 
         getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 990);
+        kGradientPanel1.setBounds(0, 0, 550, 710);
 
-        setBounds(0, 0, 572, 1050);
+        setBounds(0, 0, 572, 751);
     }// </editor-fold>//GEN-END:initComponents
 
     private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed

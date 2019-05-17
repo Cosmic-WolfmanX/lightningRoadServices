@@ -65,7 +65,7 @@ public class customerPayments extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(550, 950));
         setName("MainFrame"); // NOI18N
         setResizable(false);
-        setSize(new java.awt.Dimension(550, 950));
+        setSize(new java.awt.Dimension(900, 950));
         getContentPane().setLayout(null);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
@@ -139,36 +139,36 @@ public class customerPayments extends javax.swing.JFrame {
         Title8.setForeground(new java.awt.Color(255, 255, 255));
         Title8.setText("Card Number:");
         kGradientPanel1.add(Title8);
-        Title8.setBounds(20, 450, 210, 70);
+        Title8.setBounds(10, 300, 210, 70);
 
         cNumberEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         cNumberEnter.setText(String.valueOf(Global.user.creditCardNum));
         kGradientPanel1.add(cNumberEnter);
-        cNumberEnter.setBounds(230, 460, 210, 30);
+        cNumberEnter.setBounds(220, 310, 210, 30);
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
         Title11.setText("Expiry Date:");
         kGradientPanel1.add(Title11);
-        Title11.setBounds(20, 530, 210, 70);
+        Title11.setBounds(10, 380, 210, 70);
 
         cNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         cNameEnter.setText(Global.user.nameOnCreditCard);
         kGradientPanel1.add(cNameEnter);
-        cNameEnter.setBounds(230, 510, 210, 30);
+        cNameEnter.setBounds(220, 360, 210, 30);
 
         Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title12.setForeground(new java.awt.Color(255, 255, 255));
         Title12.setText("Name on Card:");
         kGradientPanel1.add(Title12);
-        Title12.setBounds(20, 490, 210, 70);
+        Title12.setBounds(10, 340, 210, 70);
 
         expiryMonthEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryMonthEnter1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryMonthEnter1.setText(Global.user.creditCardExpiryDate.split("/",-2)[0]
         );
         kGradientPanel1.add(expiryMonthEnter1);
-        expiryMonthEnter1.setBounds(230, 550, 30, 30);
+        expiryMonthEnter1.setBounds(220, 400, 30, 30);
 
         dash2.setEditable(false);
         dash2.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -177,24 +177,24 @@ public class customerPayments extends javax.swing.JFrame {
         dash2.setBorder(null);
         dash2.setOpaque(false);
         kGradientPanel1.add(dash2);
-        dash2.setBounds(260, 550, 30, 30);
+        dash2.setBounds(250, 400, 30, 30);
 
         expiryYearEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryYearEnter1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryYearEnter1.setText(Global.user.creditCardExpiryDate.split("/",-2)[1]);
         kGradientPanel1.add(expiryYearEnter1);
-        expiryYearEnter1.setBounds(290, 550, 30, 30);
+        expiryYearEnter1.setBounds(280, 400, 30, 30);
 
         cvvEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         cvvEnter.setText(String.valueOf(Global.user.cvv));
         kGradientPanel1.add(cvvEnter);
-        cvvEnter.setBounds(230, 590, 90, 30);
+        cvvEnter.setBounds(220, 440, 90, 30);
 
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
         Title7.setText("CVV:");
         kGradientPanel1.add(Title7);
-        Title7.setBounds(20, 570, 210, 70);
+        Title7.setBounds(10, 420, 210, 70);
 
         create2.setBackground(new java.awt.Color(51, 51, 255));
         create2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -210,7 +210,7 @@ public class customerPayments extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(create2);
-        create2.setBounds(150, 860, 390, 60);
+        create2.setBounds(150, 540, 390, 60);
 
         Title21.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title21.setForeground(new java.awt.Color(255, 255, 255));
@@ -235,9 +235,9 @@ public class customerPayments extends javax.swing.JFrame {
         serviceWorkName2.setBounds(310, 200, 160, 40);
 
         getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 950);
+        kGradientPanel1.setBounds(0, 0, 550, 710);
 
-        setBounds(0, 0, 572, 1006);
+        setBounds(0, 0, 573, 749);
     }// </editor-fold>//GEN-END:initComponents
 
     private void create2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_create2ActionPerformed

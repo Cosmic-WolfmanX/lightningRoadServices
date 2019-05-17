@@ -84,7 +84,7 @@ public class requestHelp extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(550, 950));
         setName("MainFrame"); // NOI18N
         setResizable(false);
-        setSize(new java.awt.Dimension(550, 950));
+        setSize(new java.awt.Dimension(900, 950));
         getContentPane().setLayout(null);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
@@ -102,7 +102,7 @@ public class requestHelp extends javax.swing.JFrame {
         Title31.setForeground(new java.awt.Color(255, 255, 255));
         Title31.setText("Location:");
         kGradientPanel1.add(Title31);
-        Title31.setBounds(20, 90, 240, 70);
+        Title31.setBounds(20, 50, 240, 70);
 
         create.setBackground(new java.awt.Color(51, 51, 255));
         create.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -118,53 +118,53 @@ public class requestHelp extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(create);
-        create.setBounds(140, 870, 390, 60);
+        create.setBounds(210, 640, 320, 40);
 
         Title15.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title15.setForeground(new java.awt.Color(255, 255, 255));
         Title15.setText("Vehicle Modle:");
         kGradientPanel1.add(Title15);
-        Title15.setBounds(10, 330, 210, 70);
+        Title15.setBounds(10, 290, 210, 70);
 
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(fNameEnter);
-        fNameEnter.setBounds(200, 350, 210, 30);
+        fNameEnter.setBounds(200, 310, 210, 30);
 
         lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(lNameEnter);
-        lNameEnter.setBounds(200, 390, 210, 30);
+        lNameEnter.setBounds(200, 350, 210, 30);
 
         Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title4.setForeground(new java.awt.Color(255, 255, 255));
         Title4.setText("Vehicle Make:");
         kGradientPanel1.add(Title4);
-        Title4.setBounds(10, 370, 210, 70);
+        Title4.setBounds(10, 330, 210, 70);
 
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
         Title7.setText("Year:");
         kGradientPanel1.add(Title7);
-        Title7.setBounds(10, 440, 210, 70);
+        Title7.setBounds(10, 400, 210, 70);
 
         mobileEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(mobileEnter);
-        mobileEnter.setBounds(200, 460, 210, 30);
+        mobileEnter.setBounds(200, 420, 210, 30);
 
         emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(emailEnter);
-        emailEnter.setBounds(200, 500, 210, 30);
+        emailEnter.setBounds(200, 460, 210, 30);
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
         Title11.setText("Regostration:");
         kGradientPanel1.add(Title11);
-        Title11.setBounds(10, 480, 210, 70);
+        Title11.setBounds(10, 440, 210, 70);
 
         Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title12.setForeground(new java.awt.Color(255, 255, 255));
         Title12.setText("Approximate Fault/s:");
         kGradientPanel1.add(Title12);
-        Title12.setBounds(10, 530, 210, 70);
+        Title12.setBounds(10, 490, 210, 70);
 
         inccidentReport1.setEditable(false);
         inccidentReport1.setColumns(20);
@@ -173,7 +173,7 @@ public class requestHelp extends javax.swing.JFrame {
         jScrollPane2.setViewportView(inccidentReport1);
 
         kGradientPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(10, 580, 520, 130);
+        jScrollPane2.setBounds(10, 540, 520, 90);
 
         inccidentReport2.setEditable(false);
         inccidentReport2.setColumns(20);
@@ -183,12 +183,12 @@ public class requestHelp extends javax.swing.JFrame {
         jScrollPane3.setViewportView(inccidentReport2);
 
         kGradientPanel1.add(jScrollPane3);
-        jScrollPane3.setBounds(10, 140, 520, 130);
+        jScrollPane3.setBounds(10, 100, 520, 130);
 
         fNameEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         fNameEnter1.setText("If unknown fill in bellow info");
         kGradientPanel1.add(fNameEnter1);
-        fNameEnter1.setBounds(200, 290, 210, 30);
+        fNameEnter1.setBounds(200, 250, 210, 30);
 
         jSeparator2.setBackground(new java.awt.Color(51, 0, 51));
         jSeparator2.setForeground(new java.awt.Color(51, 0, 51));
@@ -198,7 +198,7 @@ public class requestHelp extends javax.swing.JFrame {
         jSeparator2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jSeparator2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         kGradientPanel1.add(jSeparator2);
-        jSeparator2.setBounds(0, 540, 550, 10);
+        jSeparator2.setBounds(0, 500, 550, 10);
 
         jSeparator4.setBackground(new java.awt.Color(51, 0, 51));
         jSeparator4.setForeground(new java.awt.Color(51, 0, 51));
@@ -208,16 +208,16 @@ public class requestHelp extends javax.swing.JFrame {
         jSeparator4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jSeparator4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         kGradientPanel1.add(jSeparator4);
-        jSeparator4.setBounds(0, 330, 550, 10);
+        jSeparator4.setBounds(0, 290, 550, 10);
 
         Title17.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title17.setForeground(new java.awt.Color(255, 255, 255));
         Title17.setText("Vehicle ID:");
         kGradientPanel1.add(Title17);
-        Title17.setBounds(10, 270, 210, 70);
+        Title17.setBounds(10, 230, 210, 70);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Log-out" }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "Make Report", "View Past Reports", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
@@ -227,9 +227,9 @@ public class requestHelp extends javax.swing.JFrame {
         DropM.setBounds(300, 10, 240, 60);
 
         getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 950);
+        kGradientPanel1.setBounds(0, 0, 550, 860);
 
-        setBounds(0, 0, 572, 1006);
+        setBounds(0, 0, 572, 750);
     }// </editor-fold>//GEN-END:initComponents
 
     private void createActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createActionPerformed
@@ -281,6 +281,13 @@ public class requestHelp extends javax.swing.JFrame {
 
             logInFrame log = new logInFrame();
             log.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Make Report")
+        {
+            this.setVisible(false);
+
+            makeReport rep = new makeReport();
+            rep.setVisible(true);
         }
         else if((String)DropM.getSelectedItem() == "View Past Report")
         {

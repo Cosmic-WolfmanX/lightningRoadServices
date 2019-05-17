@@ -61,11 +61,143 @@ public class WorkerReport extends javax.swing.JFrame {
         Title10 = new javax.swing.JLabel();
         fnameV = new javax.swing.JTextField();
         kGradientPanel3 = new keeptoo.KGradientPanel();
+        Title12 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        incidentReports4 = new javax.swing.JTextArea();
+        Title13 = new javax.swing.JLabel();
+        expiryDayEnter1 = new javax.swing.JTextField();
+        dash1 = new javax.swing.JTextField();
+        expiryMonthEnter1 = new javax.swing.JTextField();
+        expiryYearEnter1 = new javax.swing.JTextField();
+        Title14 = new javax.swing.JLabel();
+        fnameV1 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        incidentReports1 = new javax.swing.JTextArea();
+        Title15 = new javax.swing.JLabel();
+        Title16 = new javax.swing.JLabel();
+        jRadioButton6 = new javax.swing.JRadioButton();
+        jRadioButton7 = new javax.swing.JRadioButton();
+        jRadioButton8 = new javax.swing.JRadioButton();
+        jRadioButton9 = new javax.swing.JRadioButton();
+        jRadioButton10 = new javax.swing.JRadioButton();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        incidentReports5 = new javax.swing.JTextArea();
+        Title17 = new javax.swing.JLabel();
         kGradientPanel4 = new keeptoo.KGradientPanel();
+        Title18 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        incidentReports6 = new javax.swing.JTextArea();
+        Title19 = new javax.swing.JLabel();
+        expiryDayEnter2 = new javax.swing.JTextField();
+        dash2 = new javax.swing.JTextField();
+        expiryMonthEnter2 = new javax.swing.JTextField();
+        expiryYearEnter2 = new javax.swing.JTextField();
+        Title20 = new javax.swing.JLabel();
+        fnameV2 = new javax.swing.JTextField();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        incidentReports7 = new javax.swing.JTextArea();
+        Title21 = new javax.swing.JLabel();
+        Title22 = new javax.swing.JLabel();
+        jRadioButton11 = new javax.swing.JRadioButton();
+        jRadioButton12 = new javax.swing.JRadioButton();
+        jRadioButton13 = new javax.swing.JRadioButton();
+        jRadioButton14 = new javax.swing.JRadioButton();
+        jRadioButton15 = new javax.swing.JRadioButton();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        incidentReports8 = new javax.swing.JTextArea();
+        Title23 = new javax.swing.JLabel();
         kGradientPanel5 = new keeptoo.KGradientPanel();
+        Title24 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        incidentReports9 = new javax.swing.JTextArea();
+        Title25 = new javax.swing.JLabel();
+        expiryDayEnter3 = new javax.swing.JTextField();
+        dash3 = new javax.swing.JTextField();
+        expiryMonthEnter3 = new javax.swing.JTextField();
+        expiryYearEnter3 = new javax.swing.JTextField();
+        Title26 = new javax.swing.JLabel();
+        fnameV3 = new javax.swing.JTextField();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        incidentReports10 = new javax.swing.JTextArea();
+        Title27 = new javax.swing.JLabel();
+        Title28 = new javax.swing.JLabel();
+        jRadioButton16 = new javax.swing.JRadioButton();
+        jRadioButton17 = new javax.swing.JRadioButton();
+        jRadioButton18 = new javax.swing.JRadioButton();
+        jRadioButton19 = new javax.swing.JRadioButton();
+        jRadioButton20 = new javax.swing.JRadioButton();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        incidentReports11 = new javax.swing.JTextArea();
+        Title29 = new javax.swing.JLabel();
         kGradientPanel6 = new keeptoo.KGradientPanel();
+        Title30 = new javax.swing.JLabel();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        incidentReports12 = new javax.swing.JTextArea();
+        Title31 = new javax.swing.JLabel();
+        expiryDayEnter4 = new javax.swing.JTextField();
+        dash4 = new javax.swing.JTextField();
+        expiryMonthEnter4 = new javax.swing.JTextField();
+        expiryYearEnter4 = new javax.swing.JTextField();
+        Title32 = new javax.swing.JLabel();
+        fnameV4 = new javax.swing.JTextField();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        incidentReports13 = new javax.swing.JTextArea();
+        Title33 = new javax.swing.JLabel();
+        Title34 = new javax.swing.JLabel();
+        jRadioButton21 = new javax.swing.JRadioButton();
+        jRadioButton22 = new javax.swing.JRadioButton();
+        jRadioButton23 = new javax.swing.JRadioButton();
+        jRadioButton24 = new javax.swing.JRadioButton();
+        jRadioButton25 = new javax.swing.JRadioButton();
+        jScrollPane15 = new javax.swing.JScrollPane();
+        incidentReports14 = new javax.swing.JTextArea();
+        Title35 = new javax.swing.JLabel();
         kGradientPanel7 = new keeptoo.KGradientPanel();
+        Title36 = new javax.swing.JLabel();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        incidentReports15 = new javax.swing.JTextArea();
+        Title37 = new javax.swing.JLabel();
+        expiryDayEnter5 = new javax.swing.JTextField();
+        dash5 = new javax.swing.JTextField();
+        expiryMonthEnter5 = new javax.swing.JTextField();
+        expiryYearEnter5 = new javax.swing.JTextField();
+        Title38 = new javax.swing.JLabel();
+        fnameV5 = new javax.swing.JTextField();
+        jScrollPane17 = new javax.swing.JScrollPane();
+        incidentReports16 = new javax.swing.JTextArea();
+        Title39 = new javax.swing.JLabel();
+        Title40 = new javax.swing.JLabel();
+        jRadioButton26 = new javax.swing.JRadioButton();
+        jRadioButton27 = new javax.swing.JRadioButton();
+        jRadioButton28 = new javax.swing.JRadioButton();
+        jRadioButton29 = new javax.swing.JRadioButton();
+        jRadioButton30 = new javax.swing.JRadioButton();
+        jScrollPane18 = new javax.swing.JScrollPane();
+        incidentReports17 = new javax.swing.JTextArea();
+        Title41 = new javax.swing.JLabel();
         kGradientPanel8 = new keeptoo.KGradientPanel();
+        Title42 = new javax.swing.JLabel();
+        jScrollPane19 = new javax.swing.JScrollPane();
+        incidentReports18 = new javax.swing.JTextArea();
+        Title43 = new javax.swing.JLabel();
+        expiryDayEnter6 = new javax.swing.JTextField();
+        dash6 = new javax.swing.JTextField();
+        expiryMonthEnter6 = new javax.swing.JTextField();
+        expiryYearEnter6 = new javax.swing.JTextField();
+        Title44 = new javax.swing.JLabel();
+        fnameV6 = new javax.swing.JTextField();
+        jScrollPane20 = new javax.swing.JScrollPane();
+        incidentReports19 = new javax.swing.JTextArea();
+        Title45 = new javax.swing.JLabel();
+        Title46 = new javax.swing.JLabel();
+        jRadioButton31 = new javax.swing.JRadioButton();
+        jRadioButton32 = new javax.swing.JRadioButton();
+        jRadioButton33 = new javax.swing.JRadioButton();
+        jRadioButton34 = new javax.swing.JRadioButton();
+        jRadioButton35 = new javax.swing.JRadioButton();
+        jScrollPane21 = new javax.swing.JScrollPane();
+        incidentReports20 = new javax.swing.JTextArea();
+        Title47 = new javax.swing.JLabel();
         DropM = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -84,7 +216,7 @@ public class WorkerReport extends javax.swing.JFrame {
         Title5.setForeground(new java.awt.Color(255, 255, 255));
         Title5.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 300, 80);
+        Title5.setBounds(10, 0, 300, 80);
 
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel2.setkGradientFocus(750);
@@ -98,7 +230,7 @@ public class WorkerReport extends javax.swing.JFrame {
         dash.setBorder(null);
         dash.setOpaque(false);
         kGradientPanel2.add(dash);
-        dash.setBounds(140, 30, 30, 30);
+        dash.setBounds(140, 30, 20, 20);
 
         expiryDayEnter.setEditable(false);
         expiryDayEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -110,33 +242,33 @@ public class WorkerReport extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(expiryDayEnter);
-        expiryDayEnter.setBounds(110, 30, 30, 30);
+        expiryDayEnter.setBounds(110, 30, 20, 20);
 
         Title9.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title9.setForeground(new java.awt.Color(255, 255, 255));
         Title9.setText("Location:");
         kGradientPanel2.add(Title9);
-        Title9.setBounds(270, 10, 100, 70);
+        Title9.setBounds(270, 10, 90, 60);
 
         expiryMonthEnter.setEditable(false);
         expiryMonthEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryMonthEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryMonthEnter.setText("M");
         kGradientPanel2.add(expiryMonthEnter);
-        expiryMonthEnter.setBounds(170, 30, 30, 30);
+        expiryMonthEnter.setBounds(170, 30, 21, 20);
 
         expiryYearEnter.setEditable(false);
         expiryYearEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryYearEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryYearEnter.setText("Y");
         kGradientPanel2.add(expiryYearEnter);
-        expiryYearEnter.setBounds(230, 30, 30, 30);
+        expiryYearEnter.setBounds(230, 30, 20, 20);
 
         Title6.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title6.setForeground(new java.awt.Color(255, 255, 255));
         Title6.setText("Incident Details:");
         kGradientPanel2.add(Title6);
-        Title6.setBounds(10, 60, 250, 70);
+        Title6.setBounds(10, 50, 240, 60);
 
         incidentReports.setEditable(false);
         incidentReports.setColumns(20);
@@ -145,19 +277,19 @@ public class WorkerReport extends javax.swing.JFrame {
         jScrollPane1.setViewportView(incidentReports);
 
         kGradientPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 310, 520, 140);
+        jScrollPane1.setBounds(10, 240, 520, 140);
 
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
         Title7.setText("Repairs Given:");
         kGradientPanel2.add(Title7);
-        Title7.setBounds(10, 260, 250, 70);
+        Title7.setBounds(10, 190, 240, 60);
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
         Title11.setText("Rating:");
         kGradientPanel2.add(Title11);
-        Title11.setBounds(10, 450, 100, 70);
+        Title11.setBounds(10, 370, 100, 70);
 
         jRadioButton2.setText("1 Star");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -166,7 +298,7 @@ public class WorkerReport extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton2);
-        jRadioButton2.setBounds(90, 470, 80, 29);
+        jRadioButton2.setBounds(90, 400, 80, 20);
 
         jRadioButton3.setText("2 Stars");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +307,7 @@ public class WorkerReport extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton3);
-        jRadioButton3.setBounds(170, 470, 90, 29);
+        jRadioButton3.setBounds(170, 400, 90, 20);
 
         jRadioButton4.setText("3 Stars");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -184,7 +316,7 @@ public class WorkerReport extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton4);
-        jRadioButton4.setBounds(260, 470, 90, 29);
+        jRadioButton4.setBounds(260, 400, 90, 20);
 
         jRadioButton5.setText("4 Stars");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -193,7 +325,7 @@ public class WorkerReport extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton5);
-        jRadioButton5.setBounds(350, 470, 90, 29);
+        jRadioButton5.setBounds(350, 400, 90, 20);
 
         jRadioButton1.setText("5 Stars");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +334,7 @@ public class WorkerReport extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton1);
-        jRadioButton1.setBounds(440, 470, 90, 29);
+        jRadioButton1.setBounds(440, 400, 90, 20);
 
         incidentReports2.setEditable(false);
         incidentReports2.setColumns(20);
@@ -211,13 +343,13 @@ public class WorkerReport extends javax.swing.JFrame {
         jScrollPane3.setViewportView(incidentReports2);
 
         kGradientPanel2.add(jScrollPane3);
-        jScrollPane3.setBounds(10, 110, 520, 140);
+        jScrollPane3.setBounds(10, 90, 510, 100);
 
         Title8.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title8.setForeground(new java.awt.Color(255, 255, 255));
         Title8.setText("Customer Feedback:");
         kGradientPanel2.add(Title8);
-        Title8.setBounds(10, 500, 250, 70);
+        Title8.setBounds(10, 410, 250, 70);
 
         incidentReports3.setEditable(false);
         incidentReports3.setColumns(20);
@@ -226,18 +358,18 @@ public class WorkerReport extends javax.swing.JFrame {
         jScrollPane4.setViewportView(incidentReports3);
 
         kGradientPanel2.add(jScrollPane4);
-        jScrollPane4.setBounds(10, 550, 520, 140);
+        jScrollPane4.setBounds(10, 460, 520, 90);
 
         Title10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title10.setForeground(new java.awt.Color(255, 255, 255));
         Title10.setText("Date:");
         kGradientPanel2.add(Title10);
-        Title10.setBounds(10, 10, 100, 70);
+        Title10.setBounds(10, 10, 90, 60);
 
         fnameV.setEditable(false);
         fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         kGradientPanel2.add(fnameV);
-        fnameV.setBounds(370, 30, 160, 40);
+        fnameV.setBounds(370, 30, 150, 30);
 
         jTabbedPane1.addTab("Report 1", kGradientPanel2);
 
@@ -245,55 +377,950 @@ public class WorkerReport extends javax.swing.JFrame {
         kGradientPanel3.setkGradientFocus(750);
         kGradientPanel3.setkStartColor(new java.awt.Color(0, 51, 255));
         kGradientPanel3.setLayout(null);
+
+        Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title12.setForeground(new java.awt.Color(255, 255, 255));
+        Title12.setText("Date:");
+        kGradientPanel3.add(Title12);
+        Title12.setBounds(10, 10, 90, 60);
+
+        incidentReports4.setEditable(false);
+        incidentReports4.setColumns(20);
+        incidentReports4.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports4.setRows(5);
+        jScrollPane5.setViewportView(incidentReports4);
+
+        kGradientPanel3.add(jScrollPane5);
+        jScrollPane5.setBounds(10, 90, 510, 100);
+
+        Title13.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title13.setForeground(new java.awt.Color(255, 255, 255));
+        Title13.setText("Incident Details:");
+        kGradientPanel3.add(Title13);
+        Title13.setBounds(10, 50, 240, 60);
+
+        expiryDayEnter1.setEditable(false);
+        expiryDayEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryDayEnter1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryDayEnter1.setText("D");
+        expiryDayEnter1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expiryDayEnter1ActionPerformed(evt);
+            }
+        });
+        kGradientPanel3.add(expiryDayEnter1);
+        expiryDayEnter1.setBounds(110, 30, 20, 20);
+
+        dash1.setEditable(false);
+        dash1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash1.setText("/");
+        dash1.setBorder(null);
+        dash1.setOpaque(false);
+        kGradientPanel3.add(dash1);
+        dash1.setBounds(140, 30, 20, 20);
+
+        expiryMonthEnter1.setEditable(false);
+        expiryMonthEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter1.setText("M");
+        kGradientPanel3.add(expiryMonthEnter1);
+        expiryMonthEnter1.setBounds(170, 30, 21, 20);
+
+        expiryYearEnter1.setEditable(false);
+        expiryYearEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter1.setText("Y");
+        kGradientPanel3.add(expiryYearEnter1);
+        expiryYearEnter1.setBounds(230, 30, 20, 20);
+
+        Title14.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title14.setForeground(new java.awt.Color(255, 255, 255));
+        Title14.setText("Location:");
+        kGradientPanel3.add(Title14);
+        Title14.setBounds(270, 10, 90, 60);
+
+        fnameV1.setEditable(false);
+        fnameV1.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel3.add(fnameV1);
+        fnameV1.setBounds(370, 30, 150, 30);
+
+        incidentReports1.setEditable(false);
+        incidentReports1.setColumns(20);
+        incidentReports1.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports1.setRows(5);
+        jScrollPane2.setViewportView(incidentReports1);
+
+        kGradientPanel3.add(jScrollPane2);
+        jScrollPane2.setBounds(10, 240, 520, 140);
+
+        Title15.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title15.setForeground(new java.awt.Color(255, 255, 255));
+        Title15.setText("Repairs Given:");
+        kGradientPanel3.add(Title15);
+        Title15.setBounds(10, 190, 240, 60);
+
+        Title16.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title16.setForeground(new java.awt.Color(255, 255, 255));
+        Title16.setText("Rating:");
+        kGradientPanel3.add(Title16);
+        Title16.setBounds(10, 370, 100, 70);
+
+        jRadioButton6.setText("1 Star");
+        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton6ActionPerformed(evt);
+            }
+        });
+        kGradientPanel3.add(jRadioButton6);
+        jRadioButton6.setBounds(90, 400, 80, 20);
+
+        jRadioButton7.setText("2 Stars");
+        jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton7ActionPerformed(evt);
+            }
+        });
+        kGradientPanel3.add(jRadioButton7);
+        jRadioButton7.setBounds(170, 400, 90, 20);
+
+        jRadioButton8.setText("3 Stars");
+        jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton8ActionPerformed(evt);
+            }
+        });
+        kGradientPanel3.add(jRadioButton8);
+        jRadioButton8.setBounds(260, 400, 90, 20);
+
+        jRadioButton9.setText("4 Stars");
+        jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton9ActionPerformed(evt);
+            }
+        });
+        kGradientPanel3.add(jRadioButton9);
+        jRadioButton9.setBounds(350, 400, 90, 20);
+
+        jRadioButton10.setText("5 Stars");
+        jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton10ActionPerformed(evt);
+            }
+        });
+        kGradientPanel3.add(jRadioButton10);
+        jRadioButton10.setBounds(440, 400, 90, 20);
+
+        incidentReports5.setEditable(false);
+        incidentReports5.setColumns(20);
+        incidentReports5.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports5.setRows(5);
+        jScrollPane6.setViewportView(incidentReports5);
+
+        kGradientPanel3.add(jScrollPane6);
+        jScrollPane6.setBounds(10, 460, 520, 90);
+
+        Title17.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title17.setForeground(new java.awt.Color(255, 255, 255));
+        Title17.setText("Customer Feedback:");
+        kGradientPanel3.add(Title17);
+        Title17.setBounds(10, 410, 250, 70);
+
         jTabbedPane1.addTab("Report 2", kGradientPanel3);
 
         kGradientPanel4.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel4.setkGradientFocus(750);
         kGradientPanel4.setkStartColor(new java.awt.Color(0, 51, 255));
         kGradientPanel4.setLayout(null);
+
+        Title18.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title18.setForeground(new java.awt.Color(255, 255, 255));
+        Title18.setText("Date:");
+        kGradientPanel4.add(Title18);
+        Title18.setBounds(10, 10, 90, 60);
+
+        incidentReports6.setEditable(false);
+        incidentReports6.setColumns(20);
+        incidentReports6.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports6.setRows(5);
+        jScrollPane7.setViewportView(incidentReports6);
+
+        kGradientPanel4.add(jScrollPane7);
+        jScrollPane7.setBounds(10, 90, 510, 100);
+
+        Title19.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title19.setForeground(new java.awt.Color(255, 255, 255));
+        Title19.setText("Incident Details:");
+        kGradientPanel4.add(Title19);
+        Title19.setBounds(10, 50, 240, 60);
+
+        expiryDayEnter2.setEditable(false);
+        expiryDayEnter2.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryDayEnter2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryDayEnter2.setText("D");
+        expiryDayEnter2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expiryDayEnter2ActionPerformed(evt);
+            }
+        });
+        kGradientPanel4.add(expiryDayEnter2);
+        expiryDayEnter2.setBounds(110, 30, 20, 20);
+
+        dash2.setEditable(false);
+        dash2.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash2.setText("/");
+        dash2.setBorder(null);
+        dash2.setOpaque(false);
+        kGradientPanel4.add(dash2);
+        dash2.setBounds(140, 30, 20, 20);
+
+        expiryMonthEnter2.setEditable(false);
+        expiryMonthEnter2.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter2.setText("M");
+        kGradientPanel4.add(expiryMonthEnter2);
+        expiryMonthEnter2.setBounds(170, 30, 21, 20);
+
+        expiryYearEnter2.setEditable(false);
+        expiryYearEnter2.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter2.setText("Y");
+        kGradientPanel4.add(expiryYearEnter2);
+        expiryYearEnter2.setBounds(230, 30, 20, 20);
+
+        Title20.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title20.setForeground(new java.awt.Color(255, 255, 255));
+        Title20.setText("Location:");
+        kGradientPanel4.add(Title20);
+        Title20.setBounds(270, 10, 90, 60);
+
+        fnameV2.setEditable(false);
+        fnameV2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel4.add(fnameV2);
+        fnameV2.setBounds(370, 30, 150, 30);
+
+        incidentReports7.setEditable(false);
+        incidentReports7.setColumns(20);
+        incidentReports7.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports7.setRows(5);
+        jScrollPane8.setViewportView(incidentReports7);
+
+        kGradientPanel4.add(jScrollPane8);
+        jScrollPane8.setBounds(10, 240, 520, 140);
+
+        Title21.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title21.setForeground(new java.awt.Color(255, 255, 255));
+        Title21.setText("Repairs Given:");
+        kGradientPanel4.add(Title21);
+        Title21.setBounds(10, 190, 240, 60);
+
+        Title22.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title22.setForeground(new java.awt.Color(255, 255, 255));
+        Title22.setText("Rating:");
+        kGradientPanel4.add(Title22);
+        Title22.setBounds(10, 370, 100, 70);
+
+        jRadioButton11.setText("1 Star");
+        jRadioButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton11ActionPerformed(evt);
+            }
+        });
+        kGradientPanel4.add(jRadioButton11);
+        jRadioButton11.setBounds(90, 400, 80, 20);
+
+        jRadioButton12.setText("2 Stars");
+        jRadioButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton12ActionPerformed(evt);
+            }
+        });
+        kGradientPanel4.add(jRadioButton12);
+        jRadioButton12.setBounds(170, 400, 90, 20);
+
+        jRadioButton13.setText("3 Stars");
+        jRadioButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton13ActionPerformed(evt);
+            }
+        });
+        kGradientPanel4.add(jRadioButton13);
+        jRadioButton13.setBounds(260, 400, 90, 20);
+
+        jRadioButton14.setText("4 Stars");
+        jRadioButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton14ActionPerformed(evt);
+            }
+        });
+        kGradientPanel4.add(jRadioButton14);
+        jRadioButton14.setBounds(350, 400, 90, 20);
+
+        jRadioButton15.setText("5 Stars");
+        jRadioButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton15ActionPerformed(evt);
+            }
+        });
+        kGradientPanel4.add(jRadioButton15);
+        jRadioButton15.setBounds(440, 400, 90, 20);
+
+        incidentReports8.setEditable(false);
+        incidentReports8.setColumns(20);
+        incidentReports8.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports8.setRows(5);
+        jScrollPane9.setViewportView(incidentReports8);
+
+        kGradientPanel4.add(jScrollPane9);
+        jScrollPane9.setBounds(10, 460, 520, 90);
+
+        Title23.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title23.setForeground(new java.awt.Color(255, 255, 255));
+        Title23.setText("Customer Feedback:");
+        kGradientPanel4.add(Title23);
+        Title23.setBounds(10, 410, 250, 70);
+
         jTabbedPane1.addTab("Report 3", kGradientPanel4);
 
         kGradientPanel5.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel5.setkGradientFocus(750);
         kGradientPanel5.setkStartColor(new java.awt.Color(0, 51, 204));
         kGradientPanel5.setLayout(null);
+
+        Title24.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title24.setForeground(new java.awt.Color(255, 255, 255));
+        Title24.setText("Date:");
+        kGradientPanel5.add(Title24);
+        Title24.setBounds(10, 10, 90, 60);
+
+        incidentReports9.setEditable(false);
+        incidentReports9.setColumns(20);
+        incidentReports9.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports9.setRows(5);
+        jScrollPane10.setViewportView(incidentReports9);
+
+        kGradientPanel5.add(jScrollPane10);
+        jScrollPane10.setBounds(10, 90, 510, 100);
+
+        Title25.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title25.setForeground(new java.awt.Color(255, 255, 255));
+        Title25.setText("Incident Details:");
+        kGradientPanel5.add(Title25);
+        Title25.setBounds(10, 50, 240, 60);
+
+        expiryDayEnter3.setEditable(false);
+        expiryDayEnter3.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryDayEnter3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryDayEnter3.setText("D");
+        expiryDayEnter3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expiryDayEnter3ActionPerformed(evt);
+            }
+        });
+        kGradientPanel5.add(expiryDayEnter3);
+        expiryDayEnter3.setBounds(110, 30, 20, 20);
+
+        dash3.setEditable(false);
+        dash3.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash3.setText("/");
+        dash3.setBorder(null);
+        dash3.setOpaque(false);
+        kGradientPanel5.add(dash3);
+        dash3.setBounds(140, 30, 20, 20);
+
+        expiryMonthEnter3.setEditable(false);
+        expiryMonthEnter3.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter3.setText("M");
+        kGradientPanel5.add(expiryMonthEnter3);
+        expiryMonthEnter3.setBounds(170, 30, 21, 20);
+
+        expiryYearEnter3.setEditable(false);
+        expiryYearEnter3.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter3.setText("Y");
+        kGradientPanel5.add(expiryYearEnter3);
+        expiryYearEnter3.setBounds(230, 30, 20, 20);
+
+        Title26.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title26.setForeground(new java.awt.Color(255, 255, 255));
+        Title26.setText("Location:");
+        kGradientPanel5.add(Title26);
+        Title26.setBounds(270, 10, 90, 60);
+
+        fnameV3.setEditable(false);
+        fnameV3.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel5.add(fnameV3);
+        fnameV3.setBounds(370, 30, 150, 30);
+
+        incidentReports10.setEditable(false);
+        incidentReports10.setColumns(20);
+        incidentReports10.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports10.setRows(5);
+        jScrollPane11.setViewportView(incidentReports10);
+
+        kGradientPanel5.add(jScrollPane11);
+        jScrollPane11.setBounds(10, 240, 520, 140);
+
+        Title27.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title27.setForeground(new java.awt.Color(255, 255, 255));
+        Title27.setText("Repairs Given:");
+        kGradientPanel5.add(Title27);
+        Title27.setBounds(10, 190, 240, 60);
+
+        Title28.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title28.setForeground(new java.awt.Color(255, 255, 255));
+        Title28.setText("Rating:");
+        kGradientPanel5.add(Title28);
+        Title28.setBounds(10, 370, 100, 70);
+
+        jRadioButton16.setText("1 Star");
+        jRadioButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton16ActionPerformed(evt);
+            }
+        });
+        kGradientPanel5.add(jRadioButton16);
+        jRadioButton16.setBounds(90, 400, 80, 20);
+
+        jRadioButton17.setText("2 Stars");
+        jRadioButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton17ActionPerformed(evt);
+            }
+        });
+        kGradientPanel5.add(jRadioButton17);
+        jRadioButton17.setBounds(170, 400, 90, 20);
+
+        jRadioButton18.setText("3 Stars");
+        jRadioButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton18ActionPerformed(evt);
+            }
+        });
+        kGradientPanel5.add(jRadioButton18);
+        jRadioButton18.setBounds(260, 400, 90, 20);
+
+        jRadioButton19.setText("4 Stars");
+        jRadioButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton19ActionPerformed(evt);
+            }
+        });
+        kGradientPanel5.add(jRadioButton19);
+        jRadioButton19.setBounds(350, 400, 90, 20);
+
+        jRadioButton20.setText("5 Stars");
+        jRadioButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton20ActionPerformed(evt);
+            }
+        });
+        kGradientPanel5.add(jRadioButton20);
+        jRadioButton20.setBounds(440, 400, 90, 20);
+
+        incidentReports11.setEditable(false);
+        incidentReports11.setColumns(20);
+        incidentReports11.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports11.setRows(5);
+        jScrollPane12.setViewportView(incidentReports11);
+
+        kGradientPanel5.add(jScrollPane12);
+        jScrollPane12.setBounds(10, 460, 520, 90);
+
+        Title29.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title29.setForeground(new java.awt.Color(255, 255, 255));
+        Title29.setText("Customer Feedback:");
+        kGradientPanel5.add(Title29);
+        Title29.setBounds(10, 410, 250, 70);
+
         jTabbedPane1.addTab("Report 4", kGradientPanel5);
 
         kGradientPanel6.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel6.setkGradientFocus(750);
         kGradientPanel6.setkStartColor(new java.awt.Color(0, 51, 204));
         kGradientPanel6.setLayout(null);
+
+        Title30.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title30.setForeground(new java.awt.Color(255, 255, 255));
+        Title30.setText("Date:");
+        kGradientPanel6.add(Title30);
+        Title30.setBounds(10, 10, 90, 60);
+
+        incidentReports12.setEditable(false);
+        incidentReports12.setColumns(20);
+        incidentReports12.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports12.setRows(5);
+        jScrollPane13.setViewportView(incidentReports12);
+
+        kGradientPanel6.add(jScrollPane13);
+        jScrollPane13.setBounds(10, 90, 510, 100);
+
+        Title31.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title31.setForeground(new java.awt.Color(255, 255, 255));
+        Title31.setText("Incident Details:");
+        kGradientPanel6.add(Title31);
+        Title31.setBounds(10, 50, 240, 60);
+
+        expiryDayEnter4.setEditable(false);
+        expiryDayEnter4.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryDayEnter4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryDayEnter4.setText("D");
+        expiryDayEnter4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expiryDayEnter4ActionPerformed(evt);
+            }
+        });
+        kGradientPanel6.add(expiryDayEnter4);
+        expiryDayEnter4.setBounds(110, 30, 20, 20);
+
+        dash4.setEditable(false);
+        dash4.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash4.setText("/");
+        dash4.setBorder(null);
+        dash4.setOpaque(false);
+        kGradientPanel6.add(dash4);
+        dash4.setBounds(140, 30, 20, 20);
+
+        expiryMonthEnter4.setEditable(false);
+        expiryMonthEnter4.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter4.setText("M");
+        kGradientPanel6.add(expiryMonthEnter4);
+        expiryMonthEnter4.setBounds(170, 30, 21, 20);
+
+        expiryYearEnter4.setEditable(false);
+        expiryYearEnter4.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter4.setText("Y");
+        kGradientPanel6.add(expiryYearEnter4);
+        expiryYearEnter4.setBounds(230, 30, 20, 20);
+
+        Title32.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title32.setForeground(new java.awt.Color(255, 255, 255));
+        Title32.setText("Location:");
+        kGradientPanel6.add(Title32);
+        Title32.setBounds(270, 10, 90, 60);
+
+        fnameV4.setEditable(false);
+        fnameV4.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel6.add(fnameV4);
+        fnameV4.setBounds(370, 30, 150, 30);
+
+        incidentReports13.setEditable(false);
+        incidentReports13.setColumns(20);
+        incidentReports13.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports13.setRows(5);
+        jScrollPane14.setViewportView(incidentReports13);
+
+        kGradientPanel6.add(jScrollPane14);
+        jScrollPane14.setBounds(10, 240, 520, 140);
+
+        Title33.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title33.setForeground(new java.awt.Color(255, 255, 255));
+        Title33.setText("Repairs Given:");
+        kGradientPanel6.add(Title33);
+        Title33.setBounds(10, 190, 240, 60);
+
+        Title34.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title34.setForeground(new java.awt.Color(255, 255, 255));
+        Title34.setText("Rating:");
+        kGradientPanel6.add(Title34);
+        Title34.setBounds(10, 370, 100, 70);
+
+        jRadioButton21.setText("1 Star");
+        jRadioButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton21ActionPerformed(evt);
+            }
+        });
+        kGradientPanel6.add(jRadioButton21);
+        jRadioButton21.setBounds(90, 400, 80, 20);
+
+        jRadioButton22.setText("2 Stars");
+        jRadioButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton22ActionPerformed(evt);
+            }
+        });
+        kGradientPanel6.add(jRadioButton22);
+        jRadioButton22.setBounds(170, 400, 90, 20);
+
+        jRadioButton23.setText("3 Stars");
+        jRadioButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton23ActionPerformed(evt);
+            }
+        });
+        kGradientPanel6.add(jRadioButton23);
+        jRadioButton23.setBounds(260, 400, 90, 20);
+
+        jRadioButton24.setText("4 Stars");
+        jRadioButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton24ActionPerformed(evt);
+            }
+        });
+        kGradientPanel6.add(jRadioButton24);
+        jRadioButton24.setBounds(350, 400, 90, 20);
+
+        jRadioButton25.setText("5 Stars");
+        jRadioButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton25ActionPerformed(evt);
+            }
+        });
+        kGradientPanel6.add(jRadioButton25);
+        jRadioButton25.setBounds(440, 400, 90, 20);
+
+        incidentReports14.setEditable(false);
+        incidentReports14.setColumns(20);
+        incidentReports14.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports14.setRows(5);
+        jScrollPane15.setViewportView(incidentReports14);
+
+        kGradientPanel6.add(jScrollPane15);
+        jScrollPane15.setBounds(10, 460, 520, 90);
+
+        Title35.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title35.setForeground(new java.awt.Color(255, 255, 255));
+        Title35.setText("Customer Feedback:");
+        kGradientPanel6.add(Title35);
+        Title35.setBounds(10, 410, 250, 70);
+
         jTabbedPane1.addTab("Report 5", kGradientPanel6);
 
         kGradientPanel7.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel7.setkGradientFocus(750);
         kGradientPanel7.setkStartColor(new java.awt.Color(0, 51, 255));
         kGradientPanel7.setLayout(null);
+
+        Title36.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title36.setForeground(new java.awt.Color(255, 255, 255));
+        Title36.setText("Date:");
+        kGradientPanel7.add(Title36);
+        Title36.setBounds(10, 10, 90, 60);
+
+        incidentReports15.setEditable(false);
+        incidentReports15.setColumns(20);
+        incidentReports15.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports15.setRows(5);
+        jScrollPane16.setViewportView(incidentReports15);
+
+        kGradientPanel7.add(jScrollPane16);
+        jScrollPane16.setBounds(10, 90, 510, 100);
+
+        Title37.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title37.setForeground(new java.awt.Color(255, 255, 255));
+        Title37.setText("Incident Details:");
+        kGradientPanel7.add(Title37);
+        Title37.setBounds(10, 50, 240, 60);
+
+        expiryDayEnter5.setEditable(false);
+        expiryDayEnter5.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryDayEnter5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryDayEnter5.setText("D");
+        expiryDayEnter5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expiryDayEnter5ActionPerformed(evt);
+            }
+        });
+        kGradientPanel7.add(expiryDayEnter5);
+        expiryDayEnter5.setBounds(110, 30, 20, 20);
+
+        dash5.setEditable(false);
+        dash5.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash5.setText("/");
+        dash5.setBorder(null);
+        dash5.setOpaque(false);
+        kGradientPanel7.add(dash5);
+        dash5.setBounds(140, 30, 20, 20);
+
+        expiryMonthEnter5.setEditable(false);
+        expiryMonthEnter5.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter5.setText("M");
+        kGradientPanel7.add(expiryMonthEnter5);
+        expiryMonthEnter5.setBounds(170, 30, 21, 20);
+
+        expiryYearEnter5.setEditable(false);
+        expiryYearEnter5.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter5.setText("Y");
+        kGradientPanel7.add(expiryYearEnter5);
+        expiryYearEnter5.setBounds(230, 30, 20, 20);
+
+        Title38.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title38.setForeground(new java.awt.Color(255, 255, 255));
+        Title38.setText("Location:");
+        kGradientPanel7.add(Title38);
+        Title38.setBounds(270, 10, 90, 60);
+
+        fnameV5.setEditable(false);
+        fnameV5.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel7.add(fnameV5);
+        fnameV5.setBounds(370, 30, 150, 30);
+
+        incidentReports16.setEditable(false);
+        incidentReports16.setColumns(20);
+        incidentReports16.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports16.setRows(5);
+        jScrollPane17.setViewportView(incidentReports16);
+
+        kGradientPanel7.add(jScrollPane17);
+        jScrollPane17.setBounds(10, 240, 520, 140);
+
+        Title39.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title39.setForeground(new java.awt.Color(255, 255, 255));
+        Title39.setText("Repairs Given:");
+        kGradientPanel7.add(Title39);
+        Title39.setBounds(10, 190, 240, 60);
+
+        Title40.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title40.setForeground(new java.awt.Color(255, 255, 255));
+        Title40.setText("Rating:");
+        kGradientPanel7.add(Title40);
+        Title40.setBounds(10, 370, 100, 70);
+
+        jRadioButton26.setText("1 Star");
+        jRadioButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton26ActionPerformed(evt);
+            }
+        });
+        kGradientPanel7.add(jRadioButton26);
+        jRadioButton26.setBounds(90, 400, 80, 20);
+
+        jRadioButton27.setText("2 Stars");
+        jRadioButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton27ActionPerformed(evt);
+            }
+        });
+        kGradientPanel7.add(jRadioButton27);
+        jRadioButton27.setBounds(170, 400, 90, 20);
+
+        jRadioButton28.setText("3 Stars");
+        jRadioButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton28ActionPerformed(evt);
+            }
+        });
+        kGradientPanel7.add(jRadioButton28);
+        jRadioButton28.setBounds(260, 400, 90, 20);
+
+        jRadioButton29.setText("4 Stars");
+        jRadioButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton29ActionPerformed(evt);
+            }
+        });
+        kGradientPanel7.add(jRadioButton29);
+        jRadioButton29.setBounds(350, 400, 90, 20);
+
+        jRadioButton30.setText("5 Stars");
+        jRadioButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton30ActionPerformed(evt);
+            }
+        });
+        kGradientPanel7.add(jRadioButton30);
+        jRadioButton30.setBounds(440, 400, 90, 20);
+
+        incidentReports17.setEditable(false);
+        incidentReports17.setColumns(20);
+        incidentReports17.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports17.setRows(5);
+        jScrollPane18.setViewportView(incidentReports17);
+
+        kGradientPanel7.add(jScrollPane18);
+        jScrollPane18.setBounds(10, 460, 520, 90);
+
+        Title41.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title41.setForeground(new java.awt.Color(255, 255, 255));
+        Title41.setText("Customer Feedback:");
+        kGradientPanel7.add(Title41);
+        Title41.setBounds(10, 410, 250, 70);
+
         jTabbedPane1.addTab("Report 6", kGradientPanel7);
 
         kGradientPanel8.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel8.setkGradientFocus(750);
         kGradientPanel8.setkStartColor(new java.awt.Color(0, 51, 255));
+        kGradientPanel8.setMinimumSize(new java.awt.Dimension(550, 710));
         kGradientPanel8.setLayout(null);
+
+        Title42.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title42.setForeground(new java.awt.Color(255, 255, 255));
+        Title42.setText("Date:");
+        kGradientPanel8.add(Title42);
+        Title42.setBounds(10, 10, 90, 60);
+
+        incidentReports18.setEditable(false);
+        incidentReports18.setColumns(20);
+        incidentReports18.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports18.setRows(5);
+        jScrollPane19.setViewportView(incidentReports18);
+
+        kGradientPanel8.add(jScrollPane19);
+        jScrollPane19.setBounds(10, 90, 510, 100);
+
+        Title43.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title43.setForeground(new java.awt.Color(255, 255, 255));
+        Title43.setText("Incident Details:");
+        kGradientPanel8.add(Title43);
+        Title43.setBounds(10, 50, 240, 60);
+
+        expiryDayEnter6.setEditable(false);
+        expiryDayEnter6.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryDayEnter6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryDayEnter6.setText("D");
+        expiryDayEnter6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                expiryDayEnter6ActionPerformed(evt);
+            }
+        });
+        kGradientPanel8.add(expiryDayEnter6);
+        expiryDayEnter6.setBounds(110, 30, 20, 20);
+
+        dash6.setEditable(false);
+        dash6.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        dash6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        dash6.setText("/");
+        dash6.setBorder(null);
+        dash6.setOpaque(false);
+        kGradientPanel8.add(dash6);
+        dash6.setBounds(140, 30, 20, 20);
+
+        expiryMonthEnter6.setEditable(false);
+        expiryMonthEnter6.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryMonthEnter6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryMonthEnter6.setText("M");
+        kGradientPanel8.add(expiryMonthEnter6);
+        expiryMonthEnter6.setBounds(170, 30, 21, 20);
+
+        expiryYearEnter6.setEditable(false);
+        expiryYearEnter6.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        expiryYearEnter6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        expiryYearEnter6.setText("Y");
+        kGradientPanel8.add(expiryYearEnter6);
+        expiryYearEnter6.setBounds(230, 30, 20, 20);
+
+        Title44.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title44.setForeground(new java.awt.Color(255, 255, 255));
+        Title44.setText("Location:");
+        kGradientPanel8.add(Title44);
+        Title44.setBounds(270, 10, 90, 60);
+
+        fnameV6.setEditable(false);
+        fnameV6.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
+        kGradientPanel8.add(fnameV6);
+        fnameV6.setBounds(370, 30, 150, 30);
+
+        incidentReports19.setEditable(false);
+        incidentReports19.setColumns(20);
+        incidentReports19.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports19.setRows(5);
+        jScrollPane20.setViewportView(incidentReports19);
+
+        kGradientPanel8.add(jScrollPane20);
+        jScrollPane20.setBounds(10, 240, 520, 140);
+
+        Title45.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title45.setForeground(new java.awt.Color(255, 255, 255));
+        Title45.setText("Repairs Given:");
+        kGradientPanel8.add(Title45);
+        Title45.setBounds(10, 190, 240, 60);
+
+        Title46.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title46.setForeground(new java.awt.Color(255, 255, 255));
+        Title46.setText("Rating:");
+        kGradientPanel8.add(Title46);
+        Title46.setBounds(10, 370, 100, 70);
+
+        jRadioButton31.setText("1 Star");
+        jRadioButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton31ActionPerformed(evt);
+            }
+        });
+        kGradientPanel8.add(jRadioButton31);
+        jRadioButton31.setBounds(90, 400, 80, 20);
+
+        jRadioButton32.setText("2 Stars");
+        jRadioButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton32ActionPerformed(evt);
+            }
+        });
+        kGradientPanel8.add(jRadioButton32);
+        jRadioButton32.setBounds(170, 400, 90, 20);
+
+        jRadioButton33.setText("3 Stars");
+        jRadioButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton33ActionPerformed(evt);
+            }
+        });
+        kGradientPanel8.add(jRadioButton33);
+        jRadioButton33.setBounds(260, 400, 90, 20);
+
+        jRadioButton34.setText("4 Stars");
+        jRadioButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton34ActionPerformed(evt);
+            }
+        });
+        kGradientPanel8.add(jRadioButton34);
+        jRadioButton34.setBounds(350, 400, 90, 20);
+
+        jRadioButton35.setText("5 Stars");
+        jRadioButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton35ActionPerformed(evt);
+            }
+        });
+        kGradientPanel8.add(jRadioButton35);
+        jRadioButton35.setBounds(440, 400, 90, 20);
+
+        incidentReports20.setEditable(false);
+        incidentReports20.setColumns(20);
+        incidentReports20.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
+        incidentReports20.setRows(5);
+        jScrollPane21.setViewportView(incidentReports20);
+
+        kGradientPanel8.add(jScrollPane21);
+        jScrollPane21.setBounds(10, 460, 520, 90);
+
+        Title47.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title47.setForeground(new java.awt.Color(255, 255, 255));
+        Title47.setText("Customer Feedback:");
+        kGradientPanel8.add(Title47);
+        Title47.setBounds(10, 410, 250, 70);
+
         jTabbedPane1.addTab("Report 7", kGradientPanel8);
 
         kGradientPanel1.add(jTabbedPane1);
         jTabbedPane1.setBounds(0, 70, 550, 880);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Help Requests", "View Past Report Responses", "Log-out" }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Make Report", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
             }
         });
         kGradientPanel1.add(DropM);
-        DropM.setBounds(320, 10, 220, 60);
+        DropM.setBounds(300, 10, 240, 60);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
 
-        setBounds(0, 0, 572, 1006);
+        setBounds(0, 0, 572, 749);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
@@ -322,42 +1349,214 @@ public class WorkerReport extends javax.swing.JFrame {
 
     private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
 
-        if((String)DropM.getSelectedItem() == "Log-out")
+        if((String)DropM.getSelectedItem() == "Menu")
+        {
+            this.setVisible(false);
+
+            customerMainFrame cust = new customerMainFrame();
+            cust.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Vehicle/s")
+        {
+            this.setVisible(false);
+
+            viewVehicle pay = new viewVehicle();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Add Vehicle")
+        {
+            this.setVisible(false);
+
+            addVehicle addV = new addVehicle();
+            addV.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "See Quotes")
+        {
+            this.setVisible(false);
+
+            seeQuotes pay = new seeQuotes();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Log-out")
         {
             this.setVisible(false);
 
             logInFrame log = new logInFrame();
             log.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "Edit Profile")
-        {
-            this.setVisible(false);
-
-            WorkerEditDetails ed = new WorkerEditDetails();
-            ed.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Help Requests")
-        {
-            this.setVisible(false);
-
-            ViewRequestHelp req = new ViewRequestHelp();
-            req.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Past Report Responses")
+        else if((String)DropM.getSelectedItem() == "View Past Report")
         {
             this.setVisible(false);
 
             WorkerReport rep = new WorkerReport();
             rep.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "Menu")
+        else if((String)DropM.getSelectedItem() == "Make Report")
         {
             this.setVisible(false);
 
-            WorkerMainFrame work = new WorkerMainFrame();
-            work.setVisible(true);
+            makeReportW RepMake = new makeReportW();
+            RepMake.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
         }
     }//GEN-LAST:event_DropMActionPerformed
+
+    private void expiryDayEnter1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnter1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_expiryDayEnter1ActionPerformed
+
+    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton6ActionPerformed
+
+    private void jRadioButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton7ActionPerformed
+
+    private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton8ActionPerformed
+
+    private void jRadioButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton9ActionPerformed
+
+    private void jRadioButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton10ActionPerformed
+
+    private void expiryDayEnter2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnter2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_expiryDayEnter2ActionPerformed
+
+    private void jRadioButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton11ActionPerformed
+
+    private void jRadioButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton12ActionPerformed
+
+    private void jRadioButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton13ActionPerformed
+
+    private void jRadioButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton14ActionPerformed
+
+    private void jRadioButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton15ActionPerformed
+
+    private void expiryDayEnter3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnter3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_expiryDayEnter3ActionPerformed
+
+    private void jRadioButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton16ActionPerformed
+
+    private void jRadioButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton17ActionPerformed
+
+    private void jRadioButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton18ActionPerformed
+
+    private void jRadioButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton19ActionPerformed
+
+    private void jRadioButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton20ActionPerformed
+
+    private void expiryDayEnter4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnter4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_expiryDayEnter4ActionPerformed
+
+    private void jRadioButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton21ActionPerformed
+
+    private void jRadioButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton22ActionPerformed
+
+    private void jRadioButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton23ActionPerformed
+
+    private void jRadioButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton24ActionPerformed
+
+    private void jRadioButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton25ActionPerformed
+
+    private void expiryDayEnter5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnter5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_expiryDayEnter5ActionPerformed
+
+    private void jRadioButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton26ActionPerformed
+
+    private void jRadioButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton27ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton27ActionPerformed
+
+    private void jRadioButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton28ActionPerformed
+
+    private void jRadioButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton29ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton29ActionPerformed
+
+    private void jRadioButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton30ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton30ActionPerformed
+
+    private void expiryDayEnter6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnter6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_expiryDayEnter6ActionPerformed
+
+    private void jRadioButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton31ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton31ActionPerformed
+
+    private void jRadioButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton32ActionPerformed
+
+    private void jRadioButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton33ActionPerformed
+
+    private void jRadioButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton34ActionPerformed
+
+    private void jRadioButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton35ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -398,27 +1597,159 @@ public class WorkerReport extends javax.swing.JFrame {
     private javax.swing.JComboBox DropM;
     private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title11;
+    private javax.swing.JLabel Title12;
+    private javax.swing.JLabel Title13;
+    private javax.swing.JLabel Title14;
+    private javax.swing.JLabel Title15;
+    private javax.swing.JLabel Title16;
+    private javax.swing.JLabel Title17;
+    private javax.swing.JLabel Title18;
+    private javax.swing.JLabel Title19;
+    private javax.swing.JLabel Title20;
+    private javax.swing.JLabel Title21;
+    private javax.swing.JLabel Title22;
+    private javax.swing.JLabel Title23;
+    private javax.swing.JLabel Title24;
+    private javax.swing.JLabel Title25;
+    private javax.swing.JLabel Title26;
+    private javax.swing.JLabel Title27;
+    private javax.swing.JLabel Title28;
+    private javax.swing.JLabel Title29;
+    private javax.swing.JLabel Title30;
+    private javax.swing.JLabel Title31;
+    private javax.swing.JLabel Title32;
+    private javax.swing.JLabel Title33;
+    private javax.swing.JLabel Title34;
+    private javax.swing.JLabel Title35;
+    private javax.swing.JLabel Title36;
+    private javax.swing.JLabel Title37;
+    private javax.swing.JLabel Title38;
+    private javax.swing.JLabel Title39;
+    private javax.swing.JLabel Title40;
+    private javax.swing.JLabel Title41;
+    private javax.swing.JLabel Title42;
+    private javax.swing.JLabel Title43;
+    private javax.swing.JLabel Title44;
+    private javax.swing.JLabel Title45;
+    private javax.swing.JLabel Title46;
+    private javax.swing.JLabel Title47;
     private javax.swing.JLabel Title5;
     private javax.swing.JLabel Title6;
     private javax.swing.JLabel Title7;
     private javax.swing.JLabel Title8;
     private javax.swing.JLabel Title9;
     private javax.swing.JTextField dash;
+    private javax.swing.JTextField dash1;
+    private javax.swing.JTextField dash2;
+    private javax.swing.JTextField dash3;
+    private javax.swing.JTextField dash4;
+    private javax.swing.JTextField dash5;
+    private javax.swing.JTextField dash6;
     private javax.swing.JTextField expiryDayEnter;
+    private javax.swing.JTextField expiryDayEnter1;
+    private javax.swing.JTextField expiryDayEnter2;
+    private javax.swing.JTextField expiryDayEnter3;
+    private javax.swing.JTextField expiryDayEnter4;
+    private javax.swing.JTextField expiryDayEnter5;
+    private javax.swing.JTextField expiryDayEnter6;
     private javax.swing.JTextField expiryMonthEnter;
+    private javax.swing.JTextField expiryMonthEnter1;
+    private javax.swing.JTextField expiryMonthEnter2;
+    private javax.swing.JTextField expiryMonthEnter3;
+    private javax.swing.JTextField expiryMonthEnter4;
+    private javax.swing.JTextField expiryMonthEnter5;
+    private javax.swing.JTextField expiryMonthEnter6;
     private javax.swing.JTextField expiryYearEnter;
+    private javax.swing.JTextField expiryYearEnter1;
+    private javax.swing.JTextField expiryYearEnter2;
+    private javax.swing.JTextField expiryYearEnter3;
+    private javax.swing.JTextField expiryYearEnter4;
+    private javax.swing.JTextField expiryYearEnter5;
+    private javax.swing.JTextField expiryYearEnter6;
     private javax.swing.JTextField fnameV;
+    private javax.swing.JTextField fnameV1;
+    private javax.swing.JTextField fnameV2;
+    private javax.swing.JTextField fnameV3;
+    private javax.swing.JTextField fnameV4;
+    private javax.swing.JTextField fnameV5;
+    private javax.swing.JTextField fnameV6;
     private javax.swing.JTextArea incidentReports;
+    private javax.swing.JTextArea incidentReports1;
+    private javax.swing.JTextArea incidentReports10;
+    private javax.swing.JTextArea incidentReports11;
+    private javax.swing.JTextArea incidentReports12;
+    private javax.swing.JTextArea incidentReports13;
+    private javax.swing.JTextArea incidentReports14;
+    private javax.swing.JTextArea incidentReports15;
+    private javax.swing.JTextArea incidentReports16;
+    private javax.swing.JTextArea incidentReports17;
+    private javax.swing.JTextArea incidentReports18;
+    private javax.swing.JTextArea incidentReports19;
     private javax.swing.JTextArea incidentReports2;
+    private javax.swing.JTextArea incidentReports20;
     private javax.swing.JTextArea incidentReports3;
+    private javax.swing.JTextArea incidentReports4;
+    private javax.swing.JTextArea incidentReports5;
+    private javax.swing.JTextArea incidentReports6;
+    private javax.swing.JTextArea incidentReports7;
+    private javax.swing.JTextArea incidentReports8;
+    private javax.swing.JTextArea incidentReports9;
     private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton10;
+    private javax.swing.JRadioButton jRadioButton11;
+    private javax.swing.JRadioButton jRadioButton12;
+    private javax.swing.JRadioButton jRadioButton13;
+    private javax.swing.JRadioButton jRadioButton14;
+    private javax.swing.JRadioButton jRadioButton15;
+    private javax.swing.JRadioButton jRadioButton16;
+    private javax.swing.JRadioButton jRadioButton17;
+    private javax.swing.JRadioButton jRadioButton18;
+    private javax.swing.JRadioButton jRadioButton19;
     private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton20;
+    private javax.swing.JRadioButton jRadioButton21;
+    private javax.swing.JRadioButton jRadioButton22;
+    private javax.swing.JRadioButton jRadioButton23;
+    private javax.swing.JRadioButton jRadioButton24;
+    private javax.swing.JRadioButton jRadioButton25;
+    private javax.swing.JRadioButton jRadioButton26;
+    private javax.swing.JRadioButton jRadioButton27;
+    private javax.swing.JRadioButton jRadioButton28;
+    private javax.swing.JRadioButton jRadioButton29;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton30;
+    private javax.swing.JRadioButton jRadioButton31;
+    private javax.swing.JRadioButton jRadioButton32;
+    private javax.swing.JRadioButton jRadioButton33;
+    private javax.swing.JRadioButton jRadioButton34;
+    private javax.swing.JRadioButton jRadioButton35;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JRadioButton jRadioButton6;
+    private javax.swing.JRadioButton jRadioButton7;
+    private javax.swing.JRadioButton jRadioButton8;
+    private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane15;
+    private javax.swing.JScrollPane jScrollPane16;
+    private javax.swing.JScrollPane jScrollPane17;
+    private javax.swing.JScrollPane jScrollPane18;
+    private javax.swing.JScrollPane jScrollPane19;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane20;
+    private javax.swing.JScrollPane jScrollPane21;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private keeptoo.KGradientPanel kGradientPanel2;

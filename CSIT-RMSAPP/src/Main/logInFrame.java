@@ -116,7 +116,7 @@ public class logInFrame extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(logIn);
-        logIn.setBounds(250, 480, 170, 50);
+        logIn.setBounds(350, 480, 170, 50);
 
         Title3.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title3.setForeground(new java.awt.Color(255, 255, 255));
@@ -155,9 +155,9 @@ public class logInFrame extends javax.swing.JFrame {
         create1.setBounds(330, 590, 210, 60);
 
         getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 950);
+        kGradientPanel1.setBounds(0, 0, 550, 710);
 
-        setBounds(0, 0, 572, 1006);
+        setBounds(0, 0, 572, 747);
     }// </editor-fold>//GEN-END:initComponents
 
     private void userEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userEnterActionPerformed

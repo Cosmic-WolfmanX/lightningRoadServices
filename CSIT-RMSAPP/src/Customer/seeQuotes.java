@@ -101,7 +101,7 @@ public class seeQuotes extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(550, 950));
         setName("MainFrame"); // NOI18N
         setResizable(false);
-        setSize(new java.awt.Dimension(550, 950));
+        setSize(new java.awt.Dimension(900, 950));
         getContentPane().setLayout(null);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
@@ -113,7 +113,7 @@ public class seeQuotes extends javax.swing.JFrame {
         Title5.setForeground(new java.awt.Color(255, 255, 255));
         Title5.setText("Lighting Road Assistance");
         kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 290, 80);
+        Title5.setBounds(10, 0, 290, 80);
 
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel2.setkGradientFocus(750);
@@ -168,7 +168,7 @@ public class seeQuotes extends javax.swing.JFrame {
         Title35.setForeground(new java.awt.Color(255, 255, 255));
         Title35.setText("Certificates:");
         kGradientPanel2.add(Title35);
-        Title35.setBounds(10, 310, 240, 70);
+        Title35.setBounds(10, 270, 240, 70);
 
         certs.setEditable(false);
         certs.setColumns(20);
@@ -177,7 +177,7 @@ public class seeQuotes extends javax.swing.JFrame {
         jScrollPane5.setViewportView(certs);
 
         kGradientPanel2.add(jScrollPane5);
-        jScrollPane5.setBounds(10, 370, 520, 140);
+        jScrollPane5.setBounds(10, 320, 520, 140);
 
         jRadioButton14.setText("1 Star");
         jRadioButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -186,7 +186,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton14);
-        jRadioButton14.setBounds(20, 570, 80, 29);
+        jRadioButton14.setBounds(10, 500, 80, 23);
 
         jRadioButton15.setText("2 Stars");
         jRadioButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -195,13 +195,13 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton15);
-        jRadioButton15.setBounds(100, 570, 90, 29);
+        jRadioButton15.setBounds(90, 500, 90, 23);
 
         Title36.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title36.setForeground(new java.awt.Color(255, 255, 255));
         Title36.setText("Average Rating:");
         kGradientPanel2.add(Title36);
-        Title36.setBounds(20, 510, 240, 70);
+        Title36.setBounds(10, 440, 240, 70);
 
         jRadioButton16.setText("4 Stars");
         jRadioButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +210,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton16);
-        jRadioButton16.setBounds(280, 570, 90, 29);
+        jRadioButton16.setBounds(270, 500, 90, 23);
 
         jRadioButton17.setText("3 Stars");
         jRadioButton17.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +219,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton17);
-        jRadioButton17.setBounds(190, 570, 90, 29);
+        jRadioButton17.setBounds(180, 500, 90, 23);
 
         jRadioButton18.setText("5 Stars");
         jRadioButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -228,7 +228,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(jRadioButton18);
-        jRadioButton18.setBounds(370, 570, 90, 29);
+        jRadioButton18.setBounds(360, 500, 90, 23);
 
         create.setBackground(new java.awt.Color(51, 51, 255));
         create.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -244,7 +244,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel2.add(create);
-        create.setBounds(140, 770, 390, 60);
+        create.setBounds(140, 540, 390, 60);
 
         jTabbedPane1.addTab("Quote One", kGradientPanel2);
 
@@ -290,7 +290,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel3.add(jRadioButton9);
-        jRadioButton9.setBounds(20, 570, 80, 29);
+        jRadioButton9.setBounds(20, 570, 80, 23);
 
         jRadioButton10.setText("2 Stars");
         jRadioButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -299,7 +299,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel3.add(jRadioButton10);
-        jRadioButton10.setBounds(100, 570, 90, 29);
+        jRadioButton10.setBounds(100, 570, 90, 23);
 
         Title30.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title30.setForeground(new java.awt.Color(255, 255, 255));
@@ -314,7 +314,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel3.add(jRadioButton11);
-        jRadioButton11.setBounds(280, 570, 90, 29);
+        jRadioButton11.setBounds(280, 570, 90, 23);
 
         jRadioButton12.setText("3 Stars");
         jRadioButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -323,7 +323,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel3.add(jRadioButton12);
-        jRadioButton12.setBounds(190, 570, 90, 29);
+        jRadioButton12.setBounds(190, 570, 90, 23);
 
         jRadioButton13.setText("5 Stars");
         jRadioButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -332,7 +332,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel3.add(jRadioButton13);
-        jRadioButton13.setBounds(370, 570, 90, 29);
+        jRadioButton13.setBounds(370, 570, 90, 23);
 
         serviceWorkName1.setEditable(false);
         serviceWorkName1.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -429,7 +429,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel4.add(jRadioButton2);
-        jRadioButton2.setBounds(20, 570, 80, 29);
+        jRadioButton2.setBounds(20, 570, 80, 23);
 
         jRadioButton3.setText("2 Stars");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -438,7 +438,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel4.add(jRadioButton3);
-        jRadioButton3.setBounds(100, 570, 90, 29);
+        jRadioButton3.setBounds(100, 570, 90, 23);
 
         jRadioButton4.setText("3 Stars");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -447,7 +447,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel4.add(jRadioButton4);
-        jRadioButton4.setBounds(190, 570, 90, 29);
+        jRadioButton4.setBounds(190, 570, 90, 23);
 
         jRadioButton8.setText("4 Stars");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -456,7 +456,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel4.add(jRadioButton8);
-        jRadioButton8.setBounds(280, 570, 90, 29);
+        jRadioButton8.setBounds(280, 570, 90, 23);
 
         jRadioButton1.setText("5 Stars");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -465,7 +465,7 @@ public class seeQuotes extends javax.swing.JFrame {
             }
         });
         kGradientPanel4.add(jRadioButton1);
-        jRadioButton1.setBounds(370, 570, 90, 29);
+        jRadioButton1.setBounds(370, 570, 90, 23);
 
         serviceWorkName2.setEditable(false);
         serviceWorkName2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -518,19 +518,19 @@ public class seeQuotes extends javax.swing.JFrame {
         jTabbedPane1.setBounds(0, 70, 550, 880);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Log-out" }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "Make Report", "View Past Reports", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
             }
         });
         kGradientPanel1.add(DropM);
-        DropM.setBounds(310, 10, 230, 60);
+        DropM.setBounds(300, 10, 240, 60);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
 
-        setBounds(0, 0, 572, 1006);
+        setBounds(0, 0, 572, 750);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
@@ -654,6 +654,13 @@ public class seeQuotes extends javax.swing.JFrame {
             logInFrame log = new logInFrame();
             log.setVisible(true);
         }
+        else if((String)DropM.getSelectedItem() == "Make Report")
+        {
+            this.setVisible(false);
+
+            makeReport rep = new makeReport();
+            rep.setVisible(true);
+        }
         else if((String)DropM.getSelectedItem() == "View Past Report")
         {
             this.setVisible(false);
@@ -668,7 +675,6 @@ public class seeQuotes extends javax.swing.JFrame {
             CustomerEditDetails edit = new CustomerEditDetails();
             edit.setVisible(true);
         }
-
     }//GEN-LAST:event_DropMActionPerformed
 
     /**

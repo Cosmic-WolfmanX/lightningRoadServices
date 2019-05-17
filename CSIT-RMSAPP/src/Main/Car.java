@@ -16,6 +16,7 @@ public class Car {
     public String carMake;
     public String carModel;
     public int modelYear;
+    
     public String[] carMakes = {"Acura","Audi","BMW","Buick","Chevrolet","Dodge","Ford","GMC","Honda","Infiniti","Jaguar","Jeep","Kia","Lexus","Mercedes-Benz"};
     //carMakes size = 15
     

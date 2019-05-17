@@ -61,6 +61,7 @@ public class sendQuote extends javax.swing.JFrame {
         kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setMinimumSize(new java.awt.Dimension(550, 710));
         kGradientPanel1.setLayout(null);
 
         Title5.setFont(new java.awt.Font("Georgia", 1, 22)); // NOI18N
@@ -142,12 +143,12 @@ public class sendQuote extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(create);
-        create.setBounds(140, 870, 390, 60);
+        create.setBounds(140, 590, 390, 60);
 
         getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 950);
+        kGradientPanel1.setBounds(0, 0, 550, 710);
 
-        setBounds(0, 0, 572, 1006);
+        setBounds(0, 0, 572, 753);
     }// </editor-fold>//GEN-END:initComponents
 
     private void createActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createActionPerformed

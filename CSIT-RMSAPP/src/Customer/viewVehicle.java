@@ -340,10 +340,10 @@ public class viewVehicle extends javax.swing.JFrame {
         jTabbedPane1.addTab("Vehicle Four", kGradientPanel8);
 
         kGradientPanel1.add(jTabbedPane1);
-        jTabbedPane1.setBounds(0, 70, 550, 920);
+        jTabbedPane1.setBounds(0, 70, 550, 540);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Log-out" }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "Make Report", "View Past Reports", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
@@ -355,7 +355,7 @@ public class viewVehicle extends javax.swing.JFrame {
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 990);
 
-        setBounds(0, 0, 572, 1050);
+        setBounds(0, 0, 572, 748);
     }// </editor-fold>//GEN-END:initComponents
 
     private void getProfilePic1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePic1ActionPerformed
@@ -418,6 +418,13 @@ public class viewVehicle extends javax.swing.JFrame {
             logInFrame log = new logInFrame();
             log.setVisible(true);
         }
+        else if((String)DropM.getSelectedItem() == "Make Report")
+        {
+            this.setVisible(false);
+
+            makeReport rep = new makeReport();
+            rep.setVisible(true);
+        }
         else if((String)DropM.getSelectedItem() == "View Past Report")
         {
             this.setVisible(false);
@@ -432,7 +439,6 @@ public class viewVehicle extends javax.swing.JFrame {
             CustomerEditDetails edit = new CustomerEditDetails();
             edit.setVisible(true);
         }
-
     }//GEN-LAST:event_DropMActionPerformed
 
     /**

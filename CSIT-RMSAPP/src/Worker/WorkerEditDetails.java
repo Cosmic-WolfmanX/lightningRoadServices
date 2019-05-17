@@ -55,8 +55,8 @@ public class WorkerEditDetails extends javax.swing.JFrame {
         lNameEnter = new javax.swing.JTextField();
         Title13 = new javax.swing.JLabel();
         emailEnter1 = new javax.swing.JTextField();
-        DropM = new javax.swing.JComboBox();
         jPasswordField1 = new javax.swing.JPasswordField();
+        DropM = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -170,25 +170,25 @@ public class WorkerEditDetails extends javax.swing.JFrame {
         kGradientPanel1.add(emailEnter1);
         emailEnter1.setBounds(210, 370, 210, 30);
 
+        jPasswordField1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        jPasswordField1.setText("jPasswordField1");
+        kGradientPanel1.add(jPasswordField1);
+        jPasswordField1.setBounds(210, 410, 210, 30);
+
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Help Requests", "View Past Report Responses", "Log-out" }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Make Report", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
             }
         });
         kGradientPanel1.add(DropM);
-        DropM.setBounds(320, 10, 220, 60);
-
-        jPasswordField1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
-        jPasswordField1.setText("jPasswordField1");
-        kGradientPanel1.add(jPasswordField1);
-        jPasswordField1.setBounds(210, 410, 210, 30);
+        DropM.setBounds(300, 10, 240, 60);
 
         getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 950);
+        kGradientPanel1.setBounds(0, 0, 560, 610);
 
-        setBounds(0, 0, 572, 1006);
+        setBounds(0, 0, 578, 653);
     }// </editor-fold>//GEN-END:initComponents
 
     private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed
@@ -232,40 +232,68 @@ public class WorkerEditDetails extends javax.swing.JFrame {
 
     private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
 
-        if((String)DropM.getSelectedItem() == "Log-out")
+        if((String)DropM.getSelectedItem() == "Menu")
+        {
+            this.setVisible(false);
+
+            customerMainFrame cust = new customerMainFrame();
+            cust.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Vehicle/s")
+        {
+            this.setVisible(false);
+
+            viewVehicle pay = new viewVehicle();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Add Vehicle")
+        {
+            this.setVisible(false);
+
+            addVehicle addV = new addVehicle();
+            addV.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "See Quotes")
+        {
+            this.setVisible(false);
+
+            seeQuotes pay = new seeQuotes();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Log-out")
         {
             this.setVisible(false);
 
             logInFrame log = new logInFrame();
             log.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "Edit Profile")
-        {
-            this.setVisible(false);
-
-            WorkerEditDetails ed = new WorkerEditDetails();
-            ed.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Help Requests")
-        {
-            this.setVisible(false);
-
-            ViewRequestHelp req = new ViewRequestHelp();
-            req.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Past Report Responses")
+        else if((String)DropM.getSelectedItem() == "View Past Report")
         {
             this.setVisible(false);
 
             WorkerReport rep = new WorkerReport();
             rep.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "Menu")
+        else if((String)DropM.getSelectedItem() == "Make Report")
         {
             this.setVisible(false);
 
-            WorkerMainFrame work = new WorkerMainFrame();
-            work.setVisible(true);
+            makeReportW RepMake = new makeReportW();
+            RepMake.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
         }
     }//GEN-LAST:event_DropMActionPerformed
 

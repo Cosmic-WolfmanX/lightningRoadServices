@@ -97,13 +97,13 @@ public class WorkerMainFrame extends javax.swing.JFrame
         Title3.setForeground(new java.awt.Color(255, 255, 255));
         Title3.setText("First Name:");
         kGradientPanel1.add(Title3);
-        Title3.setBounds(20, 300, 210, 70);
+        Title3.setBounds(20, 170, 210, 70);
 
         Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title4.setForeground(new java.awt.Color(255, 255, 255));
         Title4.setText("Last Name:");
         kGradientPanel1.add(Title4);
-        Title4.setBounds(20, 350, 210, 70);
+        Title4.setBounds(20, 210, 210, 70);
 
         jSeparator1.setBackground(new java.awt.Color(51, 0, 51));
         jSeparator1.setForeground(new java.awt.Color(51, 0, 51));
@@ -113,23 +113,23 @@ public class WorkerMainFrame extends javax.swing.JFrame
         jSeparator1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jSeparator1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         kGradientPanel1.add(jSeparator1);
-        jSeparator1.setBounds(0, 530, 550, 10);
+        jSeparator1.setBounds(0, 360, 550, 10);
 
         Title6.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title6.setForeground(new java.awt.Color(255, 255, 255));
         Title6.setText("Mobile: ");
         kGradientPanel1.add(Title6);
-        Title6.setBounds(20, 410, 210, 70);
+        Title6.setBounds(20, 250, 210, 70);
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
         Title11.setText("Email:");
         kGradientPanel1.add(Title11);
-        Title11.setBounds(20, 470, 210, 70);
+        Title11.setBounds(20, 290, 210, 70);
 
         getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
         kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(20, 20, 200, 220);
+        getProfilePic.setBounds(20, 20, 190, 170);
 
         fnameV.setEditable(false);
         fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -140,19 +140,19 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(fnameV);
-        fnameV.setBounds(210, 310, 210, 40);
+        fnameV.setBounds(210, 190, 210, 40);
 
         emailV.setEditable(false);
         emailV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         emailV.setText(Global.user.email);
         kGradientPanel1.add(emailV);
-        emailV.setBounds(210, 480, 210, 40);
+        emailV.setBounds(210, 310, 210, 40);
 
         mNumberV.setEditable(false);
         mNumberV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         mNumberV.setText(String.valueOf(Global.user.phoneNum));
         kGradientPanel1.add(mNumberV);
-        mNumberV.setBounds(210, 420, 210, 40);
+        mNumberV.setBounds(210, 270, 210, 40);
 
         lNameV.setEditable(false);
         lNameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -163,19 +163,19 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(lNameV);
-        lNameV.setBounds(210, 360, 210, 40);
+        lNameV.setBounds(210, 230, 210, 40);
 
         Title5.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         Title5.setForeground(new java.awt.Color(255, 255, 255));
         Title5.setText("Most Recent Report");
         kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 540, 270, 40);
+        Title5.setBounds(10, 370, 270, 40);
 
         Title9.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title9.setForeground(new java.awt.Color(255, 255, 255));
         Title9.setText("Date:");
         kGradientPanel1.add(Title9);
-        Title9.setBounds(20, 560, 100, 70);
+        Title9.setBounds(10, 380, 100, 70);
 
         expiryDayEnter.setEditable(false);
         expiryDayEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -187,7 +187,7 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(expiryDayEnter);
-        expiryDayEnter.setBounds(100, 580, 30, 30);
+        expiryDayEnter.setBounds(90, 400, 30, 30);
 
         dash.setEditable(false);
         dash.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -196,14 +196,14 @@ public class WorkerMainFrame extends javax.swing.JFrame
         dash.setBorder(null);
         dash.setOpaque(false);
         kGradientPanel1.add(dash);
-        dash.setBounds(130, 580, 30, 30);
+        dash.setBounds(120, 400, 30, 30);
 
         expiryMonthEnter.setEditable(false);
         expiryMonthEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryMonthEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryMonthEnter.setText("M");
         kGradientPanel1.add(expiryMonthEnter);
-        expiryMonthEnter.setBounds(160, 580, 30, 30);
+        expiryMonthEnter.setBounds(150, 400, 30, 30);
 
         dash1.setEditable(false);
         dash1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -212,20 +212,20 @@ public class WorkerMainFrame extends javax.swing.JFrame
         dash1.setBorder(null);
         dash1.setOpaque(false);
         kGradientPanel1.add(dash1);
-        dash1.setBounds(190, 580, 30, 30);
+        dash1.setBounds(180, 400, 30, 30);
 
         expiryYearEnter.setEditable(false);
         expiryYearEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryYearEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryYearEnter.setText("Y");
         kGradientPanel1.add(expiryYearEnter);
-        expiryYearEnter.setBounds(220, 580, 30, 30);
+        expiryYearEnter.setBounds(210, 400, 30, 30);
 
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
         Title7.setText("Repair Details:");
         kGradientPanel1.add(Title7);
-        Title7.setBounds(20, 750, 250, 70);
+        Title7.setBounds(10, 510, 250, 70);
 
         repairReport.setEditable(false);
         repairReport.setColumns(20);
@@ -234,13 +234,13 @@ public class WorkerMainFrame extends javax.swing.JFrame
         jScrollPane1.setViewportView(repairReport);
 
         kGradientPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(20, 800, 520, 140);
+        jScrollPane1.setBounds(10, 560, 520, 70);
 
         Title8.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title8.setForeground(new java.awt.Color(255, 255, 255));
         Title8.setText("Incident Details:");
         kGradientPanel1.add(Title8);
-        Title8.setBounds(20, 590, 250, 70);
+        Title8.setBounds(10, 410, 250, 70);
 
         inccidentReport1.setEditable(false);
         inccidentReport1.setColumns(20);
@@ -249,13 +249,13 @@ public class WorkerMainFrame extends javax.swing.JFrame
         jScrollPane2.setViewportView(inccidentReport1);
 
         kGradientPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(20, 640, 520, 130);
+        jScrollPane2.setBounds(10, 460, 520, 70);
 
         Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title12.setForeground(new java.awt.Color(255, 255, 255));
         Title12.setText("Rating:");
         kGradientPanel1.add(Title12);
-        Title12.setBounds(20, 930, 100, 70);
+        Title12.setBounds(10, 610, 100, 70);
 
         jRadioButton2.setText("1 Star");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -264,7 +264,7 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(100, 950, 80, 29);
+        jRadioButton2.setBounds(90, 640, 80, 23);
 
         jRadioButton3.setText("2 Stars");
         jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -273,7 +273,7 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(180, 950, 90, 29);
+        jRadioButton3.setBounds(170, 640, 90, 23);
 
         jRadioButton4.setText("3 Stars");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -282,7 +282,7 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(270, 950, 90, 29);
+        jRadioButton4.setBounds(260, 640, 90, 23);
 
         jRadioButton5.setText("4 Stars");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -291,7 +291,7 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(jRadioButton5);
-        jRadioButton5.setBounds(360, 950, 90, 29);
+        jRadioButton5.setBounds(350, 640, 90, 23);
 
         jRadioButton1.setText("5 Stars");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -300,22 +300,22 @@ public class WorkerMainFrame extends javax.swing.JFrame
             }
         });
         kGradientPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(450, 950, 90, 29);
+        jRadioButton1.setBounds(440, 640, 90, 23);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Help Requests", "View Past Report Responses", "Log-out" }));
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Make Report", "Log-out" }));
         DropM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DropMActionPerformed(evt);
             }
         });
         kGradientPanel1.add(DropM);
-        DropM.setBounds(320, 10, 220, 60);
+        DropM.setBounds(300, 10, 240, 60);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 1050);
 
-        setBounds(0, 0, 572, 1050);
+        setBounds(0, 0, 572, 749);
     }// </editor-fold>//GEN-END:initComponents
 
     private void expiryDayEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expiryDayEnterActionPerformed
@@ -352,40 +352,68 @@ public class WorkerMainFrame extends javax.swing.JFrame
 
     private void DropMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DropMActionPerformed
 
-        if((String)DropM.getSelectedItem() == "Log-out")
+        if((String)DropM.getSelectedItem() == "Menu")
+        {
+            this.setVisible(false);
+
+            customerMainFrame cust = new customerMainFrame();
+            cust.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "View Vehicle/s")
+        {
+            this.setVisible(false);
+
+            viewVehicle pay = new viewVehicle();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Add Vehicle")
+        {
+            this.setVisible(false);
+
+            addVehicle addV = new addVehicle();
+            addV.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "See Quotes")
+        {
+            this.setVisible(false);
+
+            seeQuotes pay = new seeQuotes();
+            pay.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Log-out")
         {
             this.setVisible(false);
 
             logInFrame log = new logInFrame();
             log.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "Edit Profile")
-        {
-            this.setVisible(false);
-
-            WorkerEditDetails ed = new WorkerEditDetails();
-            ed.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Help Requests")
-        {
-            this.setVisible(false);
-
-            ViewRequestHelp req = new ViewRequestHelp();
-            req.setVisible(true);
-        }
-        else if((String)DropM.getSelectedItem() == "View Past Report Responses")
+        else if((String)DropM.getSelectedItem() == "View Past Report")
         {
             this.setVisible(false);
 
             WorkerReport rep = new WorkerReport();
             rep.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "Menu")
+        else if((String)DropM.getSelectedItem() == "Make Report")
         {
             this.setVisible(false);
 
-            WorkerMainFrame work = new WorkerMainFrame();
-            work.setVisible(true);
+            makeReportW RepMake = new makeReportW();
+            RepMake.setVisible(true);
+        }
+        else if((String)DropM.getSelectedItem() == "Edit Profile")
+        {
+            this.setVisible(false);
+
+            CustomerEditDetails edit = new CustomerEditDetails();
+            edit.setVisible(true);
         }
     }//GEN-LAST:event_DropMActionPerformed
 
