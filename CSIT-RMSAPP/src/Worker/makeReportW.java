@@ -37,7 +37,6 @@ public class makeReportW extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title5 = new javax.swing.JLabel();
         DropM = new javax.swing.JComboBox();
         dash = new javax.swing.JTextField();
         Title10 = new javax.swing.JLabel();
@@ -55,6 +54,8 @@ public class makeReportW extends javax.swing.JFrame {
         createU2 = new javax.swing.JButton();
         Title12 = new javax.swing.JLabel();
         CustomerNameEnt = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -68,12 +69,6 @@ public class makeReportW extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(550, 710));
         kGradientPanel1.setLayout(null);
-
-        Title5.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title5.setForeground(new java.awt.Color(255, 255, 255));
-        Title5.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 320, 80);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "View Past Reports", "Make Report", "Log-out" }));
@@ -92,13 +87,13 @@ public class makeReportW extends javax.swing.JFrame {
         dash.setBorder(null);
         dash.setOpaque(false);
         kGradientPanel1.add(dash);
-        dash.setBounds(200, 90, 30, 30);
+        dash.setBounds(200, 120, 30, 30);
 
         Title10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title10.setForeground(new java.awt.Color(255, 255, 255));
         Title10.setText("Date:");
         kGradientPanel1.add(Title10);
-        Title10.setBounds(10, 70, 100, 70);
+        Title10.setBounds(10, 100, 100, 70);
 
         dash7.setEditable(false);
         dash7.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
@@ -107,32 +102,32 @@ public class makeReportW extends javax.swing.JFrame {
         dash7.setBorder(null);
         dash7.setOpaque(false);
         kGradientPanel1.add(dash7);
-        dash7.setBounds(140, 90, 30, 30);
+        dash7.setBounds(140, 120, 30, 30);
 
         expiryDayEnter.setEditable(false);
         expiryDayEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryDayEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryDayEnter.setText("D");
         kGradientPanel1.add(expiryDayEnter);
-        expiryDayEnter.setBounds(110, 90, 30, 30);
+        expiryDayEnter.setBounds(110, 120, 30, 30);
 
         expiryYearEnter.setEditable(false);
         expiryYearEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         expiryYearEnter.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         expiryYearEnter.setText("Y");
         kGradientPanel1.add(expiryYearEnter);
-        expiryYearEnter.setBounds(230, 90, 30, 30);
+        expiryYearEnter.setBounds(230, 120, 30, 30);
 
         Title9.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title9.setForeground(new java.awt.Color(255, 255, 255));
         Title9.setText("Location:");
         kGradientPanel1.add(Title9);
-        Title9.setBounds(270, 70, 100, 70);
+        Title9.setBounds(270, 100, 100, 70);
 
         fnameV.setEditable(false);
         fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         kGradientPanel1.add(fnameV);
-        fnameV.setBounds(370, 90, 160, 40);
+        fnameV.setBounds(370, 120, 160, 40);
 
         incidentReports2.setEditable(false);
         incidentReports2.setColumns(20);
@@ -179,12 +174,22 @@ public class makeReportW extends javax.swing.JFrame {
         Title12.setForeground(new java.awt.Color(255, 255, 255));
         Title12.setText("Customers Name:");
         kGradientPanel1.add(Title12);
-        Title12.setBounds(10, 140, 190, 70);
+        Title12.setBounds(10, 150, 190, 70);
 
         CustomerNameEnt.setEditable(false);
         CustomerNameEnt.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         kGradientPanel1.add(CustomerNameEnt);
-        CustomerNameEnt.setBounds(220, 160, 160, 40);
+        CustomerNameEnt.setBounds(220, 170, 160, 40);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Create Report");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(90, 0, 300, 80);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 710);
@@ -300,7 +305,7 @@ public class makeReportW extends javax.swing.JFrame {
     private javax.swing.JComboBox DropM;
     private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title12;
-    private javax.swing.JLabel Title5;
+    private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title6;
     private javax.swing.JLabel Title7;
     private javax.swing.JLabel Title9;
@@ -312,6 +317,7 @@ public class makeReportW extends javax.swing.JFrame {
     private javax.swing.JTextField fnameV;
     private javax.swing.JTextArea incidentReports;
     private javax.swing.JTextArea incidentReports2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private keeptoo.KGradientPanel kGradientPanel1;

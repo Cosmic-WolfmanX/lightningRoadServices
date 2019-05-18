@@ -36,7 +36,6 @@ public class makeReport extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title5 = new javax.swing.JLabel();
         DropM = new javax.swing.JComboBox();
         dash = new javax.swing.JTextField();
         Title10 = new javax.swing.JLabel();
@@ -64,6 +63,8 @@ public class makeReport extends javax.swing.JFrame {
         createU2 = new javax.swing.JButton();
         workerNameEnt = new javax.swing.JTextField();
         Title12 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -76,12 +77,6 @@ public class makeReport extends javax.swing.JFrame {
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
-
-        Title5.setFont(new java.awt.Font("Georgia", 1, 20)); // NOI18N
-        Title5.setForeground(new java.awt.Color(255, 255, 255));
-        Title5.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 260, 80);
 
         DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "Make Report", "View Past Reports", "Log-out" }));
@@ -242,6 +237,16 @@ public class makeReport extends javax.swing.JFrame {
         kGradientPanel1.add(Title12);
         Title12.setBounds(10, 130, 190, 70);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Create a Report");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(90, 0, 300, 80);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 940);
 
@@ -355,7 +360,7 @@ public class makeReport extends javax.swing.JFrame {
     private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title11;
     private javax.swing.JLabel Title12;
-    private javax.swing.JLabel Title5;
+    private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title6;
     private javax.swing.JLabel Title7;
     private javax.swing.JLabel Title8;
@@ -370,6 +375,7 @@ public class makeReport extends javax.swing.JFrame {
     private javax.swing.JTextArea incidentReports;
     private javax.swing.JTextArea incidentReports2;
     private javax.swing.JTextArea incidentReports3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;

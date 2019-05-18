@@ -36,7 +36,6 @@ public class seeQuotes extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title5 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         serviceWorkName = new javax.swing.JTextField();
@@ -96,6 +95,8 @@ public class seeQuotes extends javax.swing.JFrame {
         certs2 = new javax.swing.JTextArea();
         create2 = new javax.swing.JButton();
         DropM = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -108,12 +109,6 @@ public class seeQuotes extends javax.swing.JFrame {
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
-
-        Title5.setFont(new java.awt.Font("Georgia", 1, 22)); // NOI18N
-        Title5.setForeground(new java.awt.Color(255, 255, 255));
-        Title5.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title5);
-        Title5.setBounds(10, 0, 290, 80);
 
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel2.setkGradientFocus(750);
@@ -527,6 +522,16 @@ public class seeQuotes extends javax.swing.JFrame {
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("View Quotes");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(90, 0, 300, 80);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
 
@@ -715,6 +720,7 @@ public class seeQuotes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox DropM;
     private javax.swing.JLabel Title19;
+    private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title20;
     private javax.swing.JLabel Title21;
     private javax.swing.JLabel Title22;
@@ -732,7 +738,6 @@ public class seeQuotes extends javax.swing.JFrame {
     private javax.swing.JLabel Title34;
     private javax.swing.JLabel Title35;
     private javax.swing.JLabel Title36;
-    private javax.swing.JLabel Title5;
     private javax.swing.JTextField aBn;
     private javax.swing.JTextField aBn1;
     private javax.swing.JTextField aBn2;
@@ -745,6 +750,7 @@ public class seeQuotes extends javax.swing.JFrame {
     private javax.swing.JButton create;
     private javax.swing.JButton create1;
     private javax.swing.JButton create2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
     private javax.swing.JRadioButton jRadioButton11;

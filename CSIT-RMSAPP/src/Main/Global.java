@@ -21,6 +21,7 @@ public class Global {
     public static URL workerReportsURL;
     public static URL requestsURL;
     public static URL quotesURL;
+    public static URL selectPhotoURL;
     public static int numCustomers;
     public static int numWorkers;
     

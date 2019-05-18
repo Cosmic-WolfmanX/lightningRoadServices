@@ -36,7 +36,6 @@ public class customerPayments extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title5 = new javax.swing.JLabel();
         Title10 = new javax.swing.JLabel();
         expiryDayEnter = new javax.swing.JTextField();
         dash1 = new javax.swing.JTextField();
@@ -60,6 +59,8 @@ public class customerPayments extends javax.swing.JFrame {
         Title19 = new javax.swing.JLabel();
         costView2 = new javax.swing.JTextField();
         serviceWorkName2 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -72,12 +73,6 @@ public class customerPayments extends javax.swing.JFrame {
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
-
-        Title5.setFont(new java.awt.Font("Georgia", 1, 22)); // NOI18N
-        Title5.setForeground(new java.awt.Color(255, 255, 255));
-        Title5.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 310, 80);
 
         Title10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title10.setForeground(new java.awt.Color(255, 255, 255));
@@ -234,6 +229,16 @@ public class customerPayments extends javax.swing.JFrame {
         kGradientPanel1.add(serviceWorkName2);
         serviceWorkName2.setBounds(310, 200, 160, 40);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Pay");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(120, 0, 300, 80);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 710);
 
@@ -284,8 +289,8 @@ public class customerPayments extends javax.swing.JFrame {
     private javax.swing.JLabel Title11;
     private javax.swing.JLabel Title12;
     private javax.swing.JLabel Title19;
+    private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title21;
-    private javax.swing.JLabel Title5;
     private javax.swing.JLabel Title7;
     private javax.swing.JLabel Title8;
     private javax.swing.JLabel Title9;
@@ -303,6 +308,7 @@ public class customerPayments extends javax.swing.JFrame {
     private javax.swing.JTextField expiryYearEnter;
     private javax.swing.JTextField expiryYearEnter1;
     private javax.swing.JTextField fnameV;
+    private javax.swing.JLabel jLabel1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private javax.swing.JTextField serviceWorkName2;
     // End of variables declaration//GEN-END:variables

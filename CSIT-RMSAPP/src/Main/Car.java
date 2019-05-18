@@ -16,6 +16,7 @@ public class Car {
     public String carMake;
     public String carModel;
     public int modelYear;
+    public String imageLoc;
     
     public String[] carMakes = {"Acura","Audi","BMW","Buick","Chevrolet","Dodge","Ford","GMC","Honda","Infiniti","Jaguar","Jeep","Kia","Lexus","Mercedes-Benz"};
     //carMakes size = 15
@@ -45,6 +46,7 @@ public class Car {
             this.licenseNum = s.toString();
         }
         //fill car make field
+        this.imageLoc = "undefined";
         this.carMake = carMakes[rand.nextInt(15)];
         this.carModel = carModels[rand.nextInt(7)];
         this.modelYear = modelYears[rand.nextInt(30)];

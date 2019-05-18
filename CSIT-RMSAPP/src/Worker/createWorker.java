@@ -53,7 +53,6 @@ public class createWorker extends javax.swing.JFrame {
         Title4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         Title11 = new javax.swing.JLabel();
-        getProfilePic = new javax.swing.JButton();
         emailEnter = new javax.swing.JTextField();
         lNameEnter = new javax.swing.JTextField();
         mobileEnter = new javax.swing.JTextField();
@@ -62,12 +61,12 @@ public class createWorker extends javax.swing.JFrame {
         Title7 = new javax.swing.JLabel();
         fNameEnter = new javax.swing.JTextField();
         Title13 = new javax.swing.JLabel();
-        emailEnter1 = new javax.swing.JTextField();
+        certsEnter = new javax.swing.JTextField();
         Title35 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        certs = new javax.swing.JTextArea();
         Title8 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
+        abnEnter1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -76,7 +75,6 @@ public class createWorker extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 710));
         setName("MainFrame"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(550, 710));
         setResizable(false);
         setSize(new java.awt.Dimension(550, 710));
         getContentPane().setLayout(null);
@@ -90,9 +88,9 @@ public class createWorker extends javax.swing.JFrame {
 
         Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Lighting Road Assistance");
+        Title2.setText("Create Worker");
         kGradientPanel1.add(Title2);
-        Title2.setBounds(240, 0, 300, 80);
+        Title2.setBounds(200, 60, 300, 80);
 
         Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title4.setForeground(new java.awt.Color(255, 255, 255));
@@ -116,15 +114,6 @@ public class createWorker extends javax.swing.JFrame {
         Title11.setText("Email:");
         kGradientPanel1.add(Title11);
         Title11.setBounds(20, 360, 210, 70);
-
-        getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
-        getProfilePic.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                getProfilePicActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(20, 20, 210, 170);
 
         emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(emailEnter);
@@ -176,24 +165,15 @@ public class createWorker extends javax.swing.JFrame {
         kGradientPanel1.add(Title13);
         Title13.setBounds(10, 410, 210, 70);
 
-        emailEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
-        kGradientPanel1.add(emailEnter1);
-        emailEnter1.setBounds(210, 430, 210, 30);
+        certsEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        kGradientPanel1.add(certsEnter);
+        certsEnter.setBounds(10, 500, 520, 130);
 
         Title35.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title35.setForeground(new java.awt.Color(255, 255, 255));
         Title35.setText("Certificates:");
         kGradientPanel1.add(Title35);
         Title35.setBounds(10, 450, 240, 70);
-
-        certs.setEditable(false);
-        certs.setColumns(20);
-        certs.setFont(new java.awt.Font("Georgia", 0, 14)); // NOI18N
-        certs.setRows(5);
-        jScrollPane5.setViewportView(certs);
-
-        kGradientPanel1.add(jScrollPane5);
-        jScrollPane5.setBounds(10, 500, 520, 140);
 
         Title8.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title8.setForeground(new java.awt.Color(255, 255, 255));
@@ -202,9 +182,16 @@ public class createWorker extends javax.swing.JFrame {
         Title8.setBounds(20, 270, 210, 70);
 
         jPasswordField1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
-        jPasswordField1.setText("jPasswordField1");
         kGradientPanel1.add(jPasswordField1);
         jPasswordField1.setBounds(210, 290, 210, 30);
+
+        abnEnter1.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
+        kGradientPanel1.add(abnEnter1);
+        abnEnter1.setBounds(210, 430, 210, 30);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.png"))); // NOI18N
+        kGradientPanel1.add(jLabel2);
+        jLabel2.setBounds(30, 30, 120, 120);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 710);
@@ -212,39 +199,26 @@ public class createWorker extends javax.swing.JFrame {
         setBounds(0, 0, 572, 751);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed
-        try
-        {
-            Desktop desktop = null;
-            if (Desktop.isDesktopSupported())
-            {
-              desktop = Desktop.getDesktop();
-            }
-
-            desktop.open(new File("C:\\Users\\codym\\Pictures"));
-        } 
-        catch (IOException ioe) 
-        {
-            ioe.printStackTrace();
-        }
-        
-        URL url = null;
-        /*try 
-        {
-            url = new URL("C:\\Users\\codym\\Pictures\\818.png");
-        } 
-        catch (MalformedURLException ex)
-        {
-            Logger.getLogger(createCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Toolkit kit = Toolkit.getDefaultToolkit();
-        Image img = kit.createImage(url);
-        this.setIconImage(img);*/
-        
-    }//GEN-LAST:event_getProfilePicActionPerformed
-
     private void createUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUActionPerformed
-
+        String firstName = fNameEnter.getText();
+        String lastName = lNameEnter.getText();
+        String password = jPasswordField1.getText();
+        long mobile = Long.valueOf(mobileEnter.getText().trim());
+        String email = emailEnter.getText();
+        long abnNum = Long.valueOf(abnEnter1.getText().trim());
+        String certs = certsEnter.getText();
+        
+        
+        
+        WorkerRecord newWorker = Global.data.add_worker(firstName, lastName, password, mobile, email, abnNum,certs);
+        currentUser user = new currentUser(newWorker.id,Global.data);
+        Global.user = user;
+        
+        this.setVisible(false);
+        WorkerMainFrame work = new WorkerMainFrame();
+        work.setVisible(true);
+        //take data and store into CSV File
+        //move to customer bio 
         //take data and store into CSV File
         //move to customer bio 
 
@@ -294,15 +268,14 @@ public class createWorker extends javax.swing.JFrame {
     private javax.swing.JLabel Title4;
     private javax.swing.JLabel Title7;
     private javax.swing.JLabel Title8;
-    private javax.swing.JTextArea certs;
+    private javax.swing.JTextField abnEnter1;
+    private javax.swing.JTextField certsEnter;
     private javax.swing.JButton createU;
     private javax.swing.JTextField emailEnter;
-    private javax.swing.JTextField emailEnter1;
     private javax.swing.JTextField fNameEnter;
-    private javax.swing.JButton getProfilePic;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
     private keeptoo.KGradientPanel kGradientPanel1;

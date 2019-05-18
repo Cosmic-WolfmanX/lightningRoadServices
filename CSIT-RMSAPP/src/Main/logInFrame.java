@@ -51,6 +51,7 @@ public class logInFrame extends javax.swing.JFrame {
         Title4 = new javax.swing.JLabel();
         passEnter = new javax.swing.JPasswordField();
         create1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -67,9 +68,9 @@ public class logInFrame extends javax.swing.JFrame {
 
         Title1.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         Title1.setForeground(new java.awt.Color(255, 255, 255));
-        Title1.setText("Lighting Road Assistance");
+        Title1.setText("Lightning Road Services");
         kGradientPanel1.add(Title1);
-        Title1.setBounds(230, 0, 390, 90);
+        Title1.setBounds(130, 20, 310, 90);
 
         userEnter.setFont(new java.awt.Font("Georgia", 0, 18)); // NOI18N
         userEnter.setBorder(null);
@@ -79,7 +80,7 @@ public class logInFrame extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(userEnter);
-        userEnter.setBounds(160, 360, 220, 40);
+        userEnter.setBounds(160, 360, 300, 40);
 
         create.setBackground(new java.awt.Color(51, 51, 255));
         create.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -95,7 +96,7 @@ public class logInFrame extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(create);
-        create.setBounds(10, 590, 210, 60);
+        create.setBounds(10, 640, 210, 60);
 
         logIn.setBackground(new java.awt.Color(255, 153, 0));
         logIn.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -116,19 +117,19 @@ public class logInFrame extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(logIn);
-        logIn.setBounds(350, 480, 170, 50);
+        logIn.setBounds(340, 460, 170, 50);
 
         Title3.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title3.setForeground(new java.awt.Color(255, 255, 255));
-        Title3.setText("Pass - Word:");
+        Title3.setText("Password:");
         kGradientPanel1.add(Title3);
-        Title3.setBounds(30, 410, 210, 70);
+        Title3.setBounds(50, 400, 210, 70);
 
         Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title4.setForeground(new java.awt.Color(255, 255, 255));
-        Title4.setText("User - Name:");
+        Title4.setText("Username:");
         kGradientPanel1.add(Title4);
-        Title4.setBounds(30, 350, 210, 70);
+        Title4.setBounds(50, 340, 210, 70);
 
         passEnter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +137,7 @@ public class logInFrame extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(passEnter);
-        passEnter.setBounds(160, 420, 220, 40);
+        passEnter.setBounds(160, 410, 300, 40);
 
         create1.setBackground(new java.awt.Color(51, 51, 255));
         create1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -152,7 +153,11 @@ public class logInFrame extends javax.swing.JFrame {
             }
         });
         kGradientPanel1.add(create1);
-        create1.setBounds(330, 590, 210, 60);
+        create1.setBounds(330, 640, 210, 60);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoBig.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(150, 80, 280, 250);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 710);
@@ -293,14 +298,6 @@ public class logInFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
         DataCollection randomData = Global.data;
-        try
-        {
-            randomData.writeToCSV();
-        }
-        catch(IOException f)
-        {
-            f.printStackTrace();
-        }
 
 
         /* Create and display the form */
@@ -317,6 +314,7 @@ public class logInFrame extends javax.swing.JFrame {
     private javax.swing.JLabel Title4;
     private javax.swing.JButton create;
     private javax.swing.JButton create1;
+    private javax.swing.JLabel jLabel1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private javax.swing.JButton logIn;
     private javax.swing.JPasswordField passEnter;

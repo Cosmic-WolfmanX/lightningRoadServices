@@ -15,6 +15,15 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.filechooser.FileSystemView;
+import java.io.InputStream;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -30,7 +39,10 @@ public class addVehicle extends javax.swing.JFrame {
 
     /**
      * Creates new form logInFrame
+     * 
      */
+    public Boolean enteredPicture = false;
+    public String theFileLoc;
     public addVehicle() 
     {
         initComponents();
@@ -48,7 +60,6 @@ public class addVehicle extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title2 = new javax.swing.JLabel();
         getProfilePic = new javax.swing.JButton();
         Title12 = new javax.swing.JLabel();
         fNameEnter = new javax.swing.JTextField();
@@ -60,6 +71,8 @@ public class addVehicle extends javax.swing.JFrame {
         Title11 = new javax.swing.JLabel();
         createU = new javax.swing.JButton();
         DropM = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -78,12 +91,6 @@ public class addVehicle extends javax.swing.JFrame {
         kGradientPanel1.setPreferredSize(new java.awt.Dimension(550, 1050));
         kGradientPanel1.setLayout(null);
 
-        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title2);
-        Title2.setBounds(20, 0, 300, 80);
-
         getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
         getProfilePic.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,27 +102,27 @@ public class addVehicle extends javax.swing.JFrame {
 
         Title12.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title12.setForeground(new java.awt.Color(255, 255, 255));
-        Title12.setText("Vehicle Modle:");
+        Title12.setText("Vehicle Model:");
         kGradientPanel1.add(Title12);
-        Title12.setBounds(30, 100, 210, 70);
+        Title12.setBounds(30, 120, 210, 70);
 
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(fNameEnter);
-        fNameEnter.setBounds(220, 120, 210, 30);
+        fNameEnter.setBounds(220, 140, 210, 30);
 
         lNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(lNameEnter);
-        lNameEnter.setBounds(220, 160, 210, 30);
+        lNameEnter.setBounds(220, 180, 210, 30);
 
         Title4.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title4.setForeground(new java.awt.Color(255, 255, 255));
         Title4.setText("Vehicle Make:");
         kGradientPanel1.add(Title4);
-        Title4.setBounds(30, 140, 210, 70);
+        Title4.setBounds(30, 160, 210, 70);
 
         Title7.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title7.setForeground(new java.awt.Color(255, 255, 255));
-        Title7.setText("Year:");
+        Title7.setText("Year Manufactured:");
         kGradientPanel1.add(Title7);
         Title7.setBounds(30, 210, 210, 70);
 
@@ -129,7 +136,7 @@ public class addVehicle extends javax.swing.JFrame {
 
         Title11.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title11.setForeground(new java.awt.Color(255, 255, 255));
-        Title11.setText("Regostration:");
+        Title11.setText("License Plate#:");
         kGradientPanel1.add(Title11);
         Title11.setBounds(30, 250, 210, 70);
 
@@ -159,6 +166,16 @@ public class addVehicle extends javax.swing.JFrame {
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Add Vehicle");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(100, 0, 300, 80);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 750);
 
@@ -166,38 +183,80 @@ public class addVehicle extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed
-        try
+
+        Desktop desktop = null;
+        if (Desktop.isDesktopSupported())
         {
-            Desktop desktop = null;
-            if (Desktop.isDesktopSupported())
-            {
-                desktop = Desktop.getDesktop();
+            desktop = Desktop.getDesktop();
+        }
+        //String SelectPhotoURLString = Global.data.formatURLToString(Global.selectPhotoURL);
+        //desktop.open(new File(SelectPhotoURLString));
+        JFileChooser chooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        int returnValue = chooser.showOpenDialog(null);
+        chooser.setDialogType(JFileChooser.SAVE_DIALOG);
+        //FileNameExtensionFilter filter = new FileNameExtensionFilter("jpeg images only","jpg");
+        //chooser.setFileFilter(filter);
+
+        if (returnValue == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = chooser.getSelectedFile();
+            String extension = "";
+            String absolutePath = selectedFile.getAbsolutePath();
+            int i = absolutePath.lastIndexOf('.');
+            if (i > 0) {
+            extension = absolutePath.substring(i+1);
             }
+            if(!extension.equals("jpg")){
+                JOptionPane.showMessageDialog(null, "JPG files only");
 
-            desktop.open(new File("C:\\Users\\codym\\Pictures"));
-        }
-        catch (IOException ioe)
-        {
-            ioe.printStackTrace();
+            }
+            else{
+                System.out.println(selectedFile.getAbsolutePath());
+                try
+                {
+                    Image img = ImageIO.read(selectedFile.toURL());
+                    theFileLoc = absolutePath;
+                    getProfilePic.setIcon(new ImageIcon(img));
+                    enteredPicture = true;
+                }
+                catch(IOException f)
+                {
+                    f.printStackTrace();
+                }
+            }
         }
 
-        URL url = null;
-        /*try
-        {
-            url = new URL("C:\\Users\\codym\\Pictures\\818.png");
-        }
-        catch (MalformedURLException ex)
-        {
-            Logger.getLogger(createCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Toolkit kit = Toolkit.getDefaultToolkit();
-        Image img = kit.createImage(url);
-        this.setIconImage(img);*/
+
+
+    URL url = null;
+    /*try
+    {
+        url = new URL("C:\\Users\\codym\\Pictures\\818.png");
+    }
+    catch (MalformedURLException ex)
+    {
+        Logger.getLogger(createCustomer.class.getName()).log(Level.SEVERE, null, ex);
+    }
+    Toolkit kit = Toolkit.getDefaultToolkit();
+    Image img = kit.createImage(url);
+    this.setIconImage(img);*/
 
     }//GEN-LAST:event_getProfilePicActionPerformed
 
     private void createUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUActionPerformed
 
+        String model = fNameEnter.getText().trim();
+        String make = lNameEnter.getText().trim();
+        int year = Integer.valueOf(mobileEnter.getText().trim());
+        String licenseNum = emailEnter.getText();
+        String fileLoc = "";
+        if(enteredPicture){
+            fileLoc = theFileLoc;
+        }
+        Global.data.add_vehicle(model, make, year, licenseNum,fileLoc);
+        this.setVisible(false);
+        customerMainFrame cust = new customerMainFrame();
+        cust.setVisible(true);
+        
         //take data and store into CSV File
         //move to customer bio
     }//GEN-LAST:event_createUActionPerformed
@@ -315,6 +374,7 @@ public class addVehicle extends javax.swing.JFrame {
     private javax.swing.JTextField emailEnter;
     private javax.swing.JTextField fNameEnter;
     private javax.swing.JButton getProfilePic;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private keeptoo.KGradientPanel kGradientPanel1;

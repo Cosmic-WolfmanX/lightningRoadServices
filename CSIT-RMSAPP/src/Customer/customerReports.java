@@ -36,7 +36,6 @@ public class customerReports extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title5 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         dash = new javax.swing.JTextField();
@@ -137,6 +136,8 @@ public class customerReports extends javax.swing.JFrame {
         jScrollPane20 = new javax.swing.JScrollPane();
         incidentReports19 = new javax.swing.JTextArea();
         DropM = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -149,12 +150,6 @@ public class customerReports extends javax.swing.JFrame {
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
-
-        Title5.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title5.setForeground(new java.awt.Color(255, 255, 255));
-        Title5.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 320, 80);
 
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel2.setkGradientFocus(750);
@@ -792,6 +787,16 @@ public class customerReports extends javax.swing.JFrame {
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Reports");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(90, 0, 300, 80);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
 
@@ -937,6 +942,7 @@ public class customerReports extends javax.swing.JFrame {
     private javax.swing.JLabel Title15;
     private javax.swing.JLabel Title18;
     private javax.swing.JLabel Title19;
+    private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title20;
     private javax.swing.JLabel Title21;
     private javax.swing.JLabel Title24;
@@ -955,7 +961,6 @@ public class customerReports extends javax.swing.JFrame {
     private javax.swing.JLabel Title43;
     private javax.swing.JLabel Title44;
     private javax.swing.JLabel Title45;
-    private javax.swing.JLabel Title5;
     private javax.swing.JLabel Title6;
     private javax.swing.JLabel Title7;
     private javax.swing.JLabel Title9;
@@ -1008,6 +1013,7 @@ public class customerReports extends javax.swing.JFrame {
     private javax.swing.JTextArea incidentReports6;
     private javax.swing.JTextArea incidentReports7;
     private javax.swing.JTextArea incidentReports9;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;

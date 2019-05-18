@@ -37,7 +37,6 @@ public class sendQuote extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title5 = new javax.swing.JLabel();
         Title21 = new javax.swing.JLabel();
         serviceWorkName2 = new javax.swing.JTextField();
         costView2 = new javax.swing.JTextField();
@@ -50,6 +49,8 @@ public class sendQuote extends javax.swing.JFrame {
         jScrollPane6 = new javax.swing.JScrollPane();
         certs2 = new javax.swing.JTextArea();
         create = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -64,44 +65,38 @@ public class sendQuote extends javax.swing.JFrame {
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(550, 710));
         kGradientPanel1.setLayout(null);
 
-        Title5.setFont(new java.awt.Font("Georgia", 1, 22)); // NOI18N
-        Title5.setForeground(new java.awt.Color(255, 255, 255));
-        Title5.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title5);
-        Title5.setBounds(20, 0, 310, 80);
-
         Title21.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title21.setForeground(new java.awt.Color(255, 255, 255));
         Title21.setText("Service Worker Name:");
         kGradientPanel1.add(Title21);
-        Title21.setBounds(20, 110, 240, 70);
+        Title21.setBounds(20, 130, 240, 70);
 
         serviceWorkName2.setEditable(false);
         serviceWorkName2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         kGradientPanel1.add(serviceWorkName2);
-        serviceWorkName2.setBounds(310, 120, 160, 40);
+        serviceWorkName2.setBounds(310, 140, 160, 40);
 
         costView2.setEditable(false);
         costView2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         kGradientPanel1.add(costView2);
-        costView2.setBounds(310, 170, 160, 40);
+        costView2.setBounds(310, 190, 160, 40);
 
         Title19.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title19.setForeground(new java.awt.Color(255, 255, 255));
         Title19.setText("Cost:");
         kGradientPanel1.add(Title19);
-        Title19.setBounds(20, 160, 170, 70);
+        Title19.setBounds(20, 180, 170, 70);
 
         Title20.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title20.setForeground(new java.awt.Color(255, 255, 255));
         Title20.setText("Approximite Time Till Arrival:");
         kGradientPanel1.add(Title20);
-        Title20.setBounds(20, 210, 290, 70);
+        Title20.setBounds(20, 230, 290, 70);
 
         timeTill2.setEditable(false);
         timeTill2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
         kGradientPanel1.add(timeTill2);
-        timeTill2.setBounds(310, 220, 160, 40);
+        timeTill2.setBounds(310, 240, 160, 40);
 
         aBn2.setEditable(false);
         aBn2.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -144,6 +139,16 @@ public class sendQuote extends javax.swing.JFrame {
         });
         kGradientPanel1.add(create);
         create.setBounds(140, 590, 390, 60);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 120, 120);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Send a Quote");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(140, 0, 300, 80);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 710);
@@ -192,15 +197,16 @@ public class sendQuote extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Title19;
+    private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title20;
     private javax.swing.JLabel Title21;
     private javax.swing.JLabel Title22;
     private javax.swing.JLabel Title23;
-    private javax.swing.JLabel Title5;
     private javax.swing.JTextField aBn2;
     private javax.swing.JTextArea certs2;
     private javax.swing.JTextField costView2;
     private javax.swing.JButton create;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane6;
     private keeptoo.KGradientPanel kGradientPanel1;
     private javax.swing.JTextField serviceWorkName2;

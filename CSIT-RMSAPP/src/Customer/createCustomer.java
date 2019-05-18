@@ -54,7 +54,6 @@ public class createCustomer extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         Title6 = new javax.swing.JLabel();
         Title11 = new javax.swing.JLabel();
-        getProfilePic = new javax.swing.JButton();
         emailEnter = new javax.swing.JTextField();
         lNameEnter = new javax.swing.JTextField();
         mobileEnter = new javax.swing.JTextField();
@@ -79,6 +78,7 @@ public class createCustomer extends javax.swing.JFrame {
         Title14 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         Title13 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -99,9 +99,9 @@ public class createCustomer extends javax.swing.JFrame {
 
         Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Lighting Road Assistance");
+        Title2.setText("Create Customer");
         kGradientPanel1.add(Title2);
-        Title2.setBounds(240, 20, 300, 80);
+        Title2.setBounds(200, 50, 300, 80);
 
         Title3.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title3.setForeground(new java.awt.Color(255, 255, 255));
@@ -137,15 +137,6 @@ public class createCustomer extends javax.swing.JFrame {
         Title11.setText("Email:");
         kGradientPanel1.add(Title11);
         Title11.setBounds(20, 350, 210, 70);
-
-        getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
-        getProfilePic.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                getProfilePicActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(20, 20, 190, 170);
 
         emailEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         kGradientPanel1.add(emailEnter);
@@ -299,42 +290,15 @@ public class createCustomer extends javax.swing.JFrame {
         kGradientPanel1.add(Title13);
         Title13.setBounds(20, 270, 210, 70);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(30, 30, 120, 120);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 710);
 
         setBounds(0, 0, 572, 749);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed
-        try
-        {
-            Desktop desktop = null;
-            if (Desktop.isDesktopSupported())
-            {
-              desktop = Desktop.getDesktop();
-            }
-
-            desktop.open(new File("C:\\Users\\codym\\Pictures"));
-        } 
-        catch (IOException ioe) 
-        {
-            ioe.printStackTrace();
-        }
-        
-        URL url = null;
-        /*try 
-        {
-            url = new URL("C:\\Users\\codym\\Pictures\\818.png");
-        } 
-        catch (MalformedURLException ex)
-        {
-            Logger.getLogger(createCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Toolkit kit = Toolkit.getDefaultToolkit();
-        Image img = kit.createImage(url);
-        this.setIconImage(img);*/
-        
-    }//GEN-LAST:event_getProfilePicActionPerformed
 
     private void createUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUActionPerformed
         String firstName = fNameEnter.getText();
@@ -437,8 +401,8 @@ public class createCustomer extends javax.swing.JFrame {
     private javax.swing.JTextField expiryMonthEnter;
     private javax.swing.JTextField expiryYearEnter;
     private javax.swing.JTextField fNameEnter;
-    private javax.swing.JButton getProfilePic;
     private javax.swing.JRadioButton gold;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;

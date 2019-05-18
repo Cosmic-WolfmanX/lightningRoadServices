@@ -40,8 +40,6 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        getProfilePic = new javax.swing.JButton();
-        Title2 = new javax.swing.JLabel();
         fNameEnter = new javax.swing.JTextField();
         Title12 = new javax.swing.JLabel();
         Title7 = new javax.swing.JLabel();
@@ -73,33 +71,21 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         Title16 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         DropM = new javax.swing.JComboBox();
+        jLabel2 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
+        Title17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(900, 950));
+        setMinimumSize(new java.awt.Dimension(550, 710));
         setName("MainFrame"); // NOI18N
         setResizable(false);
-        setSize(new java.awt.Dimension(550, 950));
+        setSize(new java.awt.Dimension(550, 710));
         getContentPane().setLayout(null);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 0));
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
-
-        getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
-        getProfilePic.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                getProfilePicActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(30, 20, 190, 160);
-
-        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title2);
-        Title2.setBounds(230, 70, 300, 80);
 
         fNameEnter.setFont(new java.awt.Font("Georgia", 0, 16)); // NOI18N
         fNameEnter.setText(Global.user.firstName);
@@ -318,42 +304,27 @@ public class CustomerEditDetails extends javax.swing.JFrame {
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.png"))); // NOI18N
+        kGradientPanel1.add(jLabel2);
+        jLabel2.setBounds(10, 10, 120, 120);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Edit Details");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(140, 10, 300, 80);
+
+        Title17.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title17.setForeground(new java.awt.Color(255, 255, 255));
+        Title17.setText("Username: " + Global.user.userName + " (cannot change)");
+        kGradientPanel1.add(Title17);
+        Title17.setBounds(200, 120, 320, 70);
+
         getContentPane().add(kGradientPanel1);
-        kGradientPanel1.setBounds(0, 0, 550, 710);
+        kGradientPanel1.setBounds(0, 0, 550, 700);
 
-        setBounds(0, 0, 572, 748);
+        setBounds(0, 0, 572, 743);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void getProfilePicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getProfilePicActionPerformed
-        try
-        {
-            Desktop desktop = null;
-            if (Desktop.isDesktopSupported())
-            {
-                desktop = Desktop.getDesktop();
-            }
-
-            desktop.open(new File("C:\\Users\\codym\\Pictures"));
-        }
-        catch (IOException ioe)
-        {
-            ioe.printStackTrace();
-        }
-
-        URL url = null;
-        /*try
-        {
-            url = new URL("C:\\Users\\codym\\Pictures\\818.png");
-        }
-        catch (MalformedURLException ex)
-        {
-            Logger.getLogger(createCustomer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Toolkit kit = Toolkit.getDefaultToolkit();
-        Image img = kit.createImage(url);
-        this.setIconImage(img);*/
-
-    }//GEN-LAST:event_getProfilePicActionPerformed
 
     private void createUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUActionPerformed
         String firstName = fNameEnter.getText();
@@ -505,6 +476,7 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     private javax.swing.JLabel Title14;
     private javax.swing.JLabel Title15;
     private javax.swing.JLabel Title16;
+    private javax.swing.JLabel Title17;
     private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title4;
     private javax.swing.JLabel Title5;
@@ -522,9 +494,9 @@ public class CustomerEditDetails extends javax.swing.JFrame {
     private javax.swing.JTextField expiryMonthEnter;
     private javax.swing.JTextField expiryYearEnter;
     private javax.swing.JTextField fNameEnter;
-    private javax.swing.JButton getProfilePic;
     private javax.swing.JRadioButton gold;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private keeptoo.KGradientPanel kGradientPanel1;

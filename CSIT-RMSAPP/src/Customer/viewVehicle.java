@@ -48,7 +48,6 @@ public class viewVehicle extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title2 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         fNameEnter2 = new javax.swing.JTextField();
@@ -91,6 +90,8 @@ public class viewVehicle extends javax.swing.JFrame {
         Title37 = new javax.swing.JLabel();
         Title38 = new javax.swing.JLabel();
         DropM = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -108,12 +109,6 @@ public class viewVehicle extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setPreferredSize(new java.awt.Dimension(550, 1050));
         kGradientPanel1.setLayout(null);
-
-        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title2);
-        Title2.setBounds(20, 0, 300, 80);
 
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel2.setkGradientFocus(750);
@@ -159,7 +154,7 @@ public class viewVehicle extends javax.swing.JFrame {
 
         Title16.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title16.setForeground(new java.awt.Color(255, 255, 255));
-        Title16.setText("Regostration:");
+        Title16.setText("License Plate#:");
         kGradientPanel2.add(Title16);
         Title16.setBounds(20, 220, 210, 70);
 
@@ -352,6 +347,16 @@ public class viewVehicle extends javax.swing.JFrame {
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("My Vehicles");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(90, 0, 300, 80);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 990);
 
@@ -507,6 +512,7 @@ public class viewVehicle extends javax.swing.JFrame {
     private javax.swing.JButton getProfilePic2;
     private javax.swing.JButton getProfilePic3;
     private javax.swing.JButton getProfilePic4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;

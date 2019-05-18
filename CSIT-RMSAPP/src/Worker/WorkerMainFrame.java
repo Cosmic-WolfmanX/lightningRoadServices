@@ -54,7 +54,6 @@ public class WorkerMainFrame extends javax.swing.JFrame
         jSeparator1 = new javax.swing.JSeparator();
         Title6 = new javax.swing.JLabel();
         Title11 = new javax.swing.JLabel();
-        getProfilePic = new javax.swing.JButton();
         fnameV = new javax.swing.JTextField();
         emailV = new javax.swing.JTextField();
         mNumberV = new javax.swing.JTextField();
@@ -79,6 +78,9 @@ public class WorkerMainFrame extends javax.swing.JFrame
         jRadioButton5 = new javax.swing.JRadioButton();
         jRadioButton1 = new javax.swing.JRadioButton();
         DropM = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
+        Title10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -126,10 +128,6 @@ public class WorkerMainFrame extends javax.swing.JFrame
         Title11.setText("Email:");
         kGradientPanel1.add(Title11);
         Title11.setBounds(20, 290, 210, 70);
-
-        getProfilePic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/blank-profile1.png"))); // NOI18N
-        kGradientPanel1.add(getProfilePic);
-        getProfilePic.setBounds(20, 20, 190, 170);
 
         fnameV.setEditable(false);
         fnameV.setFont(new java.awt.Font("Garamond", 0, 18)); // NOI18N
@@ -312,6 +310,22 @@ public class WorkerMainFrame extends javax.swing.JFrame
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmall.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(30, 60, 120, 120);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("LRS Home");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(20, -10, 300, 80);
+
+        Title10.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title10.setForeground(new java.awt.Color(255, 255, 255));
+        Title10.setText("Username: " + Global.user.userName);
+        kGradientPanel1.add(Title10);
+        Title10.setBounds(260, 120, 210, 70);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 1050);
 
@@ -454,8 +468,10 @@ public class WorkerMainFrame extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox DropM;
+    private javax.swing.JLabel Title10;
     private javax.swing.JLabel Title11;
     private javax.swing.JLabel Title12;
+    private javax.swing.JLabel Title2;
     private javax.swing.JLabel Title3;
     private javax.swing.JLabel Title4;
     private javax.swing.JLabel Title5;
@@ -470,8 +486,8 @@ public class WorkerMainFrame extends javax.swing.JFrame
     private javax.swing.JTextField expiryMonthEnter;
     private javax.swing.JTextField expiryYearEnter;
     private javax.swing.JTextField fnameV;
-    private javax.swing.JButton getProfilePic;
     private javax.swing.JTextArea inccidentReport1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;

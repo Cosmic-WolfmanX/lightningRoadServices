@@ -43,7 +43,6 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title2 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         jScrollPane8 = new javax.swing.JScrollPane();
@@ -126,6 +125,8 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         create = new javax.swing.JButton();
         DropM = new javax.swing.JComboBox();
+        jLabel2 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         jSeparator1.setBackground(new java.awt.Color(51, 0, 51));
         jSeparator1.setForeground(new java.awt.Color(51, 0, 51));
@@ -154,12 +155,6 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         kGradientPanel1.setkGradientFocus(850);
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
-
-        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title2);
-        Title2.setBounds(20, 10, 270, 60);
 
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel2.setkGradientFocus(750);
@@ -675,6 +670,16 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Help Requests");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(90, 0, 300, 80);
+
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 1010);
 
@@ -857,6 +862,7 @@ public class ViewRequestHelp extends javax.swing.JFrame {
     private javax.swing.JTextArea inccidentReport6;
     private javax.swing.JTextArea inccidentReport7;
     private javax.swing.JTextArea inccidentReport8;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;

@@ -42,7 +42,6 @@ public class requestHelp extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         kGradientPanel1 = new keeptoo.KGradientPanel();
-        Title2 = new javax.swing.JLabel();
         Title31 = new javax.swing.JLabel();
         create = new javax.swing.JButton();
         Title15 = new javax.swing.JLabel();
@@ -63,6 +62,8 @@ public class requestHelp extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         Title17 = new javax.swing.JLabel();
         DropM = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
+        Title2 = new javax.swing.JLabel();
 
         jSeparator1.setBackground(new java.awt.Color(51, 0, 51));
         jSeparator1.setForeground(new java.awt.Color(51, 0, 51));
@@ -92,17 +93,11 @@ public class requestHelp extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 255));
         kGradientPanel1.setLayout(null);
 
-        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Lighting Road Assistance");
-        kGradientPanel1.add(Title2);
-        Title2.setBounds(20, 10, 300, 80);
-
         Title31.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Title31.setForeground(new java.awt.Color(255, 255, 255));
         Title31.setText("Location:");
         kGradientPanel1.add(Title31);
-        Title31.setBounds(20, 50, 240, 70);
+        Title31.setBounds(30, 50, 240, 70);
 
         create.setBackground(new java.awt.Color(51, 51, 255));
         create.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -225,6 +220,16 @@ public class requestHelp extends javax.swing.JFrame {
         });
         kGradientPanel1.add(DropM);
         DropM.setBounds(300, 10, 240, 60);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
+        kGradientPanel1.add(jLabel1);
+        jLabel1.setBounds(0, 0, 80, 80);
+
+        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setForeground(new java.awt.Color(255, 255, 255));
+        Title2.setText("Get Help");
+        kGradientPanel1.add(Title2);
+        Title2.setBounds(90, 0, 300, 80);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 860);
@@ -356,6 +361,7 @@ public class requestHelp extends javax.swing.JFrame {
     private javax.swing.JTextField fNameEnter1;
     private javax.swing.JTextArea inccidentReport1;
     private javax.swing.JTextArea inccidentReport2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;

@@ -15,6 +15,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.Path;
 
 
 
@@ -35,6 +38,11 @@ public class DataCollection {
     int creditCardMax = 999999999;
     int creditCardRange = creditCardMax - creditCardMin +1;
     
+    long abnNumMax = 99999999999L;
+    long abnNumMin = 10000000000L;
+    long abnNumRange = abnNumMax - abnNumMin +1;
+    
+    
     int cvvMin = 100;
     int cvvMax = 999;
     int cvvRange = cvvMax - cvvMin +1;
@@ -49,7 +57,7 @@ public class DataCollection {
     int yearRange = yearMax - yearMin +1;
     
     int membershipMin = 1;
-    int membershipMax = 3;
+    int membershipMax = 2;
     int membershipRange = membershipMax - membershipMin +1;
     
     
@@ -93,6 +101,7 @@ public class DataCollection {
             Global.workerReportsURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/WorkerReports.csv", null);
             Global.quotesURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/Quotes.csv", null);
             Global.requestsURL =  new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/Requests.csv", null);
+            Global.selectPhotoURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile(), null);
         }   catch(MalformedURLException e)
         {
             e.printStackTrace();
@@ -104,6 +113,7 @@ public class DataCollection {
         String WorkerReportsURLString = formatURLToString(Global.workerReportsURL);
         String QuotesURLString = formatURLToString(Global.quotesURL);
         String RequestsURLString = formatURLToString(Global.requestsURL);
+        String SelectPhotoURLString = formatURLToString(Global.selectPhotoURL);
         
         File workerRecordsFile = new File(WorkerURLString);
         File customerRecordsFile = new File(CustomerRecordsURLString);
@@ -113,6 +123,7 @@ public class DataCollection {
         File requestsFile = new File(RequestsURLString);
         
         if (workerRecordsFile.exists() && customerRecordsFile.exists() && carsFile.exists() && customerReportsFile.exists() && quotesFile.exists()&& requestsFile.exists()){
+            System.out.println("all files there");
             Global.numCustomers = 0;
             Global.numWorkers = 0;
             try{
@@ -125,6 +136,7 @@ public class DataCollection {
         }
         else
         {
+            System.out.println("regenerating files");
             //create 100 random customers
             for(int i=0;i<100;i++)
             {
@@ -137,9 +149,10 @@ public class DataCollection {
                 //fill bank account number field
                 record.creditCardNum = rand.nextInt(creditCardRange);
                 record.cvv = rand.nextInt(cvvRange);
-                record.membershipStatus = rand.nextInt(membershipRange);
+                record.membershipStatus = rand.nextInt(membershipRange)+1;
                 int month = rand.nextInt(monthRange);
                 int year = rand.nextInt(yearRange);
+                
                 record.creditCardExpiryDate =  String.valueOf(month) + "-"   + String.valueOf(year);
 
 
@@ -183,9 +196,12 @@ public class DataCollection {
             {
                 WorkerRecord record = new WorkerRecord();
                 record.id = i+500;
+                long abnNum = abnNumMin+((long)(rand.nextDouble()*(abnNumMax-abnNumMin)));
+                record.abnNum = abnNum;
                 record.workerFirstName = firstNames[rand.nextInt(17)];
                 record.username =  record.workerFirstName.substring(0,3) + String.valueOf(record.id);
                 record.password = "asdf";
+                record.certs = "None";
                 record.workerLastName = lastNames[rand.nextInt(17)];
                 record.phoneNum = rand.nextInt(phoneRange);
                 record.email = record.workerFirstName + "." + record.workerLastName + "@gmail.com";
@@ -198,6 +214,14 @@ public class DataCollection {
             }
             Global.numCustomers = 100;
             Global.numWorkers = 100;
+            try
+            {
+                writeToCSV();
+            }
+            catch(IOException f)
+            {
+                f.printStackTrace();
+            }
         }
     }
     
@@ -219,7 +243,7 @@ public class DataCollection {
         try{
             br = new BufferedReader(new FileReader(customerRecordsURLString));
             while ((line = br.readLine())!= null){
-                
+
                 //use comma as separator
                 String[] Row = line.split(csvSplitBy);
                 CustomerRecord record = new CustomerRecord();
@@ -231,8 +255,8 @@ public class DataCollection {
                         record.username = Row[3];
                         record.email = Row[4];
                         record.password = Row[5];
-                        record.phoneNum = Integer.valueOf(Row[6]);
-                        record.creditCardNum = Integer.valueOf(Row[7]);
+                        record.phoneNum = Long.valueOf(Row[6]);
+                        record.creditCardNum = Long.valueOf(Row[7]);
                         record.cvv = Integer.valueOf(Row[8]);
                         record.nameOnCreditCard = Row[9];
                         record.creditCardExpiryDate = Row[10];
@@ -262,7 +286,9 @@ public class DataCollection {
                         record.username = Row[3];
                         record.email = Row[4];
                         record.password = Row[5];
-                        record.phoneNum = Integer.valueOf(Row[6]);
+                        record.phoneNum = Long.valueOf(Row[6]);
+                        record.abnNum = Long.valueOf(Row[7]);
+                        record.certs = Row[8];
                         this.WorkerRecords[record.id-500] = record;
                         Global.numWorkers +=1;
                     }
@@ -273,37 +299,66 @@ public class DataCollection {
             line = "";
             br = new BufferedReader(new FileReader(carsURLString));
             while ((line = br.readLine())!= null){
+                String[] Row = line.split(csvSplitBy);
+                if(!Row[0].equals("\"ID\"")){
+                    //System.out.println(Row[0]);
+                    String carID = Row[0];
+                    String custIDString = Row[0].split("\\.")[0];
+                    int custID = Integer.valueOf(custIDString);
+
+                    int numCars = this.CustomerRecords[custID].numcars;
+                    Car theCar = new Car();
+                    theCar.id = carID;
+                    theCar.licenseNum = Row[1];
+                    theCar.carMake = Row[2];
+                    theCar.carModel = Row[3];
+                    theCar.modelYear = Integer.valueOf(Row[4]);
+                    System.out.println(Row[5]);
+                    theCar.imageLoc = Row[5];
+
+                    this.CustomerRecords[custID].cars[numCars] = theCar;
+                    this.CustomerRecords[custID].numcars +=1;
+                }
+            }
+            /*
+            System.out.println(wholeLine);
+            System.out.println(String.valueOf(count) + " lines counted.");
+            br = new BufferedReader(new FileReader(carsURLString));
+            while ((line = br.readLine())!= null){
                 
+                System.out.println(line);
+                System.out.print("yeah");
                 //use comma as separator
                 String[] Row = line.split(csvSplitBy);
-                try{
-                    if(!Row[0].equals("\"ID\"") && !Row[0].equals("")){
-                        String carID = Row[0];
+                System.out.println(Row[0]);
+                if(!Row[0].equals("\"ID\"")){
+                    System.out.println("ping");
+                    System.out.println(Row[0]);
+                    String carID = Row[0];
 
-               
-                        String custIDString = Row[0].split("\\.")[0];
-                        int custID = Integer.valueOf(custIDString);
 
-                        int numCars = this.CustomerRecords[custID].numcars;
-                        Car theCar = new Car();
-                        theCar.id = carID;
-                        theCar.licenseNum = Row[1];
-                        theCar.carMake = Row[2];
-                        theCar.carModel = Row[3];
-                        theCar.modelYear = Integer.valueOf(Row[4]);
+                    String custIDString = Row[0].split("\\.")[0];
+                    int custID = Integer.valueOf(custIDString);
 
-                        this.CustomerRecords[custID].cars[numCars] = theCar;
-                        this.CustomerRecords[custID].numcars +=1;
-                    }
-                }finally{
+                    int numCars = this.CustomerRecords[custID].numcars;
+                    Car theCar = new Car();
+                    theCar.id = carID;
+                    theCar.licenseNum = Row[1];
+                    theCar.carMake = Row[2];
+                    theCar.carModel = Row[3];
+                    theCar.modelYear = Integer.valueOf(Row[4]);
+
+                    this.CustomerRecords[custID].cars[numCars] = theCar;
+                    this.CustomerRecords[custID].numcars +=1;
                 }
-                
+                */
+          
             line = "";
             br = new BufferedReader(new FileReader(customerReportsURLString));
             while ((line = br.readLine())!= null){
                 
                 //use comma as separator
-                Row = line.split(csvSplitBy);
+                String[] Row = line.split(csvSplitBy);
                 try{
                     if(!Row[0].equals("\"customerID\"") && !Row[0].equals("")){
 
@@ -391,7 +446,7 @@ public class DataCollection {
             }
             }
             }
-            }
+            
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -405,11 +460,19 @@ public class DataCollection {
                 }
             }
         }
+        try
+        {
+            writeToCSV();
+        }
+        catch(IOException f)
+        {
+            f.printStackTrace();
+        }
         
     }
     public void writeToCSV() throws java.io.IOException
     {
-        
+        System.out.println("writing");
         URL customerRecordsURL = Global.customerRecordsURL;
         URL carsURL = Global.carsURL;
         URL workerRecordsURL = Global.workerRecordsURL;
@@ -432,7 +495,7 @@ public class DataCollection {
             data += record.cvv + ",";
             data += record.nameOnCreditCard + ",";
             data += record.creditCardExpiryDate + ",";
-            data += record.membershipStatus + ",\n";
+            data += record.membershipStatus + "\n";
         }
         try{
             String fileString = customerRecordsURL.toString();
@@ -449,7 +512,7 @@ public class DataCollection {
         
         
         //write car records
-        data = "\"ID\",\"licenseNum\",\"carMake\",\"carModel\",\"modelYear\"\n";
+        data = "\"ID\",\"licenseNum\",\"carMake\",\"carModel\",\"modelYear\",\"imageLoc\"\n";
         for (int i = 0;i<Global.numCustomers;i++){
             int numCars = CustomerRecords[i].numcars;
             for(int j = 0;j<numCars;j++){
@@ -458,7 +521,8 @@ public class DataCollection {
                 data += car.licenseNum + ",";
                 data += car.carMake + ",";
                 data += car.carModel + ",";
-                data += car.modelYear + "\n";
+                data += car.modelYear + ",";
+                data += car.imageLoc + "\n";
             }
         }
         try{
@@ -475,7 +539,7 @@ public class DataCollection {
         }
         
         //write worker records
-        data = "\"ID\",\"workerFirstName\",\"workerLastName\",\"username\",\"email\",\"password\",\"phoneNum\"\n";
+        data = "\"ID\",\"workerFirstName\",\"workerLastName\",\"username\",\"email\",\"password\",\"phoneNum\",\"abnNum\",\"certs\"\n";
         for (int i = 0;i<Global.numWorkers;i++){
             WorkerRecord record = WorkerRecords[i];
             data += record.id + ",";
@@ -484,7 +548,9 @@ public class DataCollection {
             data += record.username + ",";
             data += record.email + ",";
             data += record.password + ",";
-            data += record.phoneNum + "\n";
+            data += record.phoneNum + ",";
+            data += String.valueOf(record.abnNum) + ",";
+            data += record.certs + "\n";
 
         }
         try{
@@ -646,8 +712,71 @@ public class DataCollection {
         return newCust;
     }
     
-
-
-
+    public WorkerRecord add_worker(String firstName, String lastName, String Password, long mobileNumber, String email, long abnNum, String certs){
+        WorkerRecord newWorker = new WorkerRecord();
+        newWorker.id = Global.numWorkers + 500;
+        newWorker.workerFirstName = firstName;
+        newWorker.workerLastName = lastName;
+        newWorker.password = Password;
+        newWorker.phoneNum = mobileNumber;
+        newWorker.email = email;
+        newWorker.abnNum = abnNum;
+        newWorker.certs = certs;
+        newWorker.numQuotes = 0;
+        newWorker.id = Global.numWorkers + 500;
+        WorkerRecords[newWorker.id-500] = newWorker;
+        Global.numWorkers +=1;
+        try
+        {
+            writeToCSV();
+        }
+        catch(IOException f)
+        {
+            f.printStackTrace();
+        }
+        
+        return newWorker;   
+    }
+    
+    public void add_vehicle(String model, String make, int year, String licenseNum,String fileLoc){
+        int custID = Global.user.id;
+        Car newCar = new Car();
+        newCar.carModel = model;
+        newCar.carMake = make;
+        newCar.modelYear = year;
+        newCar.licenseNum = licenseNum;
+        int prevNumCars = Global.data.CustomerRecords[custID].numcars;
+        Global.data.CustomerRecords[custID].numcars +=1;
+        newCar.id = String.valueOf(custID) + "."+ String.valueOf(Global.data.CustomerRecords[custID].numcars);
+        newCar.imageLoc = "";
+        if (!fileLoc.equals("")){
+            ClassLoader loader = logInFrame.class.getClassLoader();
+            URL url1 = loader.getResource("images");
+            try{
+                URL imageDestURL = new URL(url1.getProtocol(), url1.getHost(), url1.getPort(), url1.getFile() + "/" + newCar.id + ".jpg", null);
+                Path sourcePath = Paths.get(fileLoc);
+                Path destPath = Paths.get(formatURLToString(imageDestURL));
+                Files.copy(sourcePath, destPath);
+                newCar.imageLoc = formatURLToString(imageDestURL);
+            }
+            catch(MalformedURLException e)
+            {
+                e.printStackTrace();
+            }catch(IOException f){
+                f.printStackTrace();
+            }
+        }
+        Global.data.CustomerRecords[custID].cars[prevNumCars] = newCar;
+            
+        try
+        {
+            writeToCSV();
+        }
+        catch(IOException f)
+        {
+            f.printStackTrace();
+        }
+        
+    }
 
 }
