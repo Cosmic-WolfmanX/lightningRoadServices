@@ -313,7 +313,6 @@ public class DataCollection {
                     theCar.carMake = Row[2];
                     theCar.carModel = Row[3];
                     theCar.modelYear = Integer.valueOf(Row[4]);
-                    System.out.println(Row[5]);
                     theCar.imageLoc = Row[5];
 
                     this.CustomerRecords[custID].cars[numCars] = theCar;
@@ -748,8 +747,8 @@ public class DataCollection {
         int prevNumCars = Global.data.CustomerRecords[custID].numcars;
         Global.data.CustomerRecords[custID].numcars +=1;
         newCar.id = String.valueOf(custID) + "."+ String.valueOf(Global.data.CustomerRecords[custID].numcars);
-        newCar.imageLoc = "";
-        if (!fileLoc.equals("")){
+        newCar.imageLoc = "undefined";
+        if (!fileLoc.equals("") && !fileLoc.equals("undefined")){
             ClassLoader loader = logInFrame.class.getClassLoader();
             URL url1 = loader.getResource("images");
             try{

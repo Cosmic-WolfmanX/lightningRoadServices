@@ -24,6 +24,19 @@ public class Global {
     public static URL selectPhotoURL;
     public static int numCustomers;
     public static int numWorkers;
+    public static URL stringToURL(String imageLoc){
+        imageLoc = "file:///" + imageLoc;
+        try{
+        URL theUrl = new URL(imageLoc);
+        return theUrl;
+        }
+        catch(MalformedURLException f){
+            f.printStackTrace();
+            System.out.println("couldn't find image");
+            System.out.println(imageLoc);
+            return null;
+        }
+    }
     
 }
     

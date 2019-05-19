@@ -128,8 +128,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Quote One">
-                    <Property name="tabTitle" type="java.lang.String" value="Quote One"/>
+                  <JTabbedPaneConstraints tabName="Request One">
+                    <Property name="tabTitle" type="java.lang.String" value="Request One"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -462,8 +462,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Quote Three">
-                    <Property name="tabTitle" type="java.lang.String" value="Quote Three"/>
+                  <JTabbedPaneConstraints tabName="Request Two">
+                    <Property name="tabTitle" type="java.lang.String" value="Request Two"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -796,8 +796,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Quote Two">
-                    <Property name="tabTitle" type="java.lang.String" value="Quote Two"/>
+                  <JTabbedPaneConstraints tabName="Request Three">
+                    <Property name="tabTitle" type="java.lang.String" value="Request Three"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -1130,8 +1130,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Quote Four">
-                    <Property name="tabTitle" type="java.lang.String" value="Quote Four"/>
+                  <JTabbedPaneConstraints tabName="Request Four">
+                    <Property name="tabTitle" type="java.lang.String" value="Request Four"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -1497,16 +1497,16 @@
         <Component class="javax.swing.JLabel" name="Title2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Georgia" size="18" style="1"/>
+              <Font name="Georgia" size="16" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Help Requests"/>
+            <Property name="text" type="java.lang.String" value="Customer Help Requests"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="90" y="0" width="300" height="80"/>
+              <AbsoluteConstraints x="90" y="0" width="230" height="80"/>
             </Constraint>
           </Constraints>
         </Component>

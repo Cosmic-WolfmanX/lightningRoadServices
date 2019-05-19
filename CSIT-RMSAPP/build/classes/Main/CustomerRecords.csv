@@ -1,5 +1,5 @@
 "ID","firstName","lastName","userName","email","password","phoneNumber","creditCardNum","cvv","nameOnCard","creditCardExpiryDate","membershipStatus"
-0,Olivia,Reed,Oli0,Olivia.Reed@gmail.com,asdf,51505892,107678131,561,Olivia Reed,0-5,2
+0,Olivia,Reed,Oli0,Olivia.Reed@gmail.com,asdf,51505892,107678131,561,Olivia Reed,0/5,1
 1,James,Smith,Jam1,James.Smith@gmail.com,asdf,71130857,263096589,498,James Smith,8-4,1
 2,Poppy,Lopez,Pop2,Poppy.Lopez@gmail.com,asdf,25650293,391778491,245,Poppy Lopez,3-4,1
 3,Sophie,Hill,Sop3,Sophie.Hill@gmail.com,asdf,73956130,135277067,507,Sophie Hill,6-6,2

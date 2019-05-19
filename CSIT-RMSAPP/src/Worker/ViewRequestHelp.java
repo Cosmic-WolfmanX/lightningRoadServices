@@ -280,7 +280,7 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         kGradientPanel2.add(create6);
         create6.setBounds(250, 560, 280, 40);
 
-        jTabbedPane1.addTab("Quote One", kGradientPanel2);
+        jTabbedPane1.addTab("Request One", kGradientPanel2);
 
         kGradientPanel7.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel7.setkGradientFocus(750);
@@ -405,7 +405,7 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         kGradientPanel7.add(create4);
         create4.setBounds(250, 530, 280, 33);
 
-        jTabbedPane1.addTab("Quote Three", kGradientPanel7);
+        jTabbedPane1.addTab("Request Two", kGradientPanel7);
 
         kGradientPanel6.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel6.setkGradientFocus(750);
@@ -530,7 +530,7 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         kGradientPanel6.add(create5);
         create5.setBounds(280, 520, 250, 40);
 
-        jTabbedPane1.addTab("Quote Two", kGradientPanel6);
+        jTabbedPane1.addTab("Request Three", kGradientPanel6);
 
         kGradientPanel8.setkEndColor(new java.awt.Color(255, 102, 0));
         kGradientPanel8.setkGradientFocus(750);
@@ -655,7 +655,7 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         kGradientPanel8.add(create);
         create.setBounds(270, 520, 260, 30);
 
-        jTabbedPane1.addTab("Quote Four", kGradientPanel8);
+        jTabbedPane1.addTab("Request Four", kGradientPanel8);
 
         kGradientPanel1.add(jTabbedPane1);
         jTabbedPane1.setBounds(10, 70, 550, 940);
@@ -674,11 +674,11 @@ public class ViewRequestHelp extends javax.swing.JFrame {
         kGradientPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 80, 80);
 
-        Title2.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Title2.setFont(new java.awt.Font("Georgia", 1, 16)); // NOI18N
         Title2.setForeground(new java.awt.Color(255, 255, 255));
-        Title2.setText("Help Requests");
+        Title2.setText("Customer Help Requests");
         kGradientPanel1.add(Title2);
-        Title2.setBounds(90, 0, 300, 80);
+        Title2.setBounds(90, 0, 230, 80);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 1010);

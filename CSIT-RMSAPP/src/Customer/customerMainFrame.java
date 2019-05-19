@@ -319,6 +319,13 @@ public class customerMainFrame extends javax.swing.JFrame
             customerMainFrame cust = new customerMainFrame();
             cust.setVisible(true);
         }
+        else if((String)DropM.getSelectedItem() == "See Upcoming Payments")
+        {
+            this.setVisible(false);
+
+            customerPayments payments = new customerPayments();
+            payments.setVisible(true);
+        }
         else if((String)DropM.getSelectedItem() == "Edit Profile")
         {
             this.setVisible(false);
@@ -361,12 +368,12 @@ public class customerMainFrame extends javax.swing.JFrame
             makeReport rep = new makeReport();
             rep.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "View Past Report")
+        else if((String)DropM.getSelectedItem() == "View Past Reports")
         {
             this.setVisible(false);
 
-            WorkerReport rep = new WorkerReport();
-            rep.setVisible(true);
+            customerReports reps = new customerReports();
+            reps.setVisible(true);
         }
         else if((String)DropM.getSelectedItem() == "Edit Profile")
         {

@@ -135,9 +135,9 @@ public class customerReports extends javax.swing.JFrame {
         Title45 = new javax.swing.JLabel();
         jScrollPane20 = new javax.swing.JScrollPane();
         incidentReports19 = new javax.swing.JTextArea();
-        DropM = new javax.swing.JComboBox();
         jLabel1 = new javax.swing.JLabel();
         Title2 = new javax.swing.JLabel();
+        DropM = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 950));
@@ -777,16 +777,6 @@ public class customerReports extends javax.swing.JFrame {
         kGradientPanel1.add(jTabbedPane1);
         jTabbedPane1.setBounds(0, 70, 550, 880);
 
-        DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
-        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "Make Report", "View Past Reports", "Log-out" }));
-        DropM.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DropMActionPerformed(evt);
-            }
-        });
-        kGradientPanel1.add(DropM);
-        DropM.setBounds(300, 10, 240, 60);
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoSmaller.png"))); // NOI18N
         kGradientPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 80, 80);
@@ -796,6 +786,16 @@ public class customerReports extends javax.swing.JFrame {
         Title2.setText("Reports");
         kGradientPanel1.add(Title2);
         Title2.setBounds(90, 0, 300, 80);
+
+        DropM.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        DropM.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Menu", "Edit Profile", "View Vehicle/s", "Add Vehicle", "See Quotes", "See Upcoming Payments", "Make Report", "View Past Reports", "Log-out" }));
+        DropM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DropMActionPerformed(evt);
+            }
+        });
+        kGradientPanel1.add(DropM);
+        DropM.setBounds(300, 10, 240, 60);
 
         getContentPane().add(kGradientPanel1);
         kGradientPanel1.setBounds(0, 0, 550, 950);
@@ -840,6 +840,13 @@ public class customerReports extends javax.swing.JFrame {
             customerMainFrame cust = new customerMainFrame();
             cust.setVisible(true);
         }
+        else if((String)DropM.getSelectedItem() == "See Upcoming Payments")
+        {
+            this.setVisible(false);
+
+            customerPayments payments = new customerPayments();
+            payments.setVisible(true);
+        }
         else if((String)DropM.getSelectedItem() == "Edit Profile")
         {
             this.setVisible(false);
@@ -882,12 +889,12 @@ public class customerReports extends javax.swing.JFrame {
             makeReport rep = new makeReport();
             rep.setVisible(true);
         }
-        else if((String)DropM.getSelectedItem() == "View Past Report")
+        else if((String)DropM.getSelectedItem() == "View Past Reports")
         {
             this.setVisible(false);
 
-            WorkerReport rep = new WorkerReport();
-            rep.setVisible(true);
+            customerReports reps = new customerReports();
+            reps.setVisible(true);
         }
         else if((String)DropM.getSelectedItem() == "Edit Profile")
         {
